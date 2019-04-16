@@ -16,6 +16,7 @@ import std_msgs
 import numpy as np
 import math
 import tf
+from pprint import pprint
 from sensor_msgs.msg import Image, JointState
 from baxter_core_msgs.srv import ListCameras, SolvePositionIK, SolvePositionIKRequest
 from geometry_msgs.msg import Point, Pose, PoseStamped, Quaternion
@@ -212,6 +213,27 @@ class move():
 		threadr = threading.Thread(target = threadr)	#Creates the thread
 		threadl.start()
 		threadr.start()
+
+	def rotate_wrist(self, degrees):
+		# Ver este link para los limites de angulo del robot
+		# http://sdk.rethinkrobotics.com/wiki/Hardware_Specifications
+		max_angle = 3.059
+		min_angle = -3.059
+		radians = 2*math.pi*degrees / 360
+		angles = self.limb_interface.joint_angles()
+		wrist = self.limb + '_w2'
+		pprint(angles)
+		angles[wrist] += radians
+		if angles[wrist] > max_angle:
+			angles[wrist] -= 2*math.pi
+		if angles[wrist] < min_angle:
+			raise Exception('Angulo imposible:', current, '+', radians)
+
+		pprint(angles)
+		self.limb_interface.move_to_joint_positions(angles)
+		return self.limb_interface.joint_angles()[wrist]
+
+
 
 def main():
 	rospy.init_node('move', anonymous = True) #Initializes a ros node

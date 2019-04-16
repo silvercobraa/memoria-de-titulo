@@ -7,19 +7,26 @@ from basic import move
 
 X = 0.5
 Y = 0.0
-Z = 0.3
+Z = 0.2
 CUBE_POSITION = [X, Y, -0.15]
 MIDDLE = [X, Y, Z]
-ABOVE = [X, Y, 0.5]
+ABOVE = [X + 0.1, Y, 0.5]
 DOWNWARDS = [-math.pi, 0, -math.pi]
 RIGHTWARDS = [-math.pi/2, 0, -math.pi]
 RIGHTWARDS2 = [-math.pi/2, -math.pi/2, -math.pi]
-UPWARDS = [0, 0, -math.pi/2]
+UPWARDS_0 = [0, 0, -math.pi/2]
+UPWARDS_180 = [0, math.pi, math.pi/2]
 LEFTWARDS_0 = [math.pi/2, 0, math.pi]
 LEFTWARDS_90 = [math.pi/2, math.pi/2, math.pi]
 LEFTWARDS_180 = [math.pi/2, math.pi, math.pi]
 LEFTWARDS_270 = [math.pi/2, -math.pi/2, math.pi]
 DELTA = 0.1
+
+away_right = {
+	90: LEFTWARDS_270,
+	180: LEFTWARDS_180,
+	270: LEFTWARDS_90,
+}
 
 rospy.init_node('move', anonymous = True) #Initializes a ros node
 left_arm = move('left')
@@ -47,44 +54,53 @@ def left_pickup():
 	left_arm.move_baxter('base', [X, Y, 0], DOWNWARDS)
 
 
-def D90():
+def D(degrees):
 	right_grip.open()
 	left_arm.move_baxter('base', MIDDLE, RIGHTWARDS)
 	right_arm.move_baxter('base', [X, Y - DELTA, Z], LEFTWARDS_0)
 	right_arm.move_baxter('base', [X, Y - 0.02, Z], LEFTWARDS_0)
-
+	time.sleep(1)
 	right_grip.close()
 	time.sleep(1)
-	right_arm.rotate_wrist(90)
+	right_arm.rotate_wrist(degrees)
+	time.sleep(1)
 	right_grip.open()
 	time.sleep(1)
-	right_arm.move_baxter('base', [X, Y - DELTA, Z], LEFTWARDS_270)
+	right_arm.move_baxter('base', [X, Y - DELTA, Z], away_right[degrees])
+	# right_arm.rotate_wrist(-90)
 
-def D180():
+
+def B(degrees):
 	right_grip.open()
-	left_arm.move_baxter('base', MIDDLE, RIGHTWARDS)
-	right_arm.move_baxter('base', [X, Y - DELTA, Z], LEFTWARDS_0)
-	right_arm.move_baxter('base', [X, Y - 0.02, Z], LEFTWARDS_0)
+	left_arm.move_baxter('base', ABOVE, UPWARDS_0)
+	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - 0.1, ABOVE[2]], LEFTWARDS_0)
+	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - 0.01, ABOVE[2]], LEFTWARDS_0)
 
+	time.sleep(1)
 	right_grip.close()
 	time.sleep(1)
-	right_arm.rotate_wrist(180)
+	right_arm.rotate_wrist(degrees)
+	time.sleep(1)
 	right_grip.open()
 	time.sleep(1)
-	right_arm.move_baxter('base', [X, Y - DELTA, Z], LEFTWARDS_180)
+	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - 0.1, ABOVE[2]], away_right[degrees])
 
-def D270():
+
+def F(degrees):
 	right_grip.open()
-	left_arm.move_baxter('base', MIDDLE, RIGHTWARDS)
-	right_arm.move_baxter('base', [X, Y - DELTA, Z], LEFTWARDS_0)
-	right_arm.move_baxter('base', [X, Y - 0.02, Z], LEFTWARDS_0)
+	left_arm.move_baxter('base', ABOVE, UPWARDS_0)
+	left_arm.rotate_wrist(180)
+	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - 0.1, ABOVE[2]], LEFTWARDS_0)
+	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - 0.013, ABOVE[2]], LEFTWARDS_0)
 
+	time.sleep(1)
 	right_grip.close()
 	time.sleep(1)
-	right_arm.rotate_wrist(270)
+	right_arm.rotate_wrist(degrees)
+	time.sleep(1)
 	right_grip.open()
 	time.sleep(1)
-	right_arm.move_baxter('base', [X, Y - DELTA, Z], LEFTWARDS_90)
+	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - 0.1, ABOVE[2]], away_right[degrees])
 
 
 
@@ -98,12 +114,14 @@ def switch_hands():
 def main():
 
 	# left_pickup()
-	D90()
-	D180()
-	D270()
+	# right_grip.open()
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1], ABOVE[2] - 0.1], [0, 0, -math.pi/2])
+	B(180)
+	F(180)
+	D(180)
 	return
 
-	left_arm.move_baxter('base', [ABOVE[0] + 0.1, ABOVE[1], ABOVE[2]], UPWARDS)
+	left_arm.move_baxter('base', [ABOVE[0] + 0.1, ABOVE[1], ABOVE[2]], UPWARDS_0)
 	right_arm.move_baxter('base', [ABOVE[0] + 0.1, ABOVE[1] - 0.1, ABOVE[2]], LEFTWARDS_0)
 	time.sleep(1)
 	right_arm.move_baxter('base', [ABOVE[0] + 0.1, ABOVE[1] - 0.01, ABOVE[2]], LEFTWARDS_0)
