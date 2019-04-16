@@ -223,11 +223,13 @@ class move():
 		angles = self.limb_interface.joint_angles()
 		wrist = self.limb + '_w2'
 		pprint(angles)
+		print('radianes antes:', angles[wrist])
 		angles[wrist] += radians
+		print('radianes despues:', angles[wrist])
 		if angles[wrist] > max_angle:
 			angles[wrist] -= 2*math.pi
 		if angles[wrist] < min_angle:
-			raise Exception('Angulo imposible:', current, '+', radians)
+			raise Exception('Angulo imposible:', angles[wrist])
 
 		pprint(angles)
 		self.limb_interface.move_to_joint_positions(angles)
