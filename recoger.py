@@ -5,11 +5,12 @@ import baxter_interface
 
 from basic import move
 
-X = 0.5
+X = 0.6
 Y = 0.0
 Z = 0.2
-CUBE_POSITION = [X, Y, -0.15]
+CUBE_POSITION = [0.5, 0.0, -0.15]
 MIDDLE = [X, Y, Z]
+MIDDLE2 = [0.5, Y, Z]
 ABOVE = [X + 0.1, Y, 0.5]
 DOWNWARDS = [-math.pi, 0, -math.pi]
 RIGHTWARDS_0 = [-math.pi/2, 0, -math.pi]
@@ -43,8 +44,8 @@ left_grip = baxter_interface.Gripper('left')
 right_grip = baxter_interface.Gripper('right')
 
 def descend(left_arm):
-	left_arm.move_baxter('base', MIDDLE, DOWNWARDS)
-	left_arm.move_baxter('base', [X, Y, 0], DOWNWARDS)
+	left_arm.move_baxter('base', MIDDLE2, DOWNWARDS)
+	left_arm.move_baxter('base', [0.5, Y, 0], DOWNWARDS)
 	left_arm.move_baxter('base', CUBE_POSITION, DOWNWARDS)
 
 def ascend(left_arm):
@@ -72,7 +73,9 @@ def right_pickup():
 
 def D(degrees):
 	right_grip.open()
-	left_arm.move_baxter('base', MIDDLE, RIGHTWARDS_0)
+	left_arm.move_baxter('base', ABOVE, RIGHTWARDS_0)
+	return
+	left_arm.move_baxter('base', ABOVE, RIGHTWARDS_0)
 	right_arm.move_baxter('base', [X, Y - DELTA, Z], LEFTWARDS_0)
 	right_arm.move_baxter('base', [X, Y - 0.02, Z], LEFTWARDS_0)
 	time.sleep(1)
@@ -83,7 +86,6 @@ def D(degrees):
 	right_grip.open()
 	time.sleep(1)
 	right_arm.move_baxter('base', [X, Y - DELTA, Z], away_right[degrees])
-	# right_arm.rotate_wrist(-90)
 
 
 def B(degrees):
@@ -185,13 +187,15 @@ def main():
 	# left_grip.calibrate()
 	# right_grip.calibrate()
 	# right_grip.open()
-	# left_drop()
 
 	# right_pickup()
 	# left_pickup()
-	F(180)
-	B(180)
-	D(180)
+	# B(90)
+	# F(180)
+	# D(90)
+	# left_arm.move_baxter('base', MIDDLE, [math.pi/2, 0, 0])
+	left_arm.move_baxter('base', ABOVE, [math.pi/2, 0, 0])
+	# left_drop()
 	return
 
 
