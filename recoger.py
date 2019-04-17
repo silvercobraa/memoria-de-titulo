@@ -13,12 +13,11 @@ MIDDLE = [X, Y, Z]
 ABOVE = [X + 0.1, Y, 0.5]
 DOWNWARDS = [-math.pi, 0, -math.pi]
 RIGHTWARDS_0 = [-math.pi/2, 0, -math.pi]
-RIGHTWARDS2 = [-math.pi/2, -math.pi/2, -math.pi]
 RIGHTWARDS_90 = [-math.pi/2, math.pi/2, -math.pi]
 RIGHTWARDS_180 = [-math.pi/2, math.pi, -math.pi]
 RIGHTWARDS_270 = [-math.pi/2, -math.pi/2, -math.pi]
 UPWARDS_0 = [0, 0, -math.pi/2]
-UPWARDS_180 = [0, math.pi, math.pi/2]
+UPWARDS_180 = [0, 0, math.pi/2]
 LEFTWARDS_0 = [math.pi/2, 0, math.pi]
 LEFTWARDS_90 = [math.pi/2, math.pi/2, math.pi]
 LEFTWARDS_180 = [math.pi/2, math.pi, math.pi]
@@ -105,8 +104,7 @@ def B(degrees):
 
 def F(degrees):
 	right_grip.open()
-	left_arm.move_baxter('base', ABOVE, UPWARDS_0)
-	left_arm.rotate_wrist(180)
+	left_arm.move_baxter('base', ABOVE, UPWARDS_180)
 	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - DELTA, ABOVE[2]], LEFTWARDS_0)
 	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - 0.013, ABOVE[2]], LEFTWARDS_0)
 
@@ -124,7 +122,7 @@ def U(degrees):
 	left_grip.open()
 	right_arm.move_baxter('base', MIDDLE, LEFTWARDS_0)
 	left_arm.move_baxter('base', [X, Y + DELTA, Z], RIGHTWARDS_0)
-	left_arm.move_baxter('base', [X, Y + 0.02, Z], RIGHTWARDS_0)
+	left_arm.move_baxter('base', [X, Y + 0.01, Z], RIGHTWARDS_0)
 
 	time.sleep(1)
 	left_grip.close()
@@ -134,6 +132,39 @@ def U(degrees):
 	left_grip.open()
 	time.sleep(1)
 	left_arm.move_baxter('base', [X, Y + DELTA, Z], away_left[degrees])
+
+
+# podria ser L...
+def R(degrees):
+	left_grip.open()
+	right_arm.move_baxter('base', ABOVE, UPWARDS_0)
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_0)
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + 0.025, ABOVE[2]], RIGHTWARDS_0)
+	#
+	time.sleep(1)
+	left_grip.close()
+	time.sleep(1)
+	left_arm.rotate_wrist(degrees)
+	time.sleep(1)
+	left_grip.open()
+	time.sleep(1)
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], away_left[degrees])
+
+
+def L(degrees):
+	left_grip.open()
+	right_arm.move_baxter('base', ABOVE, UPWARDS_180)
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_0)
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + 0.17, ABOVE[2]], RIGHTWARDS_0)
+
+	time.sleep(1)
+	left_grip.close()
+	time.sleep(1)
+	left_arm.rotate_wrist(degrees)
+	time.sleep(1)
+	left_grip.open()
+	time.sleep(1)
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], away_left[degrees])
 
 
 def switch_hands():
@@ -154,14 +185,13 @@ def main():
 	# left_grip.calibrate()
 	# right_grip.calibrate()
 	# right_grip.open()
-	# left_arm.move_baxter('base', MIDDLE, RIGHTWARDS_0)
-	# F(180)
-	# B(180)
-	# D(180)
 	# left_drop()
 
 	# right_pickup()
-	U(270)
+	# left_pickup()
+	F(180)
+	B(180)
+	D(180)
 	return
 
 
