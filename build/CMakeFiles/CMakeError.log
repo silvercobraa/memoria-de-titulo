@@ -51,3 +51,99 @@ make[1]: *** [cmTryCompileExec3436975993] Error 1
 make: *** [cmTryCompileExec3436975993/fast] Error 2
 
 
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3461567314/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3461567314.dir/build.make CMakeFiles/cmTryCompileExec3461567314.dir/build
+make[1]: se ingresa al directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
+/usr/bin/cmake -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3461567314.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec3461567314.dir/CheckSymbolExists.cxx.o -c /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^
+make[1]: se sale del directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
+make[1]: *** [CMakeFiles/cmTryCompileExec3461567314.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec3461567314/fast] Error 2
+
+File /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec24805796/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec24805796.dir/build.make CMakeFiles/cmTryCompileExec24805796.dir/build
+make[1]: se ingresa al directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
+/usr/bin/cmake -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec24805796.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec24805796.dir/CheckSymbolExists.cxx.o -c /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^
+make[1]: se sale del directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
+make[1]: *** [CMakeFiles/cmTryCompileExec24805796.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec24805796/fast] Error 2
+
+File /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2708085543/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2708085543.dir/build.make CMakeFiles/cmTryCompileExec2708085543.dir/build
+make[1]: se ingresa al directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
+/usr/bin/cmake -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2708085543.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec2708085543.dir/CheckSymbolExists.cxx.o -c /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^
+make[1]: se sale del directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
+make[1]: *** [CMakeFiles/cmTryCompileExec2708085543.dir/CheckSymbolExists.cxx.o] Error 1
+make: *** [cmTryCompileExec2708085543/fast] Error 2
+
+File /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
