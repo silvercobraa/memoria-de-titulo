@@ -208,20 +208,57 @@ def right_drop():
 
 def main():
 	# left_pickup()
-	D(270)
-	B(180)
-	F(90)
-	B(180)
-	D(270)
-	F(90)
-	D(270)
+	# D(270)
+	# B(180)
+	# F(90)
+	# B(180)
+	# D(270)
+	# F(90)
+	# D(270)
 	# switch_l2r()
 	# R(90)
 	# L(90)
 	# U(90)
 	# right_drop()
 
-	# left_arm.move_baxter('base', [ABOVE[0] - 0.2, ABOVE[1], ABOVE[2] + 0.1], UPWARDS_270)
+	# # FOTO D
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1], ABOVE[2]], RIGHTWARDS_0)
+	# right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - DELTA, ABOVE[2]], LEFTWARDS_90)
+	# right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - 0.01, ABOVE[2]], LEFTWARDS_90)
+	# # ACA
+	# right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - DELTA, ABOVE[2]], LEFTWARDS_90)
+	# # FOTO B
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1], ABOVE[2]], UPWARDS_0)
+	# right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - DELTA, ABOVE[2]], LEFTWARDS_90)
+	# right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - 0.01, ABOVE[2]], LEFTWARDS_90)
+	# # ACA
+	# right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - DELTA, ABOVE[2]], LEFTWARDS_90)
+	# # FOTO B
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1], ABOVE[2]], UPWARDS_180)
+	# right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - DELTA, ABOVE[2]], LEFTWARDS_90)
+	# right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - 0.01, ABOVE[2]], LEFTWARDS_90)
+	# # ACA
+	# right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - DELTA, ABOVE[2]], LEFTWARDS_90)
+
+	# switch_l2r()
+	# # FOTO U
+	# right_arm.move_baxter('base', [ABOVE[0], ABOVE[1], ABOVE[2]], LEFTWARDS_0)
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + 0.01, ABOVE[2]], RIGHTWARDS_90)
+	# # ACA
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
+	# # FOTO R
+	# right_arm.move_baxter('base', [ABOVE[0], ABOVE[1], ABOVE[2]], UPWARDS_0)
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + 0.01, ABOVE[2]], RIGHTWARDS_90)
+	# # ACA
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
+	# # FOTO L
+	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1], ABOVE[2]], UPWARDS_180)
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + 0.01, ABOVE[2]], RIGHTWARDS_90)
+	# # ACA
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
 	return
 
 
