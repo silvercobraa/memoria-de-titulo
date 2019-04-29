@@ -50,9 +50,9 @@ class move():
 		self.limb_interface = baxter_interface.Limb(self.limb) #Declares the limb
 		self.head = baxter_interface.Head()	#Declares the head
 		self.gripper = baxter_interface.Gripper(self.limb)	#Declares the gripper
-		self.camera = baxter_interface.CameraController('right_hand_camera')
-		self.camera.open()
-		self.camera.resolution          = self.camera.MODES[0]
+		# self.camera = baxter_interface.CameraController('right_hand_camera')
+		# self.camera.open()
+		# self.camera.resolution          = self.camera.MODES[0]
 
 		self.pub = rospy.Publisher('/robot/xdisplay', Image, latch=True, queue_size = 10) #Publisher for changing the screen display
 

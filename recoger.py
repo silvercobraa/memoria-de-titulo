@@ -18,7 +18,9 @@ RIGHTWARDS_90 = [math.pi/2, math.pi/2, 0]
 RIGHTWARDS_180 = [math.pi/2, math.pi, 0]
 RIGHTWARDS_270 = [math.pi/2, -math.pi/2, 0]
 UPWARDS_0 = [0, 0, -math.pi/2]
+UPWARDS_90 = [0, 0, 0]
 UPWARDS_180 = [0, 0, math.pi/2]
+UPWARDS_270 = [0, 0, math.pi]
 LEFTWARDS_0 = [-math.pi/2, 0, 0]
 LEFTWARDS_90 = [-math.pi/2, math.pi/2, 0]
 LEFTWARDS_180 = [-math.pi/2, math.pi, 0]
@@ -84,6 +86,7 @@ def D(degrees):
 	right_grip.open()
 	time.sleep(1)
 	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - DELTA, ABOVE[2]], away_right[degrees])
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], away_left[90])
 
 
 def B(degrees):
@@ -100,6 +103,7 @@ def B(degrees):
 	right_grip.open()
 	time.sleep(1)
 	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - DELTA, ABOVE[2]], away_right[degrees])
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], away_left[90])
 
 
 def F(degrees):
@@ -116,6 +120,7 @@ def F(degrees):
 	right_grip.open()
 	time.sleep(1)
 	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - DELTA, ABOVE[2]], away_right[degrees])
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], away_left[90])
 
 
 def U(degrees):
@@ -179,10 +184,10 @@ def switch_l2r():
 	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], away_left[90])
 
 def switch_r2l():
-	# right_arm.move_baxter('base', ABOVE, RIGHTWARDS_0)
-	# right_arm.rotate_wrist(90)
-	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_0)
-	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - 0.01, ABOVE[2]], RIGHTWARDS_0)
+	right_arm.move_baxter('base', ABOVE, LEFTWARDS_0)
+	right_arm.rotate_wrist(90)
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_0)
+	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] - 0.01, ABOVE[2]], RIGHTWARDS_0)
 	left_grip.close()
 	time.sleep(1)
 	right_grip.open()
@@ -202,15 +207,21 @@ def right_drop():
 
 
 def main():
-	left_pickup()
-	B(90)
+	# left_pickup()
+	D(270)
+	B(180)
 	F(90)
-	D(90)
-	switch_l2r()
-	R(90)
-	L(90)
-	U(90)
-	right_drop()
+	B(180)
+	D(270)
+	F(90)
+	D(270)
+	# switch_l2r()
+	# R(90)
+	# L(90)
+	# U(90)
+	# right_drop()
+
+	# left_arm.move_baxter('base', [ABOVE[0] - 0.2, ABOVE[1], ABOVE[2] + 0.1], UPWARDS_270)
 	return
 
 
