@@ -1,23 +1,23 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp
+Change Dir: /home/buguntu/ros_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec3335477870/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3335477870.dir/build.make CMakeFiles/cmTryCompileExec3335477870.dir/build
-make[1]: se ingresa al directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
-/usr/bin/cmake -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3335477870.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3335477870.dir/CheckSymbolExists.c.o   -c /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTryCompileExec3335477870
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3335477870.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec3335477870.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3335477870 -rdynamic 
-CMakeFiles/cmTryCompileExec3335477870.dir/CheckSymbolExists.c.o: En la función `main':
+Run Build Command:/usr/bin/make "cmTryCompileExec1732640847/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1732640847.dir/build.make CMakeFiles/cmTryCompileExec1732640847.dir/build
+make[1]: se ingresa al directorio «/home/buguntu/ros_ws/build/CMakeFiles/CMakeTmp»
+/usr/bin/cmake -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1732640847.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1732640847.dir/CheckSymbolExists.c.o   -c /home/buguntu/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1732640847
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1732640847.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1732640847.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1732640847 -rdynamic 
+CMakeFiles/cmTryCompileExec1732640847.dir/CheckSymbolExists.c.o: En la función `main':
 CheckSymbolExists.c:(.text+0x16): referencia a `pthread_create' sin definir
 collect2: error: ld returned 1 exit status
-make[1]: se sale del directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
-make[1]: *** [cmTryCompileExec3335477870] Error 1
-make: *** [cmTryCompileExec3335477870/fast] Error 2
+make[1]: se sale del directorio «/home/buguntu/ros_ws/build/CMakeFiles/CMakeTmp»
+make[1]: *** [cmTryCompileExec1732640847] Error 1
+make: *** [cmTryCompileExec1732640847/fast] Error 2
 
-File /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/buguntu/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -33,117 +33,21 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp
+Change Dir: /home/buguntu/ros_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec3436975993/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3436975993.dir/build.make CMakeFiles/cmTryCompileExec3436975993.dir/build
-make[1]: se ingresa al directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
-/usr/bin/cmake -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3436975993.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3436975993.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec3436975993
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3436975993.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3436975993.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3436975993 -rdynamic -lpthreads 
+Run Build Command:/usr/bin/make "cmTryCompileExec3138417620/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3138417620.dir/build.make CMakeFiles/cmTryCompileExec3138417620.dir/build
+make[1]: se ingresa al directorio «/home/buguntu/ros_ws/build/CMakeFiles/CMakeTmp»
+/usr/bin/cmake -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3138417620.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec3138417620.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3138417620
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3138417620.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec3138417620.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3138417620 -rdynamic -lpthreads 
 /usr/bin/ld: no se puede encontrar -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: se sale del directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
-make[1]: *** [cmTryCompileExec3436975993] Error 1
-make: *** [cmTryCompileExec3436975993/fast] Error 2
+make[1]: se sale del directorio «/home/buguntu/ros_ws/build/CMakeFiles/CMakeTmp»
+make[1]: *** [cmTryCompileExec3138417620] Error 1
+make: *** [cmTryCompileExec3138417620/fast] Error 2
 
-
-Determining if the Q_WS_WIN exist failed with the following output:
-Change Dir: /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec3461567314/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3461567314.dir/build.make CMakeFiles/cmTryCompileExec3461567314.dir/build
-make[1]: se ingresa al directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
-/usr/bin/cmake -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec3461567314.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec3461567314.dir/CheckSymbolExists.cxx.o -c /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
-   return ((int*)(&Q_WS_WIN))[argc];
-                   ^
-make[1]: se sale del directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
-make[1]: *** [CMakeFiles/cmTryCompileExec3461567314.dir/CheckSymbolExists.cxx.o] Error 1
-make: *** [cmTryCompileExec3461567314/fast] Error 2
-
-File /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
-/* */
-#include <QtCore/qglobal.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef Q_WS_WIN
-  return ((int*)(&Q_WS_WIN))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the Q_WS_QWS exist failed with the following output:
-Change Dir: /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec24805796/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec24805796.dir/build.make CMakeFiles/cmTryCompileExec24805796.dir/build
-make[1]: se ingresa al directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
-/usr/bin/cmake -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec24805796.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec24805796.dir/CheckSymbolExists.cxx.o -c /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
-   return ((int*)(&Q_WS_QWS))[argc];
-                   ^
-make[1]: se sale del directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
-make[1]: *** [CMakeFiles/cmTryCompileExec24805796.dir/CheckSymbolExists.cxx.o] Error 1
-make: *** [cmTryCompileExec24805796/fast] Error 2
-
-File /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
-/* */
-#include <QtCore/qglobal.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef Q_WS_QWS
-  return ((int*)(&Q_WS_QWS))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-
-Determining if the Q_WS_MAC exist failed with the following output:
-Change Dir: /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec2708085543/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2708085543.dir/build.make CMakeFiles/cmTryCompileExec2708085543.dir/build
-make[1]: se ingresa al directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
-/usr/bin/cmake -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2708085543.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec2708085543.dir/CheckSymbolExists.cxx.o -c /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
-/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
-/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
-   return ((int*)(&Q_WS_MAC))[argc];
-                   ^
-make[1]: se sale del directorio «/home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp»
-make[1]: *** [CMakeFiles/cmTryCompileExec2708085543.dir/CheckSymbolExists.cxx.o] Error 1
-make: *** [cmTryCompileExec2708085543/fast] Error 2
-
-File /home/silvercobraa/ros_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
-/* */
-#include <QtCore/qglobal.h>
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef Q_WS_MAC
-  return ((int*)(&Q_WS_MAC))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
 

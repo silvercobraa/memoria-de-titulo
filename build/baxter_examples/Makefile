@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/silvercobraa/ros_ws/src
+CMAKE_SOURCE_DIR = /home/buguntu/ros_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/silvercobraa/ros_ws/build
+CMAKE_BINARY_DIR = /home/buguntu/ros_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -120,14 +120,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/silvercobraa/ros_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/silvercobraa/ros_ws/build/CMakeFiles /home/silvercobraa/ros_ws/build/baxter_examples/CMakeFiles/progress.marks
-	cd /home/silvercobraa/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_examples/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/silvercobraa/ros_ws/build/CMakeFiles 0
+	cd /home/buguntu/ros_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/buguntu/ros_ws/build/CMakeFiles /home/buguntu/ros_ws/build/baxter_examples/CMakeFiles/progress.marks
+	cd /home/buguntu/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_examples/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/buguntu/ros_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/silvercobraa/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_examples/clean
+	cd /home/buguntu/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_examples/clean
 .PHONY : clean
 
 # The main clean target
@@ -136,22 +136,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/silvercobraa/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_examples/preinstall
+	cd /home/buguntu/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_examples/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/silvercobraa/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_examples/preinstall
+	cd /home/buguntu/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_examples/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/silvercobraa/ros_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/buguntu/ros_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/rule:
-	cd /home/silvercobraa/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/rule
+	cd /home/buguntu/ros_ws/build && $(MAKE) -f CMakeFiles/Makefile2 baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/rule
 .PHONY : baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/rule
 
 # Convenience name for target.
@@ -160,7 +160,7 @@ baxter_examples_gencfg: baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/ru
 
 # fast build rule for target.
 baxter_examples_gencfg/fast:
-	cd /home/silvercobraa/ros_ws/build && $(MAKE) -f baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/build.make baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/build
+	cd /home/buguntu/ros_ws/build && $(MAKE) -f baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/build.make baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/build
 .PHONY : baxter_examples_gencfg/fast
 
 # Help Target
@@ -188,6 +188,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/silvercobraa/ros_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/buguntu/ros_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/silvercobraa/ros_ws/src
+CMAKE_SOURCE_DIR = /home/buguntu/ros_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/silvercobraa/ros_ws/build
+CMAKE_BINARY_DIR = /home/buguntu/ros_ws/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_py.
 
@@ -56,10 +56,10 @@ baxter_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build: rosgra
 .PHONY : baxter_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 
 baxter_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	cd /home/silvercobraa/ros_ws/build/baxter_interface && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/buguntu/ros_ws/build/baxter_interface && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : baxter_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 baxter_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend:
-	cd /home/silvercobraa/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/silvercobraa/ros_ws/src /home/silvercobraa/ros_ws/src/baxter_interface /home/silvercobraa/ros_ws/build /home/silvercobraa/ros_ws/build/baxter_interface /home/silvercobraa/ros_ws/build/baxter_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/buguntu/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/buguntu/ros_ws/src /home/buguntu/ros_ws/src/baxter_interface /home/buguntu/ros_ws/build /home/buguntu/ros_ws/build/baxter_interface /home/buguntu/ros_ws/build/baxter_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : baxter_interface/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 

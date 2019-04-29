@@ -7,11 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/silvercobraa/ros_ws/devel:$CMAKE_PREFIX_PATH"
-export CPATH="/home/silvercobraa/ros_ws/devel/include:$CPATH"
-export LD_LIBRARY_PATH="/home/silvercobraa/ros_ws/devel/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/home/silvercobraa/ros_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/silvercobraa/ros_ws/build"
-export PYTHONPATH="/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/silvercobraa/ros_ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/silvercobraa/ros_ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/buguntu/ros_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/buguntu/ros_ws/devel/lib:$LD_LIBRARY_PATH"
+export PWD="/home/buguntu/ros_ws/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/buguntu/ros_ws/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/buguntu/ros_ws/src:$ROS_PACKAGE_PATH"

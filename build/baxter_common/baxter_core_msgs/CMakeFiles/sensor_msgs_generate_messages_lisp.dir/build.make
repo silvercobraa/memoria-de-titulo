@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/silvercobraa/ros_ws/src
+CMAKE_SOURCE_DIR = /home/buguntu/ros_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/silvercobraa/ros_ws/build
+CMAKE_BINARY_DIR = /home/buguntu/ros_ws/build
 
 # Utility rule file for sensor_msgs_generate_messages_lisp.
 
@@ -56,10 +56,10 @@ baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 
 baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean:
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && $(CMAKE_COMMAND) -P CMakeFiles/sensor_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 
 baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend:
-	cd /home/silvercobraa/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/silvercobraa/ros_ws/src /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs /home/silvercobraa/ros_ws/build /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/buguntu/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/buguntu/ros_ws/src /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs /home/buguntu/ros_ws/build /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/depend
 

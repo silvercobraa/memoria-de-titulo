@@ -35,128 +35,128 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/silvercobraa/ros_ws/src
+CMAKE_SOURCE_DIR = /home/buguntu/ros_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/silvercobraa/ros_ws/build
+CMAKE_BINARY_DIR = /home/buguntu/ros_ws/build
 
 # Utility rule file for baxter_interface_gencfg.
 
 # Include the progress variables for this target.
 include baxter_interface/CMakeFiles/baxter_interface_gencfg.dir/progress.make
 
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h
-baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/buguntu/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/buguntu/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/buguntu/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h
+baxter_interface/CMakeFiles/baxter_interface_gencfg: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py
 
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h: /home/silvercobraa/ros_ws/src/baxter_interface/cfg/PositionJointTrajectoryActionServer.cfg
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/PositionJointTrajectoryActionServer.cfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py"
-	cd /home/silvercobraa/ros_ws/build/baxter_interface && ../catkin_generated/env_cached.sh /home/silvercobraa/ros_ws/build/baxter_interface/setup_custom_pythonpath.sh /home/silvercobraa/ros_ws/src/baxter_interface/cfg/PositionJointTrajectoryActionServer.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/silvercobraa/ros_ws/devel/share/baxter_interface /home/silvercobraa/ros_ws/devel/include/baxter_interface /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface
+/home/buguntu/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h: /home/buguntu/ros_ws/src/baxter_interface/cfg/PositionJointTrajectoryActionServer.cfg
+/home/buguntu/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
+/home/buguntu/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/PositionJointTrajectoryActionServer.cfg: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py"
+	cd /home/buguntu/ros_ws/build/baxter_interface && ../catkin_generated/env_cached.sh /home/buguntu/ros_ws/build/baxter_interface/setup_custom_pythonpath.sh /home/buguntu/ros_ws/src/baxter_interface/cfg/PositionJointTrajectoryActionServer.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/buguntu/ros_ws/devel/share/baxter_interface /home/buguntu/ros_ws/devel/include/baxter_interface /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.dox: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.dox: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig-usage.dox: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig-usage.dox: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.wikidoc: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.wikidoc: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h: /home/silvercobraa/ros_ws/src/baxter_interface/cfg/VelocityJointTrajectoryActionServer.cfg
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/VelocityJointTrajectoryActionServer.cfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py"
-	cd /home/silvercobraa/ros_ws/build/baxter_interface && ../catkin_generated/env_cached.sh /home/silvercobraa/ros_ws/build/baxter_interface/setup_custom_pythonpath.sh /home/silvercobraa/ros_ws/src/baxter_interface/cfg/VelocityJointTrajectoryActionServer.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/silvercobraa/ros_ws/devel/share/baxter_interface /home/silvercobraa/ros_ws/devel/include/baxter_interface /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface
+/home/buguntu/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h: /home/buguntu/ros_ws/src/baxter_interface/cfg/VelocityJointTrajectoryActionServer.cfg
+/home/buguntu/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
+/home/buguntu/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/VelocityJointTrajectoryActionServer.cfg: /home/buguntu/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py"
+	cd /home/buguntu/ros_ws/build/baxter_interface && ../catkin_generated/env_cached.sh /home/buguntu/ros_ws/build/baxter_interface/setup_custom_pythonpath.sh /home/buguntu/ros_ws/src/baxter_interface/cfg/VelocityJointTrajectoryActionServer.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/buguntu/ros_ws/devel/share/baxter_interface /home/buguntu/ros_ws/devel/include/baxter_interface /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.dox: /home/silvercobraa/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.dox: /home/buguntu/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig-usage.dox: /home/silvercobraa/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig-usage.dox: /home/buguntu/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py: /home/silvercobraa/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py: /home/buguntu/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.wikidoc: /home/silvercobraa/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.wikidoc: /home/buguntu/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h: /home/silvercobraa/ros_ws/src/baxter_interface/cfg/PositionFFJointTrajectoryActionServer.cfg
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/PositionFFJointTrajectoryActionServer.cfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py"
-	cd /home/silvercobraa/ros_ws/build/baxter_interface && ../catkin_generated/env_cached.sh /home/silvercobraa/ros_ws/build/baxter_interface/setup_custom_pythonpath.sh /home/silvercobraa/ros_ws/src/baxter_interface/cfg/PositionFFJointTrajectoryActionServer.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/silvercobraa/ros_ws/devel/share/baxter_interface /home/silvercobraa/ros_ws/devel/include/baxter_interface /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface
+/home/buguntu/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h: /home/buguntu/ros_ws/src/baxter_interface/cfg/PositionFFJointTrajectoryActionServer.cfg
+/home/buguntu/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
+/home/buguntu/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/PositionFFJointTrajectoryActionServer.cfg: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py"
+	cd /home/buguntu/ros_ws/build/baxter_interface && ../catkin_generated/env_cached.sh /home/buguntu/ros_ws/build/baxter_interface/setup_custom_pythonpath.sh /home/buguntu/ros_ws/src/baxter_interface/cfg/PositionFFJointTrajectoryActionServer.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/buguntu/ros_ws/devel/share/baxter_interface /home/buguntu/ros_ws/devel/include/baxter_interface /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.dox: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.dox: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig-usage.dox: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig-usage.dox: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.wikidoc: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.wikidoc: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h: /home/silvercobraa/ros_ws/src/baxter_interface/cfg/GripperActionServer.cfg
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/GripperActionServer.cfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py"
-	cd /home/silvercobraa/ros_ws/build/baxter_interface && ../catkin_generated/env_cached.sh /home/silvercobraa/ros_ws/build/baxter_interface/setup_custom_pythonpath.sh /home/silvercobraa/ros_ws/src/baxter_interface/cfg/GripperActionServer.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/silvercobraa/ros_ws/devel/share/baxter_interface /home/silvercobraa/ros_ws/devel/include/baxter_interface /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface
+/home/buguntu/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h: /home/buguntu/ros_ws/src/baxter_interface/cfg/GripperActionServer.cfg
+/home/buguntu/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
+/home/buguntu/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/GripperActionServer.cfg: /home/buguntu/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py"
+	cd /home/buguntu/ros_ws/build/baxter_interface && ../catkin_generated/env_cached.sh /home/buguntu/ros_ws/build/baxter_interface/setup_custom_pythonpath.sh /home/buguntu/ros_ws/src/baxter_interface/cfg/GripperActionServer.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/buguntu/ros_ws/devel/share/baxter_interface /home/buguntu/ros_ws/devel/include/baxter_interface /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/GripperActionServerConfig.dox: /home/silvercobraa/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/GripperActionServerConfig.dox: /home/buguntu/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/GripperActionServerConfig-usage.dox: /home/silvercobraa/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/GripperActionServerConfig-usage.dox: /home/buguntu/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py: /home/silvercobraa/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py: /home/buguntu/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/GripperActionServerConfig.wikidoc: /home/silvercobraa/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/GripperActionServerConfig.wikidoc: /home/buguntu/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h: /home/silvercobraa/ros_ws/src/baxter_interface/cfg/HeadActionServer.cfg
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
-/home/silvercobraa/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/HeadActionServer.cfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py"
-	cd /home/silvercobraa/ros_ws/build/baxter_interface && ../catkin_generated/env_cached.sh /home/silvercobraa/ros_ws/build/baxter_interface/setup_custom_pythonpath.sh /home/silvercobraa/ros_ws/src/baxter_interface/cfg/HeadActionServer.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/silvercobraa/ros_ws/devel/share/baxter_interface /home/silvercobraa/ros_ws/devel/include/baxter_interface /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface
+/home/buguntu/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h: /home/buguntu/ros_ws/src/baxter_interface/cfg/HeadActionServer.cfg
+/home/buguntu/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
+/home/buguntu/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/HeadActionServer.cfg: /home/buguntu/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py"
+	cd /home/buguntu/ros_ws/build/baxter_interface && ../catkin_generated/env_cached.sh /home/buguntu/ros_ws/build/baxter_interface/setup_custom_pythonpath.sh /home/buguntu/ros_ws/src/baxter_interface/cfg/HeadActionServer.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/buguntu/ros_ws/devel/share/baxter_interface /home/buguntu/ros_ws/devel/include/baxter_interface /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/HeadActionServerConfig.dox: /home/silvercobraa/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/HeadActionServerConfig.dox: /home/buguntu/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/HeadActionServerConfig-usage.dox: /home/silvercobraa/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/HeadActionServerConfig-usage.dox: /home/buguntu/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py: /home/silvercobraa/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py: /home/buguntu/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h
 
-/home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/HeadActionServerConfig.wikidoc: /home/silvercobraa/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_interface/docs/HeadActionServerConfig.wikidoc: /home/buguntu/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h
 
 baxter_interface_gencfg: baxter_interface/CMakeFiles/baxter_interface_gencfg
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.dox
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig-usage.dox
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.wikidoc
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.dox
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig-usage.dox
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.wikidoc
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.dox
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig-usage.dox
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.wikidoc
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/GripperActionServerConfig.dox
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/GripperActionServerConfig-usage.dox
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/GripperActionServerConfig.wikidoc
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/HeadActionServerConfig.dox
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/HeadActionServerConfig-usage.dox
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py
-baxter_interface_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_interface/docs/HeadActionServerConfig.wikidoc
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.dox
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig-usage.dox
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionJointTrajectoryActionServerConfig.py
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/PositionJointTrajectoryActionServerConfig.wikidoc
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.dox
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig-usage.dox
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/VelocityJointTrajectoryActionServerConfig.py
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/VelocityJointTrajectoryActionServerConfig.wikidoc
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.dox
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig-usage.dox
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/PositionFFJointTrajectoryActionServerConfig.py
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/PositionFFJointTrajectoryActionServerConfig.wikidoc
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/GripperActionServerConfig.dox
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/GripperActionServerConfig-usage.dox
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/GripperActionServerConfig.py
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/GripperActionServerConfig.wikidoc
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/HeadActionServerConfig.dox
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/HeadActionServerConfig-usage.dox
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg/HeadActionServerConfig.py
+baxter_interface_gencfg: /home/buguntu/ros_ws/devel/share/baxter_interface/docs/HeadActionServerConfig.wikidoc
 baxter_interface_gencfg: baxter_interface/CMakeFiles/baxter_interface_gencfg.dir/build.make
 .PHONY : baxter_interface_gencfg
 
@@ -165,10 +165,10 @@ baxter_interface/CMakeFiles/baxter_interface_gencfg.dir/build: baxter_interface_
 .PHONY : baxter_interface/CMakeFiles/baxter_interface_gencfg.dir/build
 
 baxter_interface/CMakeFiles/baxter_interface_gencfg.dir/clean:
-	cd /home/silvercobraa/ros_ws/build/baxter_interface && $(CMAKE_COMMAND) -P CMakeFiles/baxter_interface_gencfg.dir/cmake_clean.cmake
+	cd /home/buguntu/ros_ws/build/baxter_interface && $(CMAKE_COMMAND) -P CMakeFiles/baxter_interface_gencfg.dir/cmake_clean.cmake
 .PHONY : baxter_interface/CMakeFiles/baxter_interface_gencfg.dir/clean
 
 baxter_interface/CMakeFiles/baxter_interface_gencfg.dir/depend:
-	cd /home/silvercobraa/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/silvercobraa/ros_ws/src /home/silvercobraa/ros_ws/src/baxter_interface /home/silvercobraa/ros_ws/build /home/silvercobraa/ros_ws/build/baxter_interface /home/silvercobraa/ros_ws/build/baxter_interface/CMakeFiles/baxter_interface_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/buguntu/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/buguntu/ros_ws/src /home/buguntu/ros_ws/src/baxter_interface /home/buguntu/ros_ws/build /home/buguntu/ros_ws/build/baxter_interface /home/buguntu/ros_ws/build/baxter_interface/CMakeFiles/baxter_interface_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : baxter_interface/CMakeFiles/baxter_interface_gencfg.dir/depend
 

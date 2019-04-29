@@ -1,8 +1,8 @@
-# Install script for directory: /home/silvercobraa/ros_ws/src/baxter_common/rethink_ee_description
+# Install script for directory: /home/buguntu/ros_ws/src/baxter_common/rethink_ee_description
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/silvercobraa/ros_ws/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/buguntu/ros_ws/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,25 +33,25 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/silvercobraa/ros_ws/build/baxter_common/rethink_ee_description/catkin_generated/installspace/rethink_ee_description.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/buguntu/ros_ws/build/baxter_common/rethink_ee_description/catkin_generated/installspace/rethink_ee_description.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rethink_ee_description/cmake" TYPE FILE FILES
-    "/home/silvercobraa/ros_ws/build/baxter_common/rethink_ee_description/catkin_generated/installspace/rethink_ee_descriptionConfig.cmake"
-    "/home/silvercobraa/ros_ws/build/baxter_common/rethink_ee_description/catkin_generated/installspace/rethink_ee_descriptionConfig-version.cmake"
+    "/home/buguntu/ros_ws/build/baxter_common/rethink_ee_description/catkin_generated/installspace/rethink_ee_descriptionConfig.cmake"
+    "/home/buguntu/ros_ws/build/baxter_common/rethink_ee_description/catkin_generated/installspace/rethink_ee_descriptionConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rethink_ee_description" TYPE FILE FILES "/home/silvercobraa/ros_ws/src/baxter_common/rethink_ee_description/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rethink_ee_description" TYPE FILE FILES "/home/buguntu/ros_ws/src/baxter_common/rethink_ee_description/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rethink_ee_description/meshes" TYPE DIRECTORY FILES "/home/silvercobraa/ros_ws/src/baxter_common/rethink_ee_description/meshes/")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rethink_ee_description/meshes" TYPE DIRECTORY FILES "/home/buguntu/ros_ws/src/baxter_common/rethink_ee_description/meshes/")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rethink_ee_description/urdf" TYPE DIRECTORY FILES "/home/silvercobraa/ros_ws/src/baxter_common/rethink_ee_description/urdf/")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/rethink_ee_description/urdf" TYPE DIRECTORY FILES "/home/buguntu/ros_ws/src/baxter_common/rethink_ee_description/urdf/")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

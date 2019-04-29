@@ -1,8 +1,8 @@
-# Install script for directory: /home/silvercobraa/ros_ws/src/baxter_common/baxter_maintenance_msgs
+# Install script for directory: /home/buguntu/ros_ws/src/baxter_common/baxter_maintenance_msgs
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/silvercobraa/ros_ws/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/buguntu/ros_ws/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,52 +34,52 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_maintenance_msgs/msg" TYPE FILE FILES
-    "/home/silvercobraa/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/CalibrateArmData.msg"
-    "/home/silvercobraa/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/CalibrateArmEnable.msg"
-    "/home/silvercobraa/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/TareData.msg"
-    "/home/silvercobraa/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/TareEnable.msg"
-    "/home/silvercobraa/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/UpdateSource.msg"
-    "/home/silvercobraa/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/UpdateSources.msg"
-    "/home/silvercobraa/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/UpdateStatus.msg"
+    "/home/buguntu/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/CalibrateArmData.msg"
+    "/home/buguntu/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/CalibrateArmEnable.msg"
+    "/home/buguntu/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/TareData.msg"
+    "/home/buguntu/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/TareEnable.msg"
+    "/home/buguntu/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/UpdateSource.msg"
+    "/home/buguntu/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/UpdateSources.msg"
+    "/home/buguntu/ros_ws/src/baxter_common/baxter_maintenance_msgs/msg/UpdateStatus.msg"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_maintenance_msgs/cmake" TYPE FILE FILES "/home/silvercobraa/ros_ws/build/baxter_common/baxter_maintenance_msgs/catkin_generated/installspace/baxter_maintenance_msgs-msg-paths.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_maintenance_msgs/cmake" TYPE FILE FILES "/home/buguntu/ros_ws/build/baxter_common/baxter_maintenance_msgs/catkin_generated/installspace/baxter_maintenance_msgs-msg-paths.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/silvercobraa/ros_ws/devel/include/baxter_maintenance_msgs")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/buguntu/ros_ws/devel/include/baxter_maintenance_msgs")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_maintenance_msgs")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_maintenance_msgs")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_maintenance_msgs")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_maintenance_msgs")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_maintenance_msgs")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_maintenance_msgs")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/silvercobraa/ros_ws/build/baxter_common/baxter_maintenance_msgs/catkin_generated/installspace/baxter_maintenance_msgs.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/buguntu/ros_ws/build/baxter_common/baxter_maintenance_msgs/catkin_generated/installspace/baxter_maintenance_msgs.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_maintenance_msgs/cmake" TYPE FILE FILES "/home/silvercobraa/ros_ws/build/baxter_common/baxter_maintenance_msgs/catkin_generated/installspace/baxter_maintenance_msgs-msg-extras.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_maintenance_msgs/cmake" TYPE FILE FILES "/home/buguntu/ros_ws/build/baxter_common/baxter_maintenance_msgs/catkin_generated/installspace/baxter_maintenance_msgs-msg-extras.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_maintenance_msgs/cmake" TYPE FILE FILES
-    "/home/silvercobraa/ros_ws/build/baxter_common/baxter_maintenance_msgs/catkin_generated/installspace/baxter_maintenance_msgsConfig.cmake"
-    "/home/silvercobraa/ros_ws/build/baxter_common/baxter_maintenance_msgs/catkin_generated/installspace/baxter_maintenance_msgsConfig-version.cmake"
+    "/home/buguntu/ros_ws/build/baxter_common/baxter_maintenance_msgs/catkin_generated/installspace/baxter_maintenance_msgsConfig.cmake"
+    "/home/buguntu/ros_ws/build/baxter_common/baxter_maintenance_msgs/catkin_generated/installspace/baxter_maintenance_msgsConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_maintenance_msgs" TYPE FILE FILES "/home/silvercobraa/ros_ws/src/baxter_common/baxter_maintenance_msgs/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_maintenance_msgs" TYPE FILE FILES "/home/buguntu/ros_ws/src/baxter_common/baxter_maintenance_msgs/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

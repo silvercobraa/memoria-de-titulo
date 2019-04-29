@@ -35,353 +35,353 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/silvercobraa/ros_ws/src
+CMAKE_SOURCE_DIR = /home/buguntu/ros_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/silvercobraa/ros_ws/build
+CMAKE_BINARY_DIR = /home/buguntu/ros_ws/build
 
 # Utility rule file for baxter_core_msgs_generate_messages_py.
 
 # Include the progress variables for this target.
 include baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/progress.make
 
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorState.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_JointCommand.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadState.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorState.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_RobustControllerStatus.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalOutputCommand.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorProperties.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyState.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOState.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraControl.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorCommand.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadPanCommand.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_URDFConfiguration.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_CloseCamera.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_ListCameras.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorState.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraControl.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadPanCommand.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_RobustControllerStatus.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyState.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_URDFConfiguration.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_JointCommand.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorState.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOState.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorProperties.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalOutputCommand.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadState.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorCommand.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_ListCameras.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_CloseCamera.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionAvoidanceState.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/CollisionAvoidanceState"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionAvoidanceState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorState.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/NavigatorState"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Wrench.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Twist.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/EndpointStates"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorStates.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/NavigatorStates"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorStates.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_JointCommand.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_JointCommand.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/JointCommand.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/JointCommand"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/JointCommand.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadState.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/HeadState"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorState.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorState.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/EndEffectorState"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyStates.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/AssemblyStates"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyStates.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Wrench.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Twist.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/EndpointStates"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_RobustControllerStatus.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_RobustControllerStatus.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/RobustControllerStatus.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/RobustControllerStatus"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/RobustControllerStatus.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/CameraSettings"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionDetectionState.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/CollisionDetectionState"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionDetectionState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Wrench.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Twist.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/EndpointState"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalOutputCommand.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalOutputCommand.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalOutputCommand.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/DigitalOutputCommand"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalOutputCommand.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOStates.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_14)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/AnalogIOStates"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOStates.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorProperties.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorProperties.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorProperties.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_15)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/EndEffectorProperties"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorProperties.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyState.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_16)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/AssemblyState"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogOutputCommand.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_17)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/AnalogOutputCommand"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogOutputCommand.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOState.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_18)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/DigitalIOState"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraControl.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraControl.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_19)
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraControl.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraControl.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/CameraControl"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorCommand.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorCommand.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorCommand.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_20)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/EndEffectorCommand"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorCommand.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/SEAJointState.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_21)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/SEAJointState"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/SEAJointState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOStates.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_22)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/DigitalIOStates"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOStates.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadPanCommand.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadPanCommand.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadPanCommand.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_23)
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadPanCommand.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadPanCommand.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadPanCommand.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/HeadPanCommand"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadPanCommand.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadPanCommand.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_24)
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_RobustControllerStatus.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_RobustControllerStatus.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/RobustControllerStatus.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/RobustControllerStatus"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/RobustControllerStatus.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyStates.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/AssemblyStates"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyStates.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyState.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/AssemblyState"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/AnalogIOState"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_URDFConfiguration.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_URDFConfiguration.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/URDFConfiguration.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_25)
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Wrench.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Twist.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/EndpointState"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionAvoidanceState.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/CollisionAvoidanceState"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionAvoidanceState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_URDFConfiguration.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_URDFConfiguration.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/URDFConfiguration.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/URDFConfiguration"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/URDFConfiguration.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/URDFConfiguration.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/sensor_msgs/cmake/../msg/JointState.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/PoseStamped.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_26)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV baxter_core_msgs/SolvePositionIK"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/CameraSettings"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_CloseCamera.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_CloseCamera.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/CloseCamera.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_27)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV baxter_core_msgs/CloseCamera"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/CloseCamera.srv -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorStates.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/NavigatorStates"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorStates.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_ListCameras.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_ListCameras.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/ListCameras.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_28)
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_JointCommand.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_JointCommand.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/JointCommand.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/JointCommand"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/JointCommand.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorState.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/NavigatorState"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOState.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/DigitalIOState"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorProperties.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorProperties.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorProperties.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/EndEffectorProperties"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorProperties.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogOutputCommand.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/AnalogOutputCommand"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogOutputCommand.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOStates.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/AnalogIOStates"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOStates.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalOutputCommand.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalOutputCommand.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalOutputCommand.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/DigitalOutputCommand"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalOutputCommand.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/SEAJointState.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/SEAJointState"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/SEAJointState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionDetectionState.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/CollisionDetectionState"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionDetectionState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOStates.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/DigitalIOStates"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOStates.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadState.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadState.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/HeadState"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorCommand.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorCommand.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorCommand.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG baxter_core_msgs/EndEffectorCommand"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorCommand.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_ListCameras.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_ListCameras.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/ListCameras.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV baxter_core_msgs/ListCameras"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/ListCameras.srv -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/ListCameras.srv -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_29)
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_CloseCamera.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_CloseCamera.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/CloseCamera.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV baxter_core_msgs/CloseCamera"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/CloseCamera.srv -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV baxter_core_msgs/OpenCamera"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_JointCommand.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_RobustControllerStatus.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalOutputCommand.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorProperties.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraControl.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorCommand.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadPanCommand.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_URDFConfiguration.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_CloseCamera.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_ListCameras.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_30)
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/sensor_msgs/cmake/../msg/JointState.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/PoseStamped.msg
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV baxter_core_msgs/SolvePositionIK"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv
+
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraControl.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadPanCommand.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_RobustControllerStatus.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_URDFConfiguration.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_JointCommand.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorProperties.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalOutputCommand.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorCommand.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_ListCameras.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_CloseCamera.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for baxter_core_msgs"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg --initpy
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg --initpy
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_JointCommand.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_RobustControllerStatus.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalOutputCommand.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorProperties.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraControl.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorCommand.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadPanCommand.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_URDFConfiguration.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_CloseCamera.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_ListCameras.py
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_31)
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraControl.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadPanCommand.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_RobustControllerStatus.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_URDFConfiguration.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_JointCommand.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorProperties.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalOutputCommand.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadState.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorCommand.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_ListCameras.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_CloseCamera.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python srv __init__.py for baxter_core_msgs"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv --initpy
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv --initpy
 
 baxter_core_msgs_generate_messages_py: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorState.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_JointCommand.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadState.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorState.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_RobustControllerStatus.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalOutputCommand.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorProperties.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyState.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOState.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraControl.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorCommand.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadPanCommand.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_URDFConfiguration.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_CloseCamera.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_ListCameras.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py
-baxter_core_msgs_generate_messages_py: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorState.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointStates.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraControl.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadPanCommand.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_RobustControllerStatus.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyStates.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AssemblyState.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOState.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndpointState.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionAvoidanceState.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_URDFConfiguration.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CameraSettings.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorStates.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_JointCommand.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_NavigatorState.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOState.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorProperties.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogOutputCommand.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_AnalogIOStates.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalOutputCommand.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_SEAJointState.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_CollisionDetectionState.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_DigitalIOStates.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_HeadState.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/_EndEffectorCommand.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_ListCameras.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_CloseCamera.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_OpenCamera.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/_SolvePositionIK.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/msg/__init__.py
+baxter_core_msgs_generate_messages_py: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_core_msgs/srv/__init__.py
 baxter_core_msgs_generate_messages_py: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/build.make
 .PHONY : baxter_core_msgs_generate_messages_py
 
@@ -390,10 +390,10 @@ baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/build
 
 baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/clean:
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && $(CMAKE_COMMAND) -P CMakeFiles/baxter_core_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && $(CMAKE_COMMAND) -P CMakeFiles/baxter_core_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/clean
 
 baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/depend:
-	cd /home/silvercobraa/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/silvercobraa/ros_ws/src /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs /home/silvercobraa/ros_ws/build /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/buguntu/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/buguntu/ros_ws/src /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs /home/buguntu/ros_ws/build /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_py.dir/depend
 

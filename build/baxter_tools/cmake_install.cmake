@@ -1,8 +1,8 @@
-# Install script for directory: /home/silvercobraa/ros_ws/src/baxter_tools
+# Install script for directory: /home/buguntu/ros_ws/src/baxter_tools
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/silvercobraa/ros_ws/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/buguntu/ros_ws/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,29 +33,29 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  INCLUDE("/home/silvercobraa/ros_ws/build/baxter_tools/catkin_generated/safe_execute_install.cmake")
+  INCLUDE("/home/buguntu/ros_ws/build/baxter_tools/catkin_generated/safe_execute_install.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/silvercobraa/ros_ws/build/baxter_tools/catkin_generated/installspace/baxter_tools.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/buguntu/ros_ws/build/baxter_tools/catkin_generated/installspace/baxter_tools.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_tools/cmake" TYPE FILE FILES
-    "/home/silvercobraa/ros_ws/build/baxter_tools/catkin_generated/installspace/baxter_toolsConfig.cmake"
-    "/home/silvercobraa/ros_ws/build/baxter_tools/catkin_generated/installspace/baxter_toolsConfig-version.cmake"
+    "/home/buguntu/ros_ws/build/baxter_tools/catkin_generated/installspace/baxter_toolsConfig.cmake"
+    "/home/buguntu/ros_ws/build/baxter_tools/catkin_generated/installspace/baxter_toolsConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_tools" TYPE FILE FILES "/home/silvercobraa/ros_ws/src/baxter_tools/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_tools" TYPE FILE FILES "/home/buguntu/ros_ws/src/baxter_tools/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/baxter_tools" TYPE DIRECTORY FILES "/home/silvercobraa/ros_ws/src/baxter_tools/scripts/" USE_SOURCE_PERMISSIONS)
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/baxter_tools" TYPE DIRECTORY FILES "/home/buguntu/ros_ws/src/baxter_tools/scripts/" USE_SOURCE_PERMISSIONS)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_tools/share" TYPE DIRECTORY FILES "/home/silvercobraa/ros_ws/src/baxter_tools/share/" USE_SOURCE_PERMISSIONS)
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_tools/share" TYPE DIRECTORY FILES "/home/buguntu/ros_ws/src/baxter_tools/share/" USE_SOURCE_PERMISSIONS)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

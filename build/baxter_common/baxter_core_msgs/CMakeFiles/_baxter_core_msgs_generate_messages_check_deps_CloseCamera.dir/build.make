@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/silvercobraa/ros_ws/src
+CMAKE_SOURCE_DIR = /home/buguntu/ros_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/silvercobraa/ros_ws/build
+CMAKE_BINARY_DIR = /home/buguntu/ros_ws/build
 
 # Utility rule file for _baxter_core_msgs_generate_messages_check_deps_CloseCamera.
 
@@ -46,7 +46,7 @@ CMAKE_BINARY_DIR = /home/silvercobraa/ros_ws/build
 include baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/progress.make
 
 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera:
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py baxter_core_msgs /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/CloseCamera.srv 
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py baxter_core_msgs /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/CloseCamera.srv 
 
 _baxter_core_msgs_generate_messages_check_deps_CloseCamera: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera
 _baxter_core_msgs_generate_messages_check_deps_CloseCamera: baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/build.make
@@ -57,10 +57,10 @@ baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_ch
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/build
 
 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/clean:
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/cmake_clean.cmake
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/cmake_clean.cmake
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/clean
 
 baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/depend:
-	cd /home/silvercobraa/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/silvercobraa/ros_ws/src /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs /home/silvercobraa/ros_ws/build /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/buguntu/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/buguntu/ros_ws/src /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs /home/buguntu/ros_ws/build /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/_baxter_core_msgs_generate_messages_check_deps_CloseCamera.dir/depend
 

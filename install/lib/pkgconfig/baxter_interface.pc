@@ -1,8 +1,8 @@
-prefix=/home/silvercobraa/ros_ws/install
+prefix=/home/buguntu/ros_ws/install
 
 Name: baxter_interface
 Description: Description of baxter_interface
 Version: 1.2.0
-Cflags: -I/home/silvercobraa/ros_ws/install/include
-Libs: -L/home/silvercobraa/ros_ws/install/lib 
+Cflags: -I/home/buguntu/ros_ws/install/include
+Libs: -L/home/buguntu/ros_ws/install/lib 
 Requires: rospy actionlib sensor_msgs std_msgs control_msgs trajectory_msgs dynamic_reconfigure baxter_core_msgs

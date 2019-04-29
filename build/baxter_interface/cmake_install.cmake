@@ -1,8 +1,8 @@
-# Install script for directory: /home/silvercobraa/ros_ws/src/baxter_interface
+# Install script for directory: /home/buguntu/ros_ws/src/baxter_interface
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/silvercobraa/ros_ws/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/buguntu/ros_ws/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,53 +33,53 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  INCLUDE("/home/silvercobraa/ros_ws/build/baxter_interface/catkin_generated/safe_execute_install.cmake")
+  INCLUDE("/home/buguntu/ros_ws/build/baxter_interface/catkin_generated/safe_execute_install.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/baxter_interface" TYPE FILE FILES "/home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/baxter_interface" TYPE FILE FILES "/home/buguntu/ros_ws/devel/include/baxter_interface/PositionJointTrajectoryActionServerConfig.h")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/baxter_interface" TYPE FILE FILES "/home/silvercobraa/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/baxter_interface" TYPE FILE FILES "/home/buguntu/ros_ws/devel/include/baxter_interface/VelocityJointTrajectoryActionServerConfig.h")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/baxter_interface" TYPE FILE FILES "/home/silvercobraa/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/baxter_interface" TYPE FILE FILES "/home/buguntu/ros_ws/devel/include/baxter_interface/PositionFFJointTrajectoryActionServerConfig.h")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/baxter_interface" TYPE FILE FILES "/home/silvercobraa/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/baxter_interface" TYPE FILE FILES "/home/buguntu/ros_ws/devel/include/baxter_interface/GripperActionServerConfig.h")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/baxter_interface" TYPE FILE FILES "/home/silvercobraa/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/baxter_interface" TYPE FILE FILES "/home/buguntu/ros_ws/devel/include/baxter_interface/HeadActionServerConfig.h")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/baxter_interface" TYPE DIRECTORY FILES "/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/baxter_interface" TYPE DIRECTORY FILES "/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_interface/cfg")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/silvercobraa/ros_ws/build/baxter_interface/catkin_generated/installspace/baxter_interface.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/buguntu/ros_ws/build/baxter_interface/catkin_generated/installspace/baxter_interface.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_interface/cmake" TYPE FILE FILES
-    "/home/silvercobraa/ros_ws/build/baxter_interface/catkin_generated/installspace/baxter_interfaceConfig.cmake"
-    "/home/silvercobraa/ros_ws/build/baxter_interface/catkin_generated/installspace/baxter_interfaceConfig-version.cmake"
+    "/home/buguntu/ros_ws/build/baxter_interface/catkin_generated/installspace/baxter_interfaceConfig.cmake"
+    "/home/buguntu/ros_ws/build/baxter_interface/catkin_generated/installspace/baxter_interfaceConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_interface" TYPE FILE FILES "/home/silvercobraa/ros_ws/src/baxter_interface/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_interface" TYPE FILE FILES "/home/buguntu/ros_ws/src/baxter_interface/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/baxter_interface" TYPE DIRECTORY FILES "/home/silvercobraa/ros_ws/src/baxter_interface/scripts/" USE_SOURCE_PERMISSIONS)
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/baxter_interface" TYPE DIRECTORY FILES "/home/buguntu/ros_ws/src/baxter_interface/scripts/" USE_SOURCE_PERMISSIONS)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

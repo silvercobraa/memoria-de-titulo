@@ -35,40 +35,40 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/silvercobraa/ros_ws/src
+CMAKE_SOURCE_DIR = /home/buguntu/ros_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/silvercobraa/ros_ws/build
+CMAKE_BINARY_DIR = /home/buguntu/ros_ws/build
 
 # Utility rule file for baxter_examples_gencfg.
 
 # Include the progress variables for this target.
 include baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/progress.make
 
-baxter_examples/CMakeFiles/baxter_examples_gencfg: /home/silvercobraa/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
-baxter_examples/CMakeFiles/baxter_examples_gencfg: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py
+baxter_examples/CMakeFiles/baxter_examples_gencfg: /home/buguntu/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
+baxter_examples/CMakeFiles/baxter_examples_gencfg: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py
 
-/home/silvercobraa/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h: /home/silvercobraa/ros_ws/src/baxter_examples/cfg/JointSpringsExample.cfg
-/home/silvercobraa/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
-/home/silvercobraa/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/JointSpringsExample.cfg: /home/silvercobraa/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py"
-	cd /home/silvercobraa/ros_ws/build/baxter_examples && ../catkin_generated/env_cached.sh /home/silvercobraa/ros_ws/build/baxter_examples/setup_custom_pythonpath.sh /home/silvercobraa/ros_ws/src/baxter_examples/cfg/JointSpringsExample.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/silvercobraa/ros_ws/devel/share/baxter_examples /home/silvercobraa/ros_ws/devel/include/baxter_examples /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_examples
+/home/buguntu/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h: /home/buguntu/ros_ws/src/baxter_examples/cfg/JointSpringsExample.cfg
+/home/buguntu/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.py.template
+/home/buguntu/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h: /opt/ros/indigo/share/dynamic_reconfigure/cmake/../templates/ConfigType.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating dynamic reconfigure files from cfg/JointSpringsExample.cfg: /home/buguntu/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py"
+	cd /home/buguntu/ros_ws/build/baxter_examples && ../catkin_generated/env_cached.sh /home/buguntu/ros_ws/build/baxter_examples/setup_custom_pythonpath.sh /home/buguntu/ros_ws/src/baxter_examples/cfg/JointSpringsExample.cfg /opt/ros/indigo/share/dynamic_reconfigure/cmake/.. /home/buguntu/ros_ws/devel/share/baxter_examples /home/buguntu/ros_ws/devel/include/baxter_examples /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_examples
 
-/home/silvercobraa/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig.dox: /home/silvercobraa/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig.dox: /home/buguntu/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
 
-/home/silvercobraa/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig-usage.dox: /home/silvercobraa/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig-usage.dox: /home/buguntu/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
 
-/home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py: /home/silvercobraa/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
+/home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py: /home/buguntu/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
 
-/home/silvercobraa/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig.wikidoc: /home/silvercobraa/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
+/home/buguntu/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig.wikidoc: /home/buguntu/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
 
 baxter_examples_gencfg: baxter_examples/CMakeFiles/baxter_examples_gencfg
-baxter_examples_gencfg: /home/silvercobraa/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
-baxter_examples_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig.dox
-baxter_examples_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig-usage.dox
-baxter_examples_gencfg: /home/silvercobraa/ros_ws/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py
-baxter_examples_gencfg: /home/silvercobraa/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig.wikidoc
+baxter_examples_gencfg: /home/buguntu/ros_ws/devel/include/baxter_examples/JointSpringsExampleConfig.h
+baxter_examples_gencfg: /home/buguntu/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig.dox
+baxter_examples_gencfg: /home/buguntu/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig-usage.dox
+baxter_examples_gencfg: /home/buguntu/ros_ws/devel/lib/python2.7/dist-packages/baxter_examples/cfg/JointSpringsExampleConfig.py
+baxter_examples_gencfg: /home/buguntu/ros_ws/devel/share/baxter_examples/docs/JointSpringsExampleConfig.wikidoc
 baxter_examples_gencfg: baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/build.make
 .PHONY : baxter_examples_gencfg
 
@@ -77,10 +77,10 @@ baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/build: baxter_examples_gen
 .PHONY : baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/build
 
 baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/clean:
-	cd /home/silvercobraa/ros_ws/build/baxter_examples && $(CMAKE_COMMAND) -P CMakeFiles/baxter_examples_gencfg.dir/cmake_clean.cmake
+	cd /home/buguntu/ros_ws/build/baxter_examples && $(CMAKE_COMMAND) -P CMakeFiles/baxter_examples_gencfg.dir/cmake_clean.cmake
 .PHONY : baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/clean
 
 baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/depend:
-	cd /home/silvercobraa/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/silvercobraa/ros_ws/src /home/silvercobraa/ros_ws/src/baxter_examples /home/silvercobraa/ros_ws/build /home/silvercobraa/ros_ws/build/baxter_examples /home/silvercobraa/ros_ws/build/baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/buguntu/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/buguntu/ros_ws/src /home/buguntu/ros_ws/src/baxter_examples /home/buguntu/ros_ws/build /home/buguntu/ros_ws/build/baxter_examples /home/buguntu/ros_ws/build/baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : baxter_examples/CMakeFiles/baxter_examples_gencfg.dir/depend
 

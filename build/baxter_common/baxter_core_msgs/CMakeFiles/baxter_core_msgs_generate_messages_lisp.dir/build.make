@@ -35,281 +35,281 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/silvercobraa/ros_ws/src
+CMAKE_SOURCE_DIR = /home/buguntu/ros_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/silvercobraa/ros_ws/build
+CMAKE_BINARY_DIR = /home/buguntu/ros_ws/build
 
 # Utility rule file for baxter_core_msgs_generate_messages_lisp.
 
 # Include the progress variables for this target.
 include baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/progress.make
 
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionAvoidanceState.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorState.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorStates.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/JointCommand.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadState.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorState.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyStates.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/RobustControllerStatus.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraSettings.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionDetectionState.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalOutputCommand.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOStates.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorProperties.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyState.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogOutputCommand.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOState.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraControl.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorCommand.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/SEAJointState.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOStates.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadPanCommand.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOState.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/URDFConfiguration.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/CloseCamera.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/ListCameras.lisp
-baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/OpenCamera.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorState.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraControl.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadPanCommand.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/RobustControllerStatus.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyStates.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyState.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOState.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionAvoidanceState.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/URDFConfiguration.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraSettings.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorStates.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/JointCommand.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorState.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOState.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorProperties.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogOutputCommand.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOStates.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalOutputCommand.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/SEAJointState.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionDetectionState.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOStates.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadState.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorCommand.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/ListCameras.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/CloseCamera.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/OpenCamera.lisp
+baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp
 
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionAvoidanceState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionAvoidanceState.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionAvoidanceState.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionAvoidanceState.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/CollisionAvoidanceState.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionAvoidanceState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorState.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/NavigatorState.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Wrench.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Twist.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/EndpointStates.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorStates.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorStates.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorStates.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorStates.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/NavigatorStates.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorStates.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/JointCommand.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/JointCommand.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/JointCommand.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/JointCommand.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/JointCommand.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadState.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/HeadState.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorState.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorState.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/EndEffectorState.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyStates.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyStates.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyStates.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyStates.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/AssemblyStates.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyStates.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Wrench.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Twist.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/EndpointStates.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointStates.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/RobustControllerStatus.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/RobustControllerStatus.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/RobustControllerStatus.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/RobustControllerStatus.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/RobustControllerStatus.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraSettings.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraSettings.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraSettings.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/CameraSettings.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionDetectionState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionDetectionState.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionDetectionState.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionDetectionState.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/CollisionDetectionState.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionDetectionState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Wrench.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Twist.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/EndpointState.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalOutputCommand.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalOutputCommand.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalOutputCommand.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/DigitalOutputCommand.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalOutputCommand.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOStates.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOStates.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOStates.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOStates.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_14)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/AnalogIOStates.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOStates.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorProperties.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorProperties.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorProperties.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_15)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/EndEffectorProperties.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorProperties.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyState.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_16)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/AssemblyState.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogOutputCommand.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogOutputCommand.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogOutputCommand.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_17)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/AnalogOutputCommand.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogOutputCommand.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOState.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_18)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/DigitalIOState.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraControl.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraControl.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_19)
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraControl.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraControl.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/CameraControl.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorCommand.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorCommand.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorCommand.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_20)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/EndEffectorCommand.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorCommand.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/SEAJointState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/SEAJointState.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/SEAJointState.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/SEAJointState.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_21)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/SEAJointState.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/SEAJointState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOStates.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOStates.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOStates.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOStates.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_22)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/DigitalIOStates.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOStates.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
-
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadPanCommand.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadPanCommand.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadPanCommand.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_23)
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadPanCommand.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadPanCommand.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadPanCommand.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/HeadPanCommand.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadPanCommand.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadPanCommand.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOState.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOState.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_24)
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/RobustControllerStatus.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/RobustControllerStatus.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/RobustControllerStatus.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/RobustControllerStatus.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/RobustControllerStatus.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyStates.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyStates.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyStates.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyStates.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/AssemblyStates.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyStates.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyState.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/AssemblyState.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AssemblyState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOState.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/AnalogIOState.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOState.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/URDFConfiguration.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/URDFConfiguration.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/URDFConfiguration.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_25)
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Wrench.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Twist.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/EndpointState.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndpointState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionAvoidanceState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionAvoidanceState.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionAvoidanceState.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionAvoidanceState.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/CollisionAvoidanceState.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionAvoidanceState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/URDFConfiguration.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/URDFConfiguration.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/URDFConfiguration.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/URDFConfiguration.msg"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/URDFConfiguration.msg -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/URDFConfiguration.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/sensor_msgs/cmake/../msg/JointState.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/PoseStamped.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_26)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/SolvePositionIK.srv"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraSettings.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraSettings.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraSettings.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/CameraSettings.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/CloseCamera.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/CloseCamera.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/CloseCamera.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_27)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/CloseCamera.srv"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/CloseCamera.srv -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorStates.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorStates.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorStates.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorStates.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/NavigatorStates.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorStates.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
 
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/ListCameras.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/ListCameras.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/ListCameras.srv
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_28)
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/JointCommand.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/JointCommand.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/JointCommand.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/JointCommand.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/JointCommand.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorState.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/NavigatorState.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/NavigatorState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOState.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/DigitalIOState.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorProperties.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorProperties.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorProperties.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_17)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/EndEffectorProperties.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorProperties.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogOutputCommand.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogOutputCommand.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogOutputCommand.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/AnalogOutputCommand.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogOutputCommand.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOStates.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOStates.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOStates.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOStates.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/AnalogIOStates.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/AnalogIOStates.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalOutputCommand.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalOutputCommand.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalOutputCommand.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/DigitalOutputCommand.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalOutputCommand.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/SEAJointState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/SEAJointState.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/SEAJointState.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/SEAJointState.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/SEAJointState.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/SEAJointState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionDetectionState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionDetectionState.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionDetectionState.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionDetectionState.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/CollisionDetectionState.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CollisionDetectionState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOStates.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOStates.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOStates.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOStates.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/DigitalIOStates.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/DigitalIOStates.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadState.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadState.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadState.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/HeadState.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/HeadState.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorCommand.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorCommand.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorCommand.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/EndEffectorCommand.msg"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/EndEffectorCommand.msg -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/ListCameras.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/ListCameras.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/ListCameras.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/ListCameras.srv"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/ListCameras.srv -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/ListCameras.srv -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv
 
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/OpenCamera.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/OpenCamera.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/OpenCamera.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
-/home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/OpenCamera.lisp: /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/silvercobraa/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_29)
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/CloseCamera.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/CloseCamera.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/CloseCamera.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/CloseCamera.srv"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/CloseCamera.srv -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/OpenCamera.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/OpenCamera.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/OpenCamera.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraSettings.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/OpenCamera.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg/CameraControl.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/OpenCamera.srv"
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv -Ibaxter_core_msgs:/home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/OpenCamera.srv -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv
+
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/sensor_msgs/cmake/../msg/JointState.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/Pose.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/geometry_msgs/cmake/../msg/PoseStamped.msg
+/home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/buguntu/ros_ws/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from baxter_core_msgs/SolvePositionIK.srv"
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/srv/SolvePositionIK.srv -Ibaxter_core_msgs:/home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs/msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p baxter_core_msgs -o /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv
 
 baxter_core_msgs_generate_messages_lisp: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionAvoidanceState.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorState.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorStates.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/JointCommand.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadState.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorState.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyStates.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/RobustControllerStatus.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraSettings.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionDetectionState.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalOutputCommand.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOStates.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorProperties.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyState.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogOutputCommand.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOState.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraControl.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorCommand.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/SEAJointState.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOStates.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadPanCommand.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOState.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/URDFConfiguration.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/CloseCamera.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/ListCameras.lisp
-baxter_core_msgs_generate_messages_lisp: /home/silvercobraa/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/OpenCamera.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorState.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointStates.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraControl.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadPanCommand.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/RobustControllerStatus.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyStates.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AssemblyState.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOState.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndpointState.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionAvoidanceState.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/URDFConfiguration.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CameraSettings.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorStates.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/JointCommand.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/NavigatorState.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOState.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorProperties.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogOutputCommand.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/AnalogIOStates.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalOutputCommand.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/SEAJointState.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/CollisionDetectionState.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/DigitalIOStates.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/HeadState.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/msg/EndEffectorCommand.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/ListCameras.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/CloseCamera.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/OpenCamera.lisp
+baxter_core_msgs_generate_messages_lisp: /home/buguntu/ros_ws/devel/share/common-lisp/ros/baxter_core_msgs/srv/SolvePositionIK.lisp
 baxter_core_msgs_generate_messages_lisp: baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/build.make
 .PHONY : baxter_core_msgs_generate_messages_lisp
 
@@ -318,10 +318,10 @@ baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lis
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/build
 
 baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/clean:
-	cd /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs && $(CMAKE_COMMAND) -P CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs && $(CMAKE_COMMAND) -P CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/clean
 
 baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/depend:
-	cd /home/silvercobraa/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/silvercobraa/ros_ws/src /home/silvercobraa/ros_ws/src/baxter_common/baxter_core_msgs /home/silvercobraa/ros_ws/build /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs /home/silvercobraa/ros_ws/build/baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/buguntu/ros_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/buguntu/ros_ws/src /home/buguntu/ros_ws/src/baxter_common/baxter_core_msgs /home/buguntu/ros_ws/build /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs /home/buguntu/ros_ws/build/baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : baxter_common/baxter_core_msgs/CMakeFiles/baxter_core_msgs_generate_messages_lisp.dir/depend
 

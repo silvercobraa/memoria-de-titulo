@@ -1,8 +1,8 @@
-# Install script for directory: /home/silvercobraa/ros_ws/src/baxter_common/baxter_description
+# Install script for directory: /home/buguntu/ros_ws/src/baxter_common/baxter_description
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/silvercobraa/ros_ws/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/buguntu/ros_ws/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,25 +33,25 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/silvercobraa/ros_ws/build/baxter_common/baxter_description/catkin_generated/installspace/baxter_description.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/buguntu/ros_ws/build/baxter_common/baxter_description/catkin_generated/installspace/baxter_description.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_description/cmake" TYPE FILE FILES
-    "/home/silvercobraa/ros_ws/build/baxter_common/baxter_description/catkin_generated/installspace/baxter_descriptionConfig.cmake"
-    "/home/silvercobraa/ros_ws/build/baxter_common/baxter_description/catkin_generated/installspace/baxter_descriptionConfig-version.cmake"
+    "/home/buguntu/ros_ws/build/baxter_common/baxter_description/catkin_generated/installspace/baxter_descriptionConfig.cmake"
+    "/home/buguntu/ros_ws/build/baxter_common/baxter_description/catkin_generated/installspace/baxter_descriptionConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_description" TYPE FILE FILES "/home/silvercobraa/ros_ws/src/baxter_common/baxter_description/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_description" TYPE FILE FILES "/home/buguntu/ros_ws/src/baxter_common/baxter_description/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_description/meshes" TYPE DIRECTORY FILES "/home/silvercobraa/ros_ws/src/baxter_common/baxter_description/meshes/")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_description/meshes" TYPE DIRECTORY FILES "/home/buguntu/ros_ws/src/baxter_common/baxter_description/meshes/")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_description/urdf" TYPE DIRECTORY FILES "/home/silvercobraa/ros_ws/src/baxter_common/baxter_description/urdf/")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/baxter_description/urdf" TYPE DIRECTORY FILES "/home/buguntu/ros_ws/src/baxter_common/baxter_description/urdf/")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
