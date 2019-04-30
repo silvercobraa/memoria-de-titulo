@@ -208,6 +208,7 @@ def right_drop():
 
 def main():
 	# left_pickup()
+	right_pickup()
 	# D(270)
 	# B(180)
 	# F(90)
@@ -252,13 +253,13 @@ def main():
 	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
 	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + 0.01, ABOVE[2]], RIGHTWARDS_90)
 	# # ACA
-	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
 	# # FOTO L
-	right_arm.move_baxter('base', [ABOVE[0], ABOVE[1], ABOVE[2]], UPWARDS_180)
-	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
-	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + 0.01, ABOVE[2]], RIGHTWARDS_90)
+	# right_arm.move_baxter('base', [ABOVE[0], ABOVE[1], ABOVE[2]], UPWARDS_180)
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + 0.01, ABOVE[2]], RIGHTWARDS_90)
 	# # ACA
-	left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
+	# left_arm.move_baxter('base', [ABOVE[0], ABOVE[1] + DELTA, ABOVE[2]], RIGHTWARDS_90)
 	return
 
 
