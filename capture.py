@@ -41,12 +41,14 @@ captured_colors = []
 while True:
     ret, bgr_frame = cap.read()
     rgb_frame = cv2.cvtColor(bgr_frame, cv2.COLOR_BGR2RGB)
-    rgb_frame = cv2.GaussianBlur(rgb_frame, (9,9), cv2.BORDER_DEFAULT)
+    # rgb_frame = cv2.GaussianBlur(rgb_frame, (9,9), cv2.BORDER_DEFAULT)
     # rgb_frame = bgr_frame
 
     for square in squares:
-        # segundo argumento: rec = tupla de 4 elementos = (offset_ancho, offset_alto, ancho, alto)
-        cv2.rectangle(bgr_frame, square, border_color, thickness)
+    #     # segundo argumento: rec = tupla de 4 elementos = (offset_ancho, offset_alto, ancho, alto)
+    #     # segundo argumento: rec = tupla de 4 elementos = (offset_ancho, offset_alto, ancho, alto)
+        # cv2.rectangle(bgr_frame, square, border_color, thickness)
+        cv2.rectangle(bgr_frame, (square[0], square[1]), (square[0] + square[2], square[1] + square[3]), border_color, thickness)
 
     cv2.imshow('bgr_frame', bgr_frame)
 
@@ -66,7 +68,6 @@ print(captured_colors)
 captured_colors = np.asarray(captured_colors)
 np.save('test_set', captured_colors)
 normalized_colors = captured_colors / 255
-sys.exit()
 
 for color in normalized_colors:
     pl.plot(color[0], color[1], 'o', color=color)
@@ -111,8 +112,8 @@ print(colors)
 normal = np.array([1.0, 1.0, 1.0])
 normal /= np.linalg.norm(normal)
 
-print(captured_colors @ normal)
-dist = [color * normal for color in captured_colors @ normal]
+print(np.matmul(captured_colors, normal))
+dist = [color * normal for color in np.matmul(captured_colors, normal)]
 print(dist)
 proyected_colors = captured_colors - np.array(dist)
 fig = pl.figure()
