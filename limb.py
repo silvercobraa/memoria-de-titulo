@@ -21,38 +21,35 @@ class Limb():
 
     def move(self, position, orientation):
         """Adaptado del código de Julio."""
-        trans = position
-        rot = orientation
         service_name = '/ExternalTools/' + self.side + '/PositionKinematicsNode/IKService'
         ik_service = rospy.ServiceProxy(service_name, SolvePositionIK)
         frame = 'base'
 
         self._limb.set_joint_position_speed(0.5)
-
-        matrix = tf.transformations.concatenate_matrices(tf.transformations.translation_matrix(trans),
-            tf.transformations.euler_matrix(rot[0], rot[1], rot[2]))
-
-        rospy.wait_for_service(service_name, 10)
+        rospy.wait_for_service(service_name, 30)
         ik_message = SolvePositionIKRequest()
-        ik_message.pose_stamp.append(self._message_matrix_to_pose(matrix, frame))
+        ik_message.pose_stamp.append(self._make_pose_stamped(position, orientation))
 
         try:
             response = ik_service(ik_message)
         except:
-            print "Movement couldn't be executed"
-
-        print response.isValid[0]
+            raise Exception("Excepción de ik_service.")
 
         if response.isValid[0] == True:
             movimiento = dict(zip(response.joints[0].name, response.joints[0].position))
             self._limb.move_to_joint_positions(movimiento)
         else:
-            print "Movement couldn't be executed"
+            raise Exception("Respuesta inválida de ik_service.")
 
-        print response.joints[0].position
-        print response.joints[0].name
+    def _make_pose_stamped(self, position, orientation):
+        t = PoseStamped()
+        t.header.frame_id = 'base'
+        t.header.stamp = rospy.Time.now()
+        quaternion = tf.transformations.quaternion_from_euler(*orientation)
+        t.pose.position.x, t.pose.position.y, t.pose.position.z = position
+        t.pose.orientation.x, t.pose.orientation.y, t.pose.orientation.z, t.pose.orientation.w = quaternion
+        return t
 
-        pass
 
 
     def open(self):
@@ -74,35 +71,16 @@ class Limb():
         radians = 2*math.pi*degrees / 360
         angles = self._limb.joint_angles()
         wrist = self.side + '_w2'
-        pprint(angles)
-        print 'radianes antes:', angles[wrist]
         angles[wrist] += radians
-        print 'radianes despues:', angles[wrist]
         if angles[wrist] > max_angle:
             angles[wrist] -= 2*math.pi
         if angles[wrist] < min_angle:
             # cambiar por warning?
             raise Exception('Angulo imposible:', angles[wrist])
 
-        pprint(angles)
         self._limb.move_to_joint_positions(angles)
         return self._limb.joint_angles()[wrist]
 
-
-    def _message_matrix_to_pose(self, T, frame):
-        t = PoseStamped()
-        t.header.frame_id = frame
-        t.header.stamp = rospy.Time.now()
-        translation = tf.transformations.translation_from_matrix(T) #Transforms a matrix to x, y, z positions
-        orientation = tf.transformations.quaternion_from_matrix(T)    #Transforms a matrix to x, y, z, w Quaternion angles
-        t.pose.position.x = translation[0]
-        t.pose.position.y = translation[1]
-        t.pose.position.z = translation[2]
-        t.pose.orientation.x = orientation[0]
-        t.pose.orientation.y = orientation[1]
-        t.pose.orientation.z = orientation[2]
-        t.pose.orientation.w = orientation[3]
-        return t
 
 
 def main():
