@@ -16,6 +16,7 @@ class Position():
     MIDDLE = (X, Y, Z)
     MIDDLE2 = (0.5, Y, Z)
     ABOVE = (X + 0.1, Y, 0.5)
+    FRONT = (X + 0.5, Y, Z)
 
 
 class Orientation():
@@ -37,3 +38,5 @@ class Orientation():
     LEFTWARDS_90 = (-math.pi/2, math.pi/2, 0)
     LEFTWARDS_180 = (-math.pi/2, math.pi, 0)
     LEFTWARDS_270 = (-math.pi/2, -math.pi/2, 0)
+
+    FRONTWARDS_0 = (0, math.pi/2, 0)
