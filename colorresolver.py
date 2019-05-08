@@ -2,12 +2,13 @@ import os
 import numpy as np
 import pylab as pl
 from mpl_toolkits.mplot3d import Axes3D
-from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+#from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
 from sklearn.cluster import KMeans, MeanShift
 from sklearn.mixture import GaussianMixture
 
 DATASET_DIR = 'dataset_tarde'
-TEST_FILE = 'test_set.npy'
+# TEST_FILE = 'test_set.npy'
+TEST_FILE = 'capturas/representatives.npy'
 
 figure = pl.figure()
 axis = figure.add_subplot(111, projection='3d')

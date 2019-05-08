@@ -15,7 +15,7 @@ class Actuator():
         self._holder = None # la mano que tiene  actualmente el cubo
         self._left = Limb('left', calibrate)
         self._right = Limb('right', calibrate)
-        self._holder = self._right # TODO: eliminar esta línea cuando el cubo esté en la mesa
+        # self._holder = self._left # TODO: eliminar esta línea cuando el cubo esté en la mesa
 
 
     def U(self, degrees):

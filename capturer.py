@@ -1,27 +1,47 @@
-import cv2
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import rospy
-import cv_bridge
 import baxter_interface
 from sensor_msgs.msg import Image
-import time
+import cv_bridge
+import cv2
 import numpy as np
+import time
+import sys
 
-from limb import Limb
 from geometry import Position, Orientation
-from hough import hough, rectangles
+from limb import Limb
+from hough import hough
 
 picture = None
 
+class Capturer(object):
+    limb = Limb('left')
+    """docstring for Capturer."""
+
+    def __init__(self):
+        pass
+
+
 def main():
-    # rosservice call /cameras/open '{name: left_hand_camera, settings: {width: 960, height: 600}}'
-    rospy.init_node('picker')
-    cam = 'head' # left_hand, right_hand o head
-    # limb = Limb('left')
-    # limb.move([0.5, Position.Y, 0], Orientation.DOWNWARDS)
+    rospy.init_node('capturer')
+    limb = Limb('left')
+    # limb.move(Position.HEAD_CAMERA, Orientation.BACKWARDS_0)
+    # sys.exit()
+    # limb.move(Position.ABOVE, Orientation.UPWARDS_90)
+    # time.sleep(1)
+    limb.move(Position.HEAD_CAMERA, Orientation.UPWARDS_90)
+    # time.sleep(1)
+    # limb.move(Position.HEAD_CAMERA, Orientation.UPWARDS_270)
+    # time.sleep(1)
+    # limb.move(Position.ABOVE, Orientation.UPWARDS_270)
+
+    cam = 'head'
     lhc = baxter_interface.CameraController(cam + '_camera')
     lhc.open()
     lhc.resolution = lhc.MODES[0]
-    # lhc.resolution = (960, 600)
+    lhc.resolution = (960, 600)
     lhc.exposure = 60
     # lhc.exposure = 30
 
@@ -43,11 +63,11 @@ def main():
         #Mostrar la imagen
         gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         circles = hough(gray_frame)
-        if circles is not None and 9 <= circles.shape[1] <= 9:
-            # np.save('capturas/U', frame)
-            # np.save('capturas/U_circles', circles)
-            print(frame)
-            print(circles.shape)
+        # if circles is not None and 9 <= circles.shape[1] <= 9:
+        #     # np.save('capturas/U', frame)
+        #     # np.save('capturas/U_circles', circles)
+        #     print(frame)
+        #     print(circles.shape)
             # break
         # rectangles(frame)
         # cv2.imshow('Imagen', frame)
@@ -58,10 +78,6 @@ def main():
             break
 
     cv2.destroyAllWindows()
-    # limb.move(Position.CUBE_POSITION, Orientation.DOWNWARDS)
-    # limb.close()
-    # time.sleep(1)
-    # limb.move([Position.X, Position.Y, 0.3], Orientation.DOWNWARDS)
 
 
 if __name__ == '__main__':

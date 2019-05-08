@@ -17,6 +17,8 @@ class Position():
     MIDDLE2 = (0.5, Y, Z)
     ABOVE = (X + 0.1, Y, 0.5)
     FRONT = (X + 0.5, Y, Z)
+    HEAD_CAMERA = (0.35, 0, 0.7) # FRENTE
+    # HEAD_CAMERA = (0.3, 0, 0.5)
 
 
 class Orientation():
@@ -40,3 +42,5 @@ class Orientation():
     LEFTWARDS_270 = (-math.pi/2, -math.pi/2, 0)
 
     FRONTWARDS_0 = (0, math.pi/2, 0)
+    # BACKWARDS_0 = (0, -math.pi/2, 0)
+    BACKWARDS_0 = (0, -3*math.pi/8, 0)

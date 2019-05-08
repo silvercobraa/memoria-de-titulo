@@ -7,14 +7,19 @@ import cv
 
 def hough(img):
     # img = cv2.imread('pepe-arch.png',0)
-    img = cv2.medianBlur(img,5)
+    # img = cv2.GaussianBlur(img, (5, 5), 5)
+    img = cv2.medianBlur(img, 5)
     # print(img)
     canny = cv2.Canny(img,100,200)
     cimg = cv2.cvtColor(img,cv2.COLOR_GRAY2BGR)
 
 
-    circles = cv2.HoughCircles(img,cv.CV_HOUGH_GRADIENT,1,30,
-                                param1=50,param2=30,minRadius=3,maxRadius=30)
+    # radios para los brazos
+    circles = cv2.HoughCircles(img, method=cv.CV_HOUGH_GRADIENT, dp=1, minDist=30,
+                                param1=80, param2=30, minRadius=10, maxRadius=30)
+    # radios para la cabeza
+    # circles = cv2.HoughCircles(img,cv.CV_HOUGH_GRADIENT,1,30,
+    #                             param1=50,param2=30,minRadius=3,maxRadius=10)
 
     if circles is None: return
     # print('circles:', circles[0])
@@ -28,7 +33,7 @@ def hough(img):
     cv2.imshow('detected circles',cimg)
     # cv2.imshow('canny', canny)
     return circles
-    # time.sleep(1)
+
 
 def rectangles(img):
     img = cv2.medianBlur(img,5)
@@ -63,14 +68,20 @@ def main():
     ret, bgr_frame = cap.read()
     while True:
         ret, bgr_frame = cap.read()
-        rgb_frame = cv2.cvtColor(bgr_frame, cv2.COLOR_BGR2GRAY)
-        # cv2.imshow('bgr_frame', bgr_frame)
-        hough(rgb_frame)
+        gray_frame = cv2.cvtColor(bgr_frame, cv2.COLOR_BGR2GRAY)
+        circles = hough(gray_frame)
+        if circles is not None and 9 <= circles.shape[1] <= 9:
+            np.save('capturas/D', bgr_frame)
+            np.save('capturas/D_circles', circles)
+            print(bgr_frame)
+            print(circles.shape)
+            break
         # rectangles(bgr_frame)
 
         key = cv2.waitKey(1) & 0xFF
         if key == ord('q'):
             break
+
 
 if __name__ == '__main__':
     main()
