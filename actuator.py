@@ -27,7 +27,13 @@ class Actuator():
         self._holder = None # la mano que tiene  actualmente el cubo
         self._left = Limb('left')
         self._right = Limb('right')
-        self._holder = self._left if holder == 'left' else self._right
+        if holder == 'left':
+            self._holder = self._left
+        elif holder == 'right':
+            self._holder = self._right
+        else:
+            self._holder = None
+
         self._capturer = Capturer()
 
     def calibrate(self):

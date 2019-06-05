@@ -8,6 +8,7 @@ from pprint import pprint
 import baxter_interface
 from baxter_core_msgs.srv import SolvePositionIK, SolvePositionIKRequest
 from geometry_msgs.msg import PoseStamped
+from geometry import Position, Orientation
 
 class Limb():
     """Clase que abstrae un brazo con su gripper y cámara. """
@@ -37,8 +38,7 @@ class Limb():
             response = ik_service(ik_message)
         except:
             if recursive:
-                self.set_angle('w1', 0.000)
-                self.rotate('w0', 180)
+                self.fix()
                 self.move(position, orientation, recursive=False)
             else:
                 raise Exception("Excepción de ik_service.")
@@ -48,12 +48,17 @@ class Limb():
             self._limb.move_to_joint_positions(movimiento)
         else:
             if recursive:
-                self.set_angle('w1', 0.000)
-                self.rotate('w0', 180)
+                self.fix()
                 self.move(position, orientation, recursive=False)
             else:
                 raise Exception("Respuesta inválida de ik_service.")
 
+
+    def fix(self):
+        ang = self._limb.joint_angles()[self.side + '_w1']
+        self.set_angle('w1', 0.000)
+        self.rotate('w0', 180)
+        self.set_angle('w1', -ang)
 
 
     def _make_pose_stamped(self, position, orientation):
@@ -141,7 +146,9 @@ def main():
     # limb.rotate_wrist(180)
     # limb.rotate_wrist(270)
     # limb.set_angle('w1', 0)
-    limb.rotate('w0', 180)
+    # limb.rotate('w0', 180)
+    limb.move(Position.ABOVE, Orientation.RIGHTWARDS_0)
+    limb.move(Position.ABOVE, Orientation.UPWARDS_90, True)
 
 
 if __name__ == '__main__':

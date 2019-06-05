@@ -7,9 +7,13 @@ from geometry import Position, Orientation
 def main():
     rospy.init_node('main')
     actuator = Actuator()
-    actuator.calibrate()
-    # actuator.pick_up('left')
-    # actuator.capture()
+    # actuator = Actuator('right')
+    # actuator = Actuator('left')
+
+    # actuator.calibrate()
+    actuator.pick_up('left')
+
+    actuator.capture()
     # actuator.R(90)
     # actuator.move('D1')
     # actuator.U(90)
