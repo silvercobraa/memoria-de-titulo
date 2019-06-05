@@ -11,15 +11,18 @@ from geometry_msgs.msg import PoseStamped
 
 class Limb():
     """Clase que abstrae un brazo con su gripper y cámara. """
-    def __init__(self, side, calibrate=False):
+    def __init__(self, side):
         if side != 'left' and side != 'right':
             raise Exception('Argumento inválido, debe ser "left" o "right".')
         self.side = side
         self._limb = baxter_interface.Limb(side)
         self._gripper = baxter_interface.Gripper(side)
-        if calibrate: self._gripper.calibrate()
+        self._limb.set_joint_position_speed(0.3) #Sets the speed for the args arm. {0.0, 1.0}
+        self.MAX_ANGLE = 3.059 # convenientemente es el mismo para w0 y w2, que son los que ocupo
+        self.MIN_ANGLE = -3.059
 
-    def move(self, position, orientation):
+
+    def move(self, position, orientation, recursive=False):
         """Adaptado del código de Julio."""
         service_name = '/ExternalTools/' + self.side + '/PositionKinematicsNode/IKService'
         ik_service = rospy.ServiceProxy(service_name, SolvePositionIK)
@@ -33,13 +36,25 @@ class Limb():
         try:
             response = ik_service(ik_message)
         except:
-            raise Exception("Excepción de ik_service.")
+            if recursive:
+                self.set_angle('w1', 0.000)
+                self.rotate('w0', 180)
+                self.move(position, orientation, recursive=False)
+            else:
+                raise Exception("Excepción de ik_service.")
 
         if response.isValid[0] == True:
             movimiento = dict(zip(response.joints[0].name, response.joints[0].position))
             self._limb.move_to_joint_positions(movimiento)
         else:
-            raise Exception("Respuesta inválida de ik_service.")
+            if recursive:
+                self.set_angle('w1', 0.000)
+                self.rotate('w0', 180)
+                self.move(position, orientation, recursive=False)
+            else:
+                raise Exception("Respuesta inválida de ik_service.")
+
+
 
     def _make_pose_stamped(self, position, orientation):
         t = PoseStamped()
@@ -62,19 +77,23 @@ class Limb():
         self._gripper.close()
 
 
+    def calibrate(self):
+        self._gripper.calibrate()
+
+
     def rotate_wrist(self, degrees):
         """Rota la muñeca de este brazo en 'degrees' grados. Útil para realizar los movimientos de las caras del cubo una vez se tenga agarrado."""
         # Ver este link para los limites de angulo del robot
         # http://sdk.rethinkrobotics.com/wiki/Hardware_Specifications
-        max_angle = 3.059
-        min_angle = -3.059
+        MAX_ANGLE = 3.059
+        MIN_ANGLE = -3.059
         radians = 2*math.pi*degrees / 360
         angles = self._limb.joint_angles()
         wrist = self.side + '_w2'
         angles[wrist] += radians
         if angles[wrist] > max_angle:
             angles[wrist] -= 2*math.pi
-        if angles[wrist] < min_angle:
+        if angles[wrist] < MIN_ANGLE:
             # cambiar por warning?
             raise Exception('Angulo imposible:', angles[wrist])
 
@@ -82,19 +101,47 @@ class Limb():
         return self._limb.joint_angles()[wrist]
 
 
+    def set_angle(self, joint, radians):
+        """Setea la articulación 'joint' a 'radians' radianes. El string joint no incluye el prefijo del brazo. Ejemplo: 's0', 'e1', 'w2', etc. """
+        # Ver este link para los limites de angulo del robot
+        # http://sdk.rethinkrobotics.com/wiki/Hardware_Specifications
+        angles = self._limb.joint_angles()
+        angles[self.side + '_' + joint] = radians
+        ret = self._limb.move_to_joint_positions(angles)
+        return ret
+
+    def rotate(self, joint, degrees):
+        """Setea la articulación 'joint' a 'radians' radianes. El string joint no incluye el prefijo del brazo. Ejemplo: 's0', 'e1', 'w2', etc. """
+        # Ver este link para los limites de angulo del robot
+        # http://sdk.rethinkrobotics.com/wiki/Hardware_Specifications
+        angles = self._limb.joint_angles()
+        radians = 2*math.pi*degrees / 360
+        joint_name = self.side + '_' + joint
+        angles[joint_name] += radians
+        if angles[joint_name] > self.MAX_ANGLE:
+            angles[joint_name] -= 2*math.pi
+        if angles[joint_name] < self.MIN_ANGLE:
+            raise Exception('Angulo imposible:', angles[joint_name])
+
+        ret = self._limb.move_to_joint_positions(angles)
+        return ret
+
+
 
 def main():
     import rospy
     import time
     rospy.init_node('limb')
-    limb = Limb('right', calibrate=True)
-    # limb = Limb('right', calibrate=False)
+    # limb = Limb('right', calibrate=True)
+    limb = Limb('left')
     # descomentar para testear funciones
     # limb.close()
     # limb.open()
     # limb.rotate_wrist(90)
-    limb.rotate_wrist(180)
+    # limb.rotate_wrist(180)
     # limb.rotate_wrist(270)
+    # limb.set_angle('w1', 0)
+    limb.rotate('w0', 180)
 
 
 if __name__ == '__main__':

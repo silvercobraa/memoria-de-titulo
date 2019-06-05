@@ -6,16 +6,33 @@ import rospy
 import time
 
 from geometry import Position, Orientation
+from capturer import Capturer
 from limb import Limb
+
+away_left = {
+    90: Orientation.RIGHTWARDS_270,
+    180: Orientation.RIGHTWARDS_180,
+    270: Orientation.RIGHTWARDS_90,
+}
+away_right = {
+    90: Orientation.LEFTWARDS_90,
+    180: Orientation.LEFTWARDS_180,
+    270: Orientation.LEFTWARDS_270,
+}
 
 class Actuator():
     """Clase que abstrae los actuadores del robot."""
 
-    def __init__(self, calibrate=False):
+    def __init__(self, holder=None):
         self._holder = None # la mano que tiene  actualmente el cubo
-        self._left = Limb('left', calibrate)
-        self._right = Limb('right', calibrate)
-        # self._holder = self._left # TODO: eliminar esta línea cuando el cubo esté en la mesa
+        self._left = Limb('left')
+        self._right = Limb('right')
+        self._holder = self._left if holder == 'left' else self._right
+        self._capturer = Capturer()
+
+    def calibrate(self):
+        self._left.calibrate()
+        self._right.calibrate()
 
 
     def U(self, degrees):
@@ -54,28 +71,19 @@ class Actuator():
         free_limb_position_far = (position[0], position[1] + DELTA, position[2])
         free_limb_orientation = Orientation.RIGHTWARDS_0 if limb == self._right else Orientation.LEFTWARDS_0
         free_limb.open()
-    	limb.move(position, orientation)
+    	limb.move(position, orientation, True)
     	free_limb.move(free_limb_position_far, free_limb_orientation)
     	free_limb.move(free_limb_position_close, free_limb_orientation)
     	time.sleep(1)
     	free_limb.close()
     	time.sleep(1)
-    	free_limb.rotate_wrist(degrees)
+    	free_limb.rotate('w2', degrees)
     	time.sleep(1)
     	free_limb.open()
     	time.sleep(1)
 
-        away_left = {
-            90: Orientation.RIGHTWARDS_270,
-            180: Orientation.RIGHTWARDS_180,
-            270: Orientation.RIGHTWARDS_90,
-        }
-        away_right = {
-            90: Orientation.LEFTWARDS_90,
-            180: Orientation.LEFTWARDS_180,
-            270: Orientation.LEFTWARDS_270,
-        }
     	free_limb.move(free_limb_position_far, away_left[degrees] if self._holder == self._right else away_right[degrees])
+    	free_limb.set_angle('w1', 0.000)
     	# limb.move((position[0], position[1] - DELTA, position[2]), Orientation.LEFTWARDS_0 if limb == self._right else Orientation.RIGHTWARDS_0)
 
 
@@ -93,6 +101,7 @@ class Actuator():
         limb.close()
     	time.sleep(1)
     	limb.move([Position.X, Position.Y, 0.3], Orientation.DOWNWARDS)
+    	limb.move([Position.X, Position.Y, 0.3], Orientation.RIGHTWARDS_0)
 
 
     def drop(self):
@@ -108,25 +117,71 @@ class Actuator():
             action = getattr(self, move[0].upper())
             degrees = 90 * int(move[1])
             print(move, degrees)
-            # action(degrees)
+            action(degrees)
 
-    def switch_l2r():
-    	self._left.move(Position.ABOVE, Orientation.RIGHTWARDS_0)
-    	self._left.rotate_wrist(90)
-    	self._right.move([Position.ABOVE[0], Position.ABOVE[1] - DELTA, Position.ABOVE[2]], Orientation.LEFTWARDS_0)
-    	self._right.move([Position.ABOVE[0], Position.ABOVE[1] + 0.01, Position.ABOVE[2]], Orientation.LEFTWARDS_0)
-    	right_grip.close()
-    	time.sleep(1)
-    	left_grip.open()
-    	time.sleep(1)
-    	self._left.move([Position.ABOVE[0], Position.ABOVE[1] + DELTA, Position.ABOVE[2]], away_left[90])
+
+    def switch_l2r(self):
+        DELTA = 0.15
+        self._left.move(Position.ABOVE, Orientation.RIGHTWARDS_0)
+        self._left.rotate('w2', 90)
+        self._right.move([Position.ABOVE[0], Position.ABOVE[1] - DELTA, Position.ABOVE[2]], Orientation.LEFTWARDS_0)
+        self._right.move([Position.ABOVE[0], Position.ABOVE[1] + 0.01, Position.ABOVE[2]], Orientation.LEFTWARDS_0)
+        self._right.close()
+        time.sleep(1)
+        self._left.open()
+        time.sleep(1)
+        self._left.move([Position.ABOVE[0], Position.ABOVE[1] + DELTA, Position.ABOVE[2]], away_left[90])
+        self._holder.set_angle('w1', 0.000)
+        self._holder = self._right
+
+
+    def switch_r2l(self):
+        DELTA = -0.15
+        self._right.move(Position.ABOVE, Orientation.LEFTWARDS_0)
+        self._right.rotate('w2', 270)
+        self._left.move([Position.ABOVE[0], Position.ABOVE[1] - DELTA, Position.ABOVE[2]], Orientation.RIGHTWARDS_0)
+        self._left.move([Position.ABOVE[0], Position.ABOVE[1] - 0.01, Position.ABOVE[2]], Orientation.RIGHTWARDS_0)
+        self._left.close()
+        time.sleep(1)
+        self._right.open()
+        time.sleep(1)
+        self._right.move([Position.ABOVE[0], Position.ABOVE[1] + DELTA, Position.ABOVE[2]], away_right[270])
+        self._holder.set_angle('w1', 0.000)
+        self._holder = self._left
+
 
     def _check_hands(self, move):
         """Si el robot tiene el cubo en la mano izquierda, se lo pasa a la mano derecha. Si el robot tiene el cubo en la mano derecha, se lo pasa a la mano izquierda."""
         if self._holder == self._left and move in ['U', 'R', 'L']:
             print('switch cube from left to right hand')
+            self.switch_l2r()
         elif self._holder == self._right and move in ['D', 'F', 'B']:
             print('switch cube from right to left hand')
+            self.switch_r2l()
+
+
+    def capture(self):
+        self._holder.move(Position.ABOVE, Orientation.UPWARDS_90, True) # paso intermedio
+        self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_90)
+        self._capturer.capture('F')
+        self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_270)
+        self._capturer.capture('B')
+        self._holder.move(Position.ABOVE, Orientation.UPWARDS_270) # paso intermedio
+        self._holder.move(Position.HEAD_CAMERA, Orientation.BACKWARDS_0)
+        self._capturer.capture('D')
+        self._holder.move(Position.ABOVE, Orientation.UPWARDS_0) # paso intermedio
+        self._holder.move([Position.X, Position.Y + 0.2, 0.3], Orientation.RIGHTWARDS_0) # TODO: hacer que funcione para el brazo derecho tambien
+        self.switch_l2r() # TODO: ver linea anterior
+        self._holder.move(Position.ABOVE, Orientation.UPWARDS_90, True) # paso intermedio
+        self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_90)
+        self._capturer.capture('R')
+        self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_270)
+        self._capturer.capture('L')
+        self._holder.move(Position.ABOVE, Orientation.UPWARDS_270) # paso intermedio
+        self._holder.move(Position.HEAD_CAMERA, Orientation.BACKWARDS_0)
+        self._capturer.capture('U')
+        self._holder.move(Position.ABOVE, Orientation.UPWARDS_0) # paso intermedio
+        self._holder.move([Position.X, Position.Y, 0.3], Orientation.LEFTWARDS_0) # TODO: hacer que funcione para el brazo derecho tambien
 
 
 

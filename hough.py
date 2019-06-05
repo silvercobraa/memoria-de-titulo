@@ -11,26 +11,30 @@ def hough(img):
     img = cv2.medianBlur(img, 5)
     # print(img)
     canny = cv2.Canny(img,100,200)
-    cimg = cv2.cvtColor(img,cv2.COLOR_GRAY2BGR)
+    gray_img = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
 
     # radios para los brazos
-    circles = cv2.HoughCircles(img, method=cv.CV_HOUGH_GRADIENT, dp=1, minDist=30,
-                                param1=80, param2=30, minRadius=10, maxRadius=30)
+    circles = cv2.HoughCircles(gray_img, method=cv.CV_HOUGH_GRADIENT, dp=1, minDist=30,
+        param1=80, param2=30, minRadius=10, maxRadius=30)
+    # circles = cv2.HoughCircles(gray_img, method=cv.CV_HOUGH_GRADIENT, dp=1, minDist=20,
+    #     param1=80, param2=30, minRadius=10, maxRadius=40)
     # radios para la cabeza
     # circles = cv2.HoughCircles(img,cv.CV_HOUGH_GRADIENT,1,30,
     #                             param1=50,param2=30,minRadius=3,maxRadius=10)
 
-    if circles is None: return
+    if circles is None:
+        cv2.imshow('detected circles', img)
+        return
     # print('circles:', circles[0])
     circles = np.uint16(np.around(circles))
     for i in circles[0,:]:
         # draw the outer circle
-        cv2.circle(cimg,(i[0],i[1]),i[2],(0,255,0),2)
+        cv2.circle(img, (i[0],i[1]), i[2], (0,255,0), 2)
         # draw the center of the circle
-        cv2.circle(cimg,(i[0],i[1]),2,(0,0,255),3)
+        cv2.circle(img, (i[0],i[1]), 2, (0,0,255), 3)
 
-    cv2.imshow('detected circles',cimg)
+    cv2.imshow('detected circles', canny)
     # cv2.imshow('canny', canny)
     return circles
 
@@ -63,19 +67,22 @@ def rectangles(img):
 
     cv2.imshow('img', img)
 
+
 def main():
-    cap = cv2.VideoCapture(0)
-    ret, bgr_frame = cap.read()
+    cap = cv2.VideoCapture(1)
+    face = 'D'
     while True:
         ret, bgr_frame = cap.read()
         gray_frame = cv2.cvtColor(bgr_frame, cv2.COLOR_BGR2GRAY)
-        circles = hough(gray_frame)
+        # circles = hough(gray_frame)
+        circles = hough(bgr_frame)
         if circles is not None and 9 <= circles.shape[1] <= 9:
-            np.save('capturas/D', bgr_frame)
-            np.save('capturas/D_circles', circles)
+            np.save('capturas_temp/' + face, bgr_frame)
+            np.save('capturas_temp/' + face + '_circles', circles)
             print(bgr_frame)
             print(circles.shape)
-            break
+            # cv2.destroyAllWindows()
+            # break
         # rectangles(bgr_frame)
 
         key = cv2.waitKey(1) & 0xFF
