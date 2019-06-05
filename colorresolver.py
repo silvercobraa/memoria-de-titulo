@@ -8,7 +8,8 @@ from sklearn.mixture import GaussianMixture
 
 DATASET_DIR = 'dataset_tarde'
 # TEST_FILE = 'test_set.npy'
-TEST_FILE = 'capturas/representatives.npy'
+# TEST_FILE = 'capturas_sin_luz/representatives.npy'
+TEST_FILE = 'capturas_temp/representatives.npy'
 
 figure = pl.figure()
 axis = figure.add_subplot(111, projection='3d')
@@ -20,6 +21,15 @@ cluster_colors = []
 def labels2perm(labels):
     # mapeo del orden en el que son capturados los facelets al orden requierido por 2 phase solver
     facelet_order = [
+        # orden de los facelets segun la camara de la cabeza del baxter
+        # 42, 39, 36,   43, 40, 37,   44, 41, 38, # U
+        # 9, 10, 11,   12, 13, 14,   15, 16, 17, # R
+        # 0, 1, 2,   3, 4, 5,   6, 7, 8, # F
+        # 47, 50, 53,   46, 49, 52,   45, 48, 51, # D
+        # 27, 28, 29,   30, 31, 32,   33, 34, 35, # L
+        # 18, 19, 20,   21, 22, 23,   24, 25, 26, # B
+
+        # orden de los facelets webcam (F, R, B, L, U, D)
         42, 39, 36,   43, 40, 37,   44, 41, 38, # U
         9, 10, 11,   12, 13, 14,   15, 16, 17, # R
         0, 1, 2,   3, 4, 5,   6, 7, 8, # F
@@ -41,6 +51,7 @@ def labels2perm(labels):
 
     # mapeo de etiquetas de color (numeros) a caras
     faces = 'FRBLUD'
+    # faces = 'URFDLB'
     print(facelet_order)
     print(center_labels)
     permutation = [faces[center_labels[labels[facelet]]] for facelet in facelet_order]
@@ -78,6 +89,9 @@ grid = np.asarray([
 test = np.load(TEST_FILE)
 # test = grid
 
+centroids = np.array([test[i] for i in range(4, 54, 9)])
+print('centroides:', centroids)
+
 # model = QuadraticDiscriminantAnalysis()
 # model = KMeans(n_clusters=6)
 model = GaussianMixture(n_components=6)
@@ -86,7 +100,16 @@ model = GaussianMixture(n_components=6)
 model.fit(test)
 
 predictions = model.predict(test)
-print(predictions.reshape(-1, 3, 3))
+print('predicciones:\n', predictions.reshape(-1, 3, 3))
+
+cluster_colors = np.asarray([
+    [233, 232, 233], # blanco
+    [154, 201, 147], # verde
+    [220, 68, 93], # rojo
+    [236, 217, 139], # amarillo
+    [138, 112, 96], # cafe
+    [89, 63, 213], # azul
+])
 
 for label, color in enumerate(cluster_colors):
     # if label == 0:
