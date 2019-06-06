@@ -34,11 +34,13 @@ class Actuator():
         else:
             self._holder = None
 
-        self._capturer = Capturer()
 
     def calibrate(self):
         self._left.calibrate()
         self._right.calibrate()
+
+    def set_capturer(self, cap):
+        self._capturer = cap
 
 
     def U(self, degrees):

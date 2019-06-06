@@ -15,25 +15,13 @@ from geometry import Position, Orientation
 from limb import Limb
 from hough import hough
 
-picture = None
-CAMERA_INDEX = 1
-DIR = 'capturas/'
 
 class Capturer(object):
     """docstring for Capturer."""
 
-    def __init__(self):
-        # self._cam = 'head'
-        # self._camera = baxter_interface.CameraController(self._cam + '_camera')
-        # self._camera.open()
-        # self._camera.resolution = self._camera.MODES[0]
-        # self._camera.resolution = (960, 600)
-        # self._camera.exposure = 9
-        # # self._camera.exposure = 60
-        # # self._camera.exposure = 30
-
-        # self._cam = cv2.VideoCapture(CAMERA_INDEX)
-        pass
+    def __init__(self, dir, camera_id):
+        self._dir = dir
+        self._cam_id = camera_id
 
 
     def release(self):
@@ -42,20 +30,19 @@ class Capturer(object):
 
     def capture(self, face):
         while True:
-            self._cam = cv2.VideoCapture(CAMERA_INDEX)
+            self._cam = cv2.VideoCapture(self._cam_id)
             ret, bgr_frame = self._cam.read()
             if not ret or bgr_frame is None:
                 print 'None'
                 continue
-            # cv2.imshow('capturas', bgr_frame)
+
             if cv2.waitKey(33) >= 0:
                 break
-            # gray_frame = cv2.cvtColor(bgr_frame, cv2.COLOR_BGR2GRAY)
-            # circles = hough(gray_frame)
+
             circles = hough(bgr_frame)
             if circles is not None and 9 <= circles.shape[1] <= 9:
-                np.save(DIR + face, bgr_frame)
-                np.save(DIR + face + '_circles', circles)
+                np.save(self._dir + face, bgr_frame)
+                np.save(self._dir + face + '_circles', circles)
                 print(bgr_frame)
                 print(circles.shape)
                 cv2.destroyAllWindows()
@@ -64,41 +51,12 @@ class Capturer(object):
                 print 'circulos:', circles
 
             self.release()
-        # def callback(msg):
-        #     global picture
-        #     picture = cv_bridge.CvBridge().imgmsg_to_cv2(msg)
-        #
-        # rospy.Subscriber('/cameras/' + self._cam + '_camera/image', Image , callback)
-        #
-        # while not rospy.is_shutdown():
-        #     while np.all(picture) == None:
-        #         continue
-        #
-        #     frame = picture
-        #
-        #     # gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        #     circles = hough(frame)
-        #     if circles is not None and 9 <= circles.shape[1] <= 9:
-        #         np.save(DIR + face, frame)
-        #         np.save(DIR + face + '_circles', circles)
-        #         print(frame)
-        #         print(circles.shape)
-        #         break
-        #
-        #     # cv2.imshow('Imagen', frame)
-        #     # rectangles(frame)
-        #
-        #     #Salir con 'ESC'
-        #     k = cv2.waitKey(5) & 0xFF
-        #     if k == 27:
-        #         break
-        # cv2.destroyAllWindows()
 
 
 def main():
     rospy.init_node('capturer')
     limb = Limb('left')
-    capturer = Capturer()
+    capturer = Capturer('capturas_temp/', 1)
     # limb.move(Position.ABOVE, Orientation.UPWARDS_90)
     # time.sleep(1)
     # limb.move(Position.HEAD_CAMERA, Orientation.UPWARDS_90)
