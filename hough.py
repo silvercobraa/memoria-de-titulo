@@ -25,6 +25,8 @@ def hough(img):
 
     if circles is None:
         cv2.imshow('detected circles', img)
+        if cv2.waitKey(100) >= 0:
+            pass
         return
     # print('circles:', circles[0])
     circles = np.uint16(np.around(circles))
@@ -34,7 +36,9 @@ def hough(img):
         # draw the center of the circle
         cv2.circle(img, (i[0],i[1]), 2, (0,0,255), 3)
 
-    cv2.imshow('detected circles', canny)
+    cv2.imshow('detected circles', img)
+    if cv2.waitKey(100) >= 0:
+        pass
     # cv2.imshow('canny', canny)
     return circles
 
@@ -65,7 +69,7 @@ def rectangles(img):
             print("circle")
             cv2.drawContours(img,[cnt],0,(0,255,255),-1)
 
-    cv2.imshow('img', img)
+    # cv2.imshow('img', img)
 
 
 def main():
@@ -77,8 +81,8 @@ def main():
         # circles = hough(gray_frame)
         circles = hough(bgr_frame)
         if circles is not None and 9 <= circles.shape[1] <= 9:
-            np.save('capturas_temp/' + face, bgr_frame)
-            np.save('capturas_temp/' + face + '_circles', circles)
+            np.save('capturas/' + face, bgr_frame)
+            np.save('capturas/' + face + '_circles', circles)
             print(bgr_frame)
             print(circles.shape)
             # cv2.destroyAllWindows()

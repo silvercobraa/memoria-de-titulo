@@ -173,7 +173,7 @@ class Actuator():
         self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_270)
         self._capturer.capture('B')
         self._holder.move(Position.ABOVE, Orientation.UPWARDS_270) # paso intermedio
-        self._holder.move(Position.HEAD_CAMERA, Orientation.BACKWARDS_0)
+        self._holder.move((0.40, 0, 0.65), (math.pi, 3*math.pi/4, 0))
         self._capturer.capture('D')
         self._holder.move(Position.ABOVE, Orientation.UPWARDS_0) # paso intermedio
         self._holder.move([Position.X, Position.Y + 0.2, 0.3], Orientation.RIGHTWARDS_0) # TODO: hacer que funcione para el brazo derecho tambien
@@ -184,7 +184,8 @@ class Actuator():
         self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_270)
         self._capturer.capture('L')
         self._holder.move(Position.ABOVE, Orientation.UPWARDS_270) # paso intermedio
-        self._holder.move(Position.HEAD_CAMERA, Orientation.BACKWARDS_0)
+        # self._holder.move((0.40, 0, 0.65), (0, -math.pi/4, -math.pi))
+        self._holder.move((0.40, 0, 0.65), (math.pi, 3*math.pi/4, 0))
         self._capturer.capture('U')
         self._holder.move(Position.ABOVE, Orientation.UPWARDS_0) # paso intermedio
         self._holder.move([Position.X, Position.Y, 0.3], Orientation.LEFTWARDS_0) # TODO: hacer que funcione para el brazo derecho tambien

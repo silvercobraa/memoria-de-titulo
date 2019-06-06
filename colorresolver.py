@@ -9,7 +9,7 @@ from sklearn.mixture import GaussianMixture
 DATASET_DIR = 'dataset_tarde'
 # TEST_FILE = 'test_set.npy'
 # TEST_FILE = 'capturas_sin_luz/representatives.npy'
-TEST_FILE = 'capturas_temp/representatives.npy'
+TEST_FILE = 'capturas/representatives.npy'
 
 figure = pl.figure()
 axis = figure.add_subplot(111, projection='3d')
@@ -32,10 +32,11 @@ def labels2perm(labels):
         # orden de los facelets webcam (F, R, B, L, U, D)
         42, 39, 36,   43, 40, 37,   44, 41, 38, # U
         9, 10, 11,   12, 13, 14,   15, 16, 17, # R
-        0, 1, 2,   3, 4, 5,   6, 7, 8, # F
-        47, 50, 53,   46, 49, 52,   45, 48, 51, # D
+         8,  7,  6,    5,  4,  3,    2,  1,  0, # F
+        45, 46, 47,   48, 49, 50,   51, 52, 53, # D
         27, 28, 29,   30, 31, 32,   33, 34, 35, # L
-        18, 19, 20,   21, 22, 23,   24, 25, 26, # B
+        # 18, 19, 20,   21, 22, 23,   24, 25, 26, # B
+        26, 25, 24,   23, 22, 21,   20, 19, 18, # B
 
     	# 41, 1,   37, 10,   39, 19,   43, 28, # UF, UR, UB, UL
     	# 50, 7,   52, 16,   48, 25,   46, 34, # DF, DR, DB, DL

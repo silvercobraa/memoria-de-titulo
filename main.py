@@ -6,14 +6,15 @@ from geometry import Position, Orientation
 
 def main():
     rospy.init_node('main')
-    actuator = Actuator()
-    # actuator = Actuator('right')
+    # actuator = Actuator()
+    actuator = Actuator('right')
     # actuator = Actuator('left')
 
     # actuator.calibrate()
-    actuator.pick_up('left')
+    # actuator.pick_up('left')
 
-    actuator.capture()
+    # actuator.capture()
+    actuator.move('B2 L2 F1 D2 F3 L2 D2 F3 U2 B1 D1 U3 L2 U1 F1 U3 F1 R3 F3 D2')
     # actuator.R(90)
     # actuator.move('D1')
     # actuator.U(90)

@@ -16,7 +16,8 @@ from limb import Limb
 from hough import hough
 
 picture = None
-DIR = 'capturas_sin_luz/'
+CAMERA_INDEX = 1
+DIR = 'capturas/'
 
 class Capturer(object):
     """docstring for Capturer."""
@@ -30,7 +31,9 @@ class Capturer(object):
         # self._camera.exposure = 9
         # # self._camera.exposure = 60
         # # self._camera.exposure = 30
-        self._cam = cv2.VideoCapture(1)
+
+        # self._cam = cv2.VideoCapture(CAMERA_INDEX)
+        pass
 
 
     def release(self):
@@ -39,17 +42,20 @@ class Capturer(object):
 
     def capture(self, face):
         while True:
+            self._cam = cv2.VideoCapture(CAMERA_INDEX)
             ret, bgr_frame = self._cam.read()
             if not ret or bgr_frame is None:
                 print 'None'
                 continue
-            cv2.imshow('capturas', bgr_frame)
+            # cv2.imshow('capturas', bgr_frame)
+            if cv2.waitKey(33) >= 0:
+                break
             # gray_frame = cv2.cvtColor(bgr_frame, cv2.COLOR_BGR2GRAY)
             # circles = hough(gray_frame)
             circles = hough(bgr_frame)
             if circles is not None and 9 <= circles.shape[1] <= 9:
-                np.save('capturas_temp/' + face, bgr_frame)
-                np.save('capturas_temp/' + face + '_circles', circles)
+                np.save(DIR + face, bgr_frame)
+                np.save(DIR + face + '_circles', circles)
                 print(bgr_frame)
                 print(circles.shape)
                 cv2.destroyAllWindows()
@@ -57,6 +63,7 @@ class Capturer(object):
             else:
                 print 'circulos:', circles
 
+            self.release()
         # def callback(msg):
         #     global picture
         #     picture = cv_bridge.CvBridge().imgmsg_to_cv2(msg)
@@ -90,20 +97,34 @@ class Capturer(object):
 
 def main():
     rospy.init_node('capturer')
-    limb = Limb('right')
+    limb = Limb('left')
     capturer = Capturer()
-    limb.move(Position.ABOVE, Orientation.UPWARDS_90)
-    time.sleep(1)
-    limb.move(Position.HEAD_CAMERA, Orientation.UPWARDS_90)
-    capturer.capture('F')
-    limb.move(Position.HEAD_CAMERA, Orientation.UPWARDS_270)
-    capturer.capture('B')
-    limb.move(Position.ABOVE, Orientation.UPWARDS_270)
-    time.sleep(1)
-    pos = (0.35, 0.0, 0.75)
-    ori = (0, -3*math.pi/8, 0)
-    limb.move(Position.HEAD_CAMERA, Orientation.BACKWARDS_0)
+    # limb.move(Position.ABOVE, Orientation.UPWARDS_90)
+    # time.sleep(1)
+    # limb.move(Position.HEAD_CAMERA, Orientation.UPWARDS_90)
+    # capturer.capture('F')
+    # limb.move(Position.HEAD_CAMERA, Orientation.UPWARDS_270)
+    # capturer.capture('B')
+    # limb.move(Position.ABOVE, Orientation.UPWARDS_270)
+    # time.sleep(1)
+    # pos = (0.35, 0.0, 0.75)
+    # ori = (0, -3*math.pi/8, 0)
+    limb.move((0.40, 0, 0.65), (0, -math.pi/4, 0))
     capturer.capture('D')
+
+    # capturer.capture('F')
+    # time.sleep(3)
+    # capturer.capture('B')
+    # time.sleep(3)
+    # capturer.capture('D')
+    # time.sleep(3)
+    # capturer.capture('R')
+    # time.sleep(3)
+    # capturer.capture('L')
+    # time.sleep(3)
+    # capturer.capture('U')
+    # time.sleep(3)
+
     capturer.release()
 
 

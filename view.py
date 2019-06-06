@@ -10,7 +10,7 @@ from mpl_toolkits.mplot3d import Axes3D
 # FACES = 'FBDRLU'
 FACES = 'FRBLUD'
 FACE = 'F'
-DIR = 'capturas_temp/'
+DIR = 'capturas/'
 
 
 # COLOR = (255, 0, 255) # magenta
@@ -82,4 +82,4 @@ for color in representatives:
     axis.scatter(col[0], col[1], col[2], color=col.astype(float)/255)
 pl.show()
 # pl.show()
-np.save('representatives', representatives)
+np.save(DIR + 'representatives', representatives)

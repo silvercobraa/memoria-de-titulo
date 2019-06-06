@@ -18,8 +18,10 @@ class Position():
     ABOVE = (X + 0.1, Y, 0.5)
     ABOVE2 = (0.7, 0.0, 0.7)
     FRONT = (X + 0.5, Y, Z)
-    # HEAD_CAMERA = (0.35, 0, 0.55) # FRENTE
-    HEAD_CAMERA = (0.35, 0, 0.75) # FRENTE
+    # HEAD_CAMERA2 = (0.35, 0, 0.55) # FRENTE
+    HEAD_CAMERA2 = (0.35, 0, 0.70) # FRENTE
+    # HEAD_CAMERA = (0.5, 0, 0.75) # FRENTE
+    HEAD_CAMERA = (0.5, 0, 0.70) # FRENTE
 
 
 class Orientation():
