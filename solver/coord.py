@@ -17,7 +17,7 @@ u_edges_plus_d_edges_to_ud_edges = None  # global variable
 
 class CoordCube:
     """Represents a cube on the coordinate level.
-    
+
     In phase 1 a state is uniquely determined by the three coordinates flip, twist and slice.
     In phase 2 a state is uniquely determined by the three coordinates corners, ud_edges and slice_sorted.
     """
@@ -183,12 +183,12 @@ def create_phase2_edgemerge_table():
                         u_edges_plus_d_edges_to_ud_edges[N_PERM_4 * i + k] = c_ud.get_ud_edges()
                         cnt += 1
                         if cnt % 2000 == 0:
-                            print('.', end='', flush=True)
-        print()
+                            print '.',
+        print ''
         fh = open(fname, "wb")
         u_edges_plus_d_edges_to_ud_edges.tofile(fh)
         fh.close()
-        print()
+        print ''
     else:
         fh = open(fname, "rb")
         u_edges_plus_d_edges_to_ud_edges = ar.array('H')

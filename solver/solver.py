@@ -1,4 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 # ################### The SolverThread class solves implements the two phase algorithm #################################
+
 import face
 import threading as thr
 import cubie
@@ -18,7 +21,7 @@ class SolverThread(thr.Thread):
         :param rot: Rotates the  cube 120° * rot along the long diagonal before applying the two-phase-algorithm
         :param inv: 0: Do not invert the cube . 1: Invert the cube before applying the two-phase-algorithm
         :param ret_length: If a solution with length <= ret_length is found the search stops.
-         The most efficient way to solve a cube is to start six threads in parallel with rot = 0, 1 and 2 and 
+         The most efficient way to solve a cube is to start six threads in parallel with rot = 0, 1 and 2 and
          inv = 0, 1. The first thread which finds a solutions sets the terminated flag which signals all other threads
          to teminate. On average this solves a cube about 12 times faster than solving one cube with a single thread.
          And this despite of Pythons GlobalInterpreterLock GIL.
@@ -107,7 +110,8 @@ class SolverThread(thr.Thread):
         ################################################################################################################
         if togo_phase1 == 0:  # phase 1 solved
 
-            if time.monotonic() > self.start_time + self.timeout and len(self.solutions) > 0:
+            # if time.monotonic() > self.start_time + self.timeout and len(self.solutions) > 0:
+            if 1000*(time.clock() - self.start_time) > self.timeout and len(self.solutions) > 0:
                 self.terminated.set()
 
             # compute initial phase 2 coordinates
@@ -215,7 +219,8 @@ def solve(cubestring, max_length=20, timeout=3):
         return s  # Error in cubie cube
 
     my_threads = []
-    s_time = time.monotonic()
+    # s_time = time.monotonic()
+    s_time = time.clock()
 
     # these mutable variables are modidified by all six threads
     s_length = [999]
