@@ -146,9 +146,9 @@ class Actuator():
     def switch_r2l(self):
         DELTA = -0.15
         self._right.move(Position.ABOVE, Orientation.LEFTWARDS_0)
-        self._right.rotate('w2', 270)
+        self._right.rotate('w2', 90)
         self._left.move([Position.ABOVE[0], Position.ABOVE[1] - DELTA, Position.ABOVE[2]], Orientation.RIGHTWARDS_0)
-        self._left.move([Position.ABOVE[0], Position.ABOVE[1] - 0.01, Position.ABOVE[2]], Orientation.RIGHTWARDS_0)
+        self._left.move([Position.ABOVE[0], Position.ABOVE[1] + 0.01, Position.ABOVE[2]], Orientation.RIGHTWARDS_0)
         self._left.close()
         time.sleep(1)
         self._right.open()
