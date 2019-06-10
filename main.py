@@ -4,30 +4,44 @@ from actuator import Limb, Actuator
 from geometry import Position, Orientation
 from color import ColorExtractor
 from capturer import Capturer
-# from solver import Solver
-# from color import Classifier
+import solver.solver as Solver
+from classifier import Classifier
 
 def main():
-    DIR = 'capturas_temp/'
+    DIR = 'capturas/'
     rospy.init_node('main')
 
-    # actuator = Actuator()
+    actuator = Actuator()
     # actuator = Actuator('right')
-    actuator = Actuator('left')
+    # actuator = Actuator('left')
     actuator.set_capturer(Capturer(DIR, 1))
 
-    # actuator.calibrate()
-    # actuator.pick_up('left')
+    actuator.calibrate()
+    actuator.pick_up('left')
+    # actuator.switch_l2r()
+    # actuator.switch_r2l()
+    # return
 
     actuator.capture()
-    # actuator.move('B2 L2 F1 D2 F3 L2 D2 F3 U2 B1 D1 U3 L2 U1 F1 U3 F1 R3 F3 D2')
 
-    ext = ColorExtractor('capturas/', 'FRBLUD')
+    ext = ColorExtractor(DIR, 'FRBLUD')
     colors = ext.get_representative_colors()
     ext.show()
     ext.save('reps')
 
 
+    cls = Classifier('URFDLB')
+    cls.fit(colors)
+    state = cls.get_state()
+    print(state)
+
+    moves = Solver.solve(state, 20, 2)
+    moves = moves[:moves.find('(')]
+    print(moves)
+
+    # actuator.move(moves)
+
+    actuator.drop()
 
 if __name__ == '__main__':
     main()
