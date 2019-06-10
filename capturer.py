@@ -56,7 +56,7 @@ class Capturer(object):
 def main():
     rospy.init_node('capturer')
     limb = Limb('left')
-    capturer = Capturer('capturas_temp/', 1)
+    capturer = Capturer('capturas/', 1)
     # limb.move(Position.ABOVE, Orientation.UPWARDS_90)
     # time.sleep(1)
     # limb.move(Position.HEAD_CAMERA, Orientation.UPWARDS_90)
