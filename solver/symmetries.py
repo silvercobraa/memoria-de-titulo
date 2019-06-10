@@ -11,6 +11,8 @@ from defs import N_TWIST, N_SYM, N_SYM_D4h, N_FLIP, N_SLICE, N_CORNERS, N_UD_EDG
     N_CORNERS_CLASS
 from enums import Corner as Co, Edge as Ed, Move as Mv, BS
 
+from cache import CACHE_DIR
+
 INVALID = 65535
 
 #  #################### permutations and orientation changes of the basic symmetries ###################################
@@ -102,7 +104,7 @@ for s in range(N_SYM):
 ########################################################################################################################
 
 # ####### generate the phase 1 table for the conjugation of the twist t by a symmetry s. twist_conj[t, s] = s*t*s^-1####
-fname = "conj_twist"
+fname = CACHE_DIR + "conj_twist"
 if not path.isfile(fname):
     print('On the first run, several tables will be created. This takes from 1/2 hour (e.g. PC) to 6 hours '
           '(e.g. RaspberryPi3), depending on the hardware.')
@@ -128,7 +130,7 @@ fh.close()
 # ######################################################################################################################
 
 # #################### generate the phase 2 table for the conjugation of the URtoDB coordinate by a symmetrie###########
-fname = "conj_ud_edges"
+fname = CACHE_DIR + "conj_ud_edges"
 if not path.isfile(fname):
     print("creating " + fname + " table...")
     ud_edges_conj = ar.array('H', [0] * (N_UD_EDGES * N_SYM_D4h))
@@ -156,9 +158,9 @@ fh.close()
 # ######################################################################################################################
 
 # ############## generate the tables to handle the symmetry reduced flip-slice coordinate in  phase 1 ##################
-fname1 = "fs_classidx"
-fname2 = "fs_sym"
-fname3 = "fs_rep"
+fname1 = CACHE_DIR + "fs_classidx"
+fname2 = CACHE_DIR + "fs_sym"
+fname3 = CACHE_DIR + "fs_rep"
 if not (path.isfile(fname1) and path.isfile(fname2) and path.isfile(fname3)):
     print("creating " + "flipslice sym-tables...")
     flipslice_classidx = ar.array('H', [INVALID] * (N_FLIP * N_SLICE))  # idx -> classidx
@@ -222,9 +224,9 @@ else:
 ########################################################################################################################
 
 # ############ generate the tables to handle the symmetry reduced corner permutation coordinate in phase 2##############
-fname1 = "co_classidx"
-fname2 = "co_sym"
-fname3 = "co_rep"
+fname1 = CACHE_DIR + "co_classidx"
+fname2 = CACHE_DIR + "co_sym"
+fname3 = CACHE_DIR + "co_rep"
 if not (path.isfile(fname1) and path.isfile(fname2) and path.isfile(fname3)):
     print("creating " + "corner sym-tables...")
     corner_classidx = ar.array('H', [INVALID] * N_CORNERS)  # idx -> classidx

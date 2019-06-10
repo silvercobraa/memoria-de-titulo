@@ -10,6 +10,7 @@ import pruning as pr
 import symmetries as sy
 from defs import N_U_EDGES_PHASE2, N_PERM_4, N_CHOOSE_8_4, N_FLIP, N_TWIST, N_UD_EDGES, N_MOVE
 from enums import Edge as Ed
+from cache import CACHE_DIR
 
 SOLVED = 0  # 0 is index of solved state (except for u_edges coordinate)
 u_edges_plus_d_edges_to_ud_edges = None  # global variable
@@ -145,7 +146,7 @@ class CoordCube:
 
 def create_phase2_edgemerge_table():
     """phase2_edgemerge retrieves the initial phase 2 ud_edges coordinate from the u_edges and d_edges coordinates."""
-    fname = "phase2_edgemerge"
+    fname = CACHE_DIR + "phase2_edgemerge"
     global u_edges_plus_d_edges_to_ud_edges
     c_u = cb.CubieCube()
     c_d = cb.CubieCube()
