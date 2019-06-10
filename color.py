@@ -5,6 +5,7 @@ import cv2
 import numpy as np
 import pylab as pl
 from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
 
 
 class ColorExtractor():
@@ -80,9 +81,7 @@ class ColorExtractor():
         pl.show()
 
     def save(self, file):
-        np.save(DIR + file, self._reps)
-
-
+        np.save(self._dir + file, self._reps)
 
 
 

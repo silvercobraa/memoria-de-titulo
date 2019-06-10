@@ -9,14 +9,14 @@ from sklearn.mixture import GaussianMixture
 DATASET_DIR = 'dataset_tarde'
 # TEST_FILE = 'test_set.npy'
 # TEST_FILE = 'capturas_sin_luz/representatives.npy'
-TEST_FILE = 'capturas/representatives.npy'
+TEST_FILE = 'capturas/reps.npy'
 
 figure = pl.figure()
 axis = figure.add_subplot(111, projection='3d')
 
 train_points = np.empty((0, 3))
 train_labels = np.empty((0, 1), dtype=int)
-cluster_colors = []
+# cluster_colors = []
 
 def labels2perm(labels):
     # mapeo del orden en el que son capturados los facelets al orden requierido por 2 phase solver
@@ -66,19 +66,6 @@ def labels2perm(labels):
     return permutation
 
 
-for root, dirs, files in os.walk(DATASET_DIR):
-    for file in files:
-        fullpath = os.path.join(DATASET_DIR, file)
-        cluster = np.load(fullpath)
-        cluster_labels = np.full((len(cluster), 1), len(cluster_colors), dtype=int)
-        mean_color = cluster.mean(axis=0)
-        cluster_colors.append(mean_color)
-        # axis.scatter(cluster[:, 0], cluster[:, 1], cluster[:, 2], color=mean_color/255)
-
-        train_points = np.append(train_points, cluster, axis=0)
-        train_labels = np.append(train_labels, cluster_labels)
-
-# pl.show()
 
 grid_step = 32
 grid = np.asarray([
@@ -91,6 +78,7 @@ test = np.load(TEST_FILE)
 # test = grid
 
 centroids = np.array([test[i] for i in range(4, 54, 9)])
+# centroids[:, 0], centroids[:, 2] = centroids[:, 2], centroids[:, 0]
 print('centroides:', centroids)
 
 # model = QuadraticDiscriminantAnalysis()
@@ -104,20 +92,25 @@ predictions = model.predict(test)
 print('predicciones:\n', predictions.reshape(-1, 3, 3))
 
 cluster_colors = np.asarray([
-    [233, 232, 233], # blanco
-    [154, 201, 147], # verde
-    [220, 68, 93], # rojo
-    [236, 217, 139], # amarillo
-    [138, 112, 96], # cafe
-    [89, 63, 213], # azul
+    [255, 255, 0], # amarillo
+    [0, 0, 0], # blanco (negro)
+    [255, 0, 255], # magenta
+    [0, 255, 0], # verde
+    [0, 0, 255], # azul
+    [255, 0, 0], # rojo
 ])
 
-for label, color in enumerate(cluster_colors):
+markers = ['.', '^', 's', 'D', '*', 'o']
+
+for label, color in enumerate(markers):
     # if label == 0:
     if True:
         indexes = np.array([i for i, val in enumerate(predictions) if label == val])
         region = test[indexes.astype(int)]
-        axis.scatter(region[:, 0], region[:, 1], region[:, 2], color=color/255)
+        # axis.scatter(region[:, 0], region[:, 1], region[:, 2], color=color/255)
+        cent = centroids[label]/384
+        cent[0], cent[2] = cent[2], cent[0]
+        axis.scatter(region[:, 0], region[:, 1], region[:, 2], marker=color, color=cent)
         # axis.scatter(color[0], color[1], color[2], color=color/255, s=100)
 
 cluster_colors = np.asarray(cluster_colors)
