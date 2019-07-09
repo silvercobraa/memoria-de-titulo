@@ -15,8 +15,9 @@ def hough(img):
 
 
     # radios para los brazos
+    # circles = cv2.HoughCircles(gray_img, method=cv.CV_HOUGH_GRADIENT, dp=1, minDist=30, param1=80, param2=30, minRadius=10, maxRadius=30)
     circles = cv2.HoughCircles(gray_img, method=cv.CV_HOUGH_GRADIENT, dp=1, minDist=30,
-        param1=80, param2=30, minRadius=10, maxRadius=30)
+        param1=80, param2=30, minRadius=10, maxRadius=35)
     # circles = cv2.HoughCircles(gray_img, method=cv.CV_HOUGH_GRADIENT, dp=1, minDist=20,
     #     param1=80, param2=30, minRadius=10, maxRadius=40)
     # radios para la cabeza
