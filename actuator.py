@@ -133,7 +133,7 @@ class Actuator():
         self._left.move(Position.ABOVE, Orientation.RIGHTWARDS_0)
         self._left.rotate('w2', 90)
         self._right.move([Position.ABOVE[0], Position.ABOVE[1] - DELTA, Position.ABOVE[2]], Orientation.LEFTWARDS_0)
-        self._right.move([Position.ABOVE[0], Position.ABOVE[1] + 0.01, Position.ABOVE[2]], Orientation.LEFTWARDS_0)
+        self._right.move([Position.ABOVE[0] + 0.01, Position.ABOVE[1] + 0.02, Position.ABOVE[2]], Orientation.LEFTWARDS_0)
         self._right.close()
         time.sleep(1)
         self._left.open()
@@ -148,12 +148,12 @@ class Actuator():
         self._right.move(Position.ABOVE, Orientation.LEFTWARDS_0)
         self._right.rotate('w2', 90)
         self._left.move([Position.ABOVE[0], Position.ABOVE[1] - DELTA, Position.ABOVE[2]], Orientation.RIGHTWARDS_0)
-        self._left.move([Position.ABOVE[0], Position.ABOVE[1] + 0.01, Position.ABOVE[2]], Orientation.RIGHTWARDS_0)
+        self._left.move([Position.ABOVE[0], Position.ABOVE[1] - 0.02, Position.ABOVE[2]], Orientation.RIGHTWARDS_0)
         self._left.close()
         time.sleep(1)
         self._right.open()
         time.sleep(1)
-        self._right.move([Position.ABOVE[0], Position.ABOVE[1] + DELTA, Position.ABOVE[2]], away_right[270])
+        self._right.move([Position.ABOVE[0], Position.ABOVE[1] + DELTA, Position.ABOVE[2]], away_right[90])
         self._holder.set_angle('w1', 0.000)
         self._holder = self._left
 
