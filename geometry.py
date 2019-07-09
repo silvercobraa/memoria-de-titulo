@@ -12,7 +12,8 @@ class Position():
     X = 0.6
     Y = 0.0
     Z = 0.2
-    CUBE_POSITION = (0.5, 0.0, -0.15)
+    # CUBE_POSITION = (0.5, 0.0, -0.15)
+    CUBE_POSITION = (0.5, 0.0, -0.16)
     MIDDLE = (X, Y, Z)
     MIDDLE2 = (0.5, Y, Z)
     ABOVE = (X + 0.1, Y, 0.5)
@@ -37,8 +38,10 @@ class Orientation():
     RIGHTWARDS_270 = (math.pi/2, -math.pi/2, 0)
     UPWARDS_0 = (0, 0, -math.pi/2)
     UPWARDS_90 = (0, 0, 0)
+    UPWARDS_90_2 = (0, 0.2, 0)
     UPWARDS_180 = (0, 0, math.pi/2)
     UPWARDS_270 = (0, 0, math.pi)
+    UPWARDS_270_2 = (0, -0.2, math.pi)
     LEFTWARDS_0 = (-math.pi/2, 0, 0)
     LEFTWARDS_90 = (-math.pi/2, math.pi/2, 0)
     LEFTWARDS_180 = (-math.pi/2, math.pi, 0)
