@@ -17,6 +17,10 @@ from hough import hough
 
 
 class Capturer(object):
+    # BRIGHTNESS = 0.1
+    # BRIGHTNESS = 0.2
+    # BRIGHTNESS = 0.3
+    BRIGHTNESS = 0.5
     """docstring for Capturer."""
 
     def __init__(self, dir, camera_id):
@@ -31,6 +35,7 @@ class Capturer(object):
     def capture(self, face):
         while True:
             self._cam = cv2.VideoCapture(self._cam_id)
+            self._cam.set(cv2.cv.CV_CAP_PROP_BRIGHTNESS, Capturer.BRIGHTNESS)
             ret, bgr_frame = self._cam.read()
             if not ret or bgr_frame is None:
                 print 'None'
@@ -54,8 +59,8 @@ class Capturer(object):
 
 
 def main():
-    rospy.init_node('capturer')
-    limb = Limb('left')
+    # rospy.init_node('capturer')
+    # limb = Limb('left')
     capturer = Capturer('capturas/', 1)
     # limb.move(Position.ABOVE, Orientation.UPWARDS_90)
     # time.sleep(1)
@@ -67,21 +72,21 @@ def main():
     # time.sleep(1)
     # pos = (0.35, 0.0, 0.75)
     # ori = (0, -3*math.pi/8, 0)
-    limb.move((0.40, 0, 0.65), (0, -math.pi/4, 0))
-    capturer.capture('D')
-
-    # capturer.capture('F')
-    # time.sleep(3)
-    # capturer.capture('B')
-    # time.sleep(3)
+    # limb.move((0.40, 0, 0.65), (0, -math.pi/4, 0))
     # capturer.capture('D')
-    # time.sleep(3)
-    # capturer.capture('R')
-    # time.sleep(3)
-    # capturer.capture('L')
-    # time.sleep(3)
-    # capturer.capture('U')
-    # time.sleep(3)
+
+    capturer.capture('F')
+    time.sleep(3)
+    capturer.capture('B')
+    time.sleep(3)
+    capturer.capture('D')
+    time.sleep(3)
+    capturer.capture('R')
+    time.sleep(3)
+    capturer.capture('L')
+    time.sleep(3)
+    capturer.capture('U')
+    time.sleep(3)
 
     capturer.release()
 
