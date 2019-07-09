@@ -5,7 +5,7 @@ import math
 import rospy
 import time
 
-from geometry import Position, Orientation
+from geometry import Position, Orientation, Angle
 from capturer import Capturer
 from limb import Limb
 
@@ -45,31 +45,37 @@ class Actuator():
 
     def U(self, degrees):
         """Rota la cara superior del cubo en 'degrees' grados."""
+        self._right._limb.move_to_joint_positions(Angle.U)
         self._generic_move(degrees, self._right, Position.ABOVE, Orientation.LEFTWARDS_0, +0.15, +0.0, +0.005, +0.0)
 
 
     def R(self, degrees):
         """Rota la cara derecha del cubo en 'degrees' grados."""
-        self._generic_move(degrees, self._right, Position.ABOVE, Orientation.UPWARDS_0, +0.15, +0.0, +0.015, +0.0)
+        self._right._limb.move_to_joint_positions(Angle.R)
+        self._generic_move(degrees, self._right, Position.ABOVE, Orientation.UPWARDS_0, +0.15, +0.0, +0.015, -0.01)
 
 
     def F(self, degrees):
         """Rota la cara frontal del cubo en 'degrees' grados."""
+        self._left._limb.move_to_joint_positions(Angle.F)
         self._generic_move(degrees, self._left, Position.ABOVE, Orientation.UPWARDS_180, -0.15, +0.0, -0.015, +0.0)
 
 
     def D(self, degrees):
         """Rota la cara inferior del cubo en 'degrees' grados."""
+        self._left._limb.move_to_joint_positions(Angle.D)
         self._generic_move(degrees, self._left, Position.ABOVE, Orientation.RIGHTWARDS_0, -0.15, +0.0, -0.005, +0.0)
 
 
     def L(self, degrees):
         """Rota la cara izquierda del cubo en 'degrees' grados."""
-        self._generic_move(degrees, self._right, Position.ABOVE, Orientation.UPWARDS_180, +0.15, +0.0, +0.015, +0.0)
+        self._right._limb.move_to_joint_positions(Angle.L)
+        self._generic_move(degrees, self._right, Position.ABOVE, Orientation.UPWARDS_180, +0.15, +0.0, +0.015, -0.01)
 
 
     def B(self, degrees):
         """Rota la cara posterior del cubo en 'degrees' grados."""
+        self._left._limb.move_to_joint_positions(Angle.B)
         self._generic_move(degrees, self._left, Position.ABOVE, Orientation.UPWARDS_0, -0.15, +0.0, -0.015, +0.0)
 
 
