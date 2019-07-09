@@ -45,37 +45,37 @@ class Actuator():
 
     def U(self, degrees):
         """Rota la cara superior del cubo en 'degrees' grados."""
-        self._generic_move(degrees, self._right, Position.ABOVE, Orientation.LEFTWARDS_0, +0.015, +0.15)
+        self._generic_move(degrees, self._right, Position.ABOVE, Orientation.LEFTWARDS_0, +0.15, +0.0, +0.005, +0.0)
 
 
     def R(self, degrees):
         """Rota la cara derecha del cubo en 'degrees' grados."""
-        self._generic_move(degrees, self._right, Position.ABOVE, Orientation.UPWARDS_0, +0.015, +0.15)
+        self._generic_move(degrees, self._right, Position.ABOVE, Orientation.UPWARDS_0, +0.15, +0.0, +0.015, +0.0)
 
 
     def F(self, degrees):
         """Rota la cara frontal del cubo en 'degrees' grados."""
-        self._generic_move(degrees, self._left, Position.ABOVE, Orientation.UPWARDS_180, -0.015, -0.15)
+        self._generic_move(degrees, self._left, Position.ABOVE, Orientation.UPWARDS_180, -0.15, +0.0, -0.015, +0.0)
 
 
     def D(self, degrees):
         """Rota la cara inferior del cubo en 'degrees' grados."""
-        self._generic_move(degrees, self._left, Position.ABOVE, Orientation.RIGHTWARDS_0, -0.015, -0.15)
+        self._generic_move(degrees, self._left, Position.ABOVE, Orientation.RIGHTWARDS_0, -0.15, +0.0, -0.005, +0.0)
 
 
     def L(self, degrees):
         """Rota la cara izquierda del cubo en 'degrees' grados."""
-        self._generic_move(degrees, self._right, Position.ABOVE, Orientation.UPWARDS_180, +0.015, +0.15)
+        self._generic_move(degrees, self._right, Position.ABOVE, Orientation.UPWARDS_180, +0.15, +0.0, +0.015, +0.0)
 
 
     def B(self, degrees):
         """Rota la cara posterior del cubo en 'degrees' grados."""
-        self._generic_move(degrees, self._left, Position.ABOVE, Orientation.UPWARDS_0, -0.015, -0.15)
+        self._generic_move(degrees, self._left, Position.ABOVE, Orientation.UPWARDS_0, -0.15, +0.0, -0.015, +0.0)
 
 
-    def _generic_move(self, degrees, limb, position, orientation, delta, DELTA):
+    def _generic_move(self, degrees, limb, position, orientation, DELTA, dx, dy, dz):
         free_limb = self._left if limb == self._right else self._right
-        free_limb_position_close = (position[0], position[1] + delta, position[2])
+        free_limb_position_close = (position[0] + dx, position[1] + dy, position[2] + dz)
         free_limb_position_far = (position[0], position[1] + DELTA, position[2])
         free_limb_orientation = Orientation.RIGHTWARDS_0 if limb == self._right else Orientation.LEFTWARDS_0
         free_limb.open()
