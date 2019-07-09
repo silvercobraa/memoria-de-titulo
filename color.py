@@ -31,8 +31,8 @@ class ColorExtractor():
         #     axis.scatter(*rgb, color=rgb.astype(float)/255)
         # pl.show()
 
-        # median = np.median(region, axis=0)
-        median = np.mean(region, axis=0)
+        median = np.median(region, axis=0)
+        # median = np.mean(region, axis=0)
         print(median)
         return median
 
