@@ -18,7 +18,7 @@ class Limb():
         self.side = side
         self._limb = baxter_interface.Limb(side)
         self._gripper = baxter_interface.Gripper(side)
-        self._limb.set_joint_position_speed(0.3) #Sets the speed for the args arm. {0.0, 1.0}
+        self._limb.set_joint_position_speed(0.9) #Sets the speed for the args arm. {0.0, 1.0}
         self.MAX_ANGLE = 3.059 # convenientemente es el mismo para w0 y w2, que son los que ocupo
         self.MIN_ANGLE = -3.059
 
@@ -29,7 +29,7 @@ class Limb():
         ik_service = rospy.ServiceProxy(service_name, SolvePositionIK)
         frame = 'base'
 
-        self._limb.set_joint_position_speed(0.5)
+        # self._limb.set_joint_position_speed(0.5)
         rospy.wait_for_service(service_name, 30)
         ik_message = SolvePositionIKRequest()
         ik_message.pose_stamp.append(self._make_pose_stamped(position, orientation))
@@ -147,8 +147,10 @@ def main():
     # limb.rotate_wrist(270)
     # limb.set_angle('w1', 0)
     # limb.rotate('w0', 180)
-    limb.move(Position.ABOVE, Orientation.RIGHTWARDS_0)
-    limb.move(Position.ABOVE, Orientation.UPWARDS_90, True)
+    # limb.move(Position.ABOVE, Orientation.RIGHTWARDS_0)
+    # limb.move(Position.ABOVE, Orientation.UPWARDS_90, True)
+    DELTA = -0.15
+    limb.move([Position.ABOVE[0], Position.ABOVE[1] + DELTA, Position.ABOVE[2]], Orientation.RIGHTWARDS_270)
 
 
 if __name__ == '__main__':
