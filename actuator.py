@@ -115,7 +115,8 @@ class Actuator():
         limb.close()
     	time.sleep(1)
     	limb.move([Position.X, Position.Y, 0.3], Orientation.DOWNWARDS)
-    	limb.move([Position.X, Position.Y, 0.3], Orientation.RIGHTWARDS_0)
+    	# limb.move([Position.X, Position.Y, 0.3], Orientation.RIGHTWARDS_0)
+    	limb._limb.move_to_joint_positions(Angle.LEFT_CLOSE)
 
 
     def drop(self):
@@ -136,31 +137,35 @@ class Actuator():
 
     def switch_l2r(self):
         DELTA = 0.15
+        self._left._limb.move_to_joint_positions(Angle.LEFT_FAR)
         self._left.move(Position.ABOVE, Orientation.RIGHTWARDS_0)
         self._left.rotate('w2', 90)
-        self._right.move([Position.ABOVE[0], Position.ABOVE[1] - DELTA, Position.ABOVE[2]], Orientation.LEFTWARDS_0)
+        self._right._limb.move_to_joint_positions(Angle.RIGHT_FAR)
         self._right.move([Position.ABOVE[0] + 0.01, Position.ABOVE[1] + 0.02, Position.ABOVE[2]], Orientation.LEFTWARDS_0)
         self._right.close()
         time.sleep(1)
         self._left.open()
         time.sleep(1)
         self._left.move([Position.ABOVE[0], Position.ABOVE[1] + DELTA, Position.ABOVE[2]], away_left[90])
-        self._holder.set_angle('w1', 0.000)
+        self._left._limb.move_to_joint_positions(Angle.LEFT_FAR_0)
+        # self._holder.set_angle('w1', 0.000)
         self._holder = self._right
 
 
     def switch_r2l(self):
         DELTA = -0.15
+        self._right._limb.move_to_joint_positions(Angle.RIGHT_FAR)
         self._right.move(Position.ABOVE, Orientation.LEFTWARDS_0)
         self._right.rotate('w2', 90)
-        self._left.move([Position.ABOVE[0], Position.ABOVE[1] - DELTA, Position.ABOVE[2]], Orientation.RIGHTWARDS_0)
+        self._left._limb.move_to_joint_positions(Angle.LEFT_FAR_2)
         self._left.move([Position.ABOVE[0], Position.ABOVE[1] - 0.02, Position.ABOVE[2]], Orientation.RIGHTWARDS_0)
         self._left.close()
         time.sleep(1)
         self._right.open()
         time.sleep(1)
         self._right.move([Position.ABOVE[0], Position.ABOVE[1] + DELTA, Position.ABOVE[2]], away_right[90])
-        self._holder.set_angle('w1', 0.000)
+        self._right._limb.move_to_joint_positions(Angle.RIGHT_FAR_0)
+        # self._holder.set_angle('w1', 0.000)
         self._holder = self._left
 
 
@@ -174,33 +179,52 @@ class Actuator():
             self.switch_r2l()
 
 
+    # def capture(self):
+    #     self._holder.move(Position.ABOVE, Orientation.UPWARDS_90, True) # paso intermedio
+    #     self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_90_2)
+    #     self._capturer.capture('F')
+    #     self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_270_2)
+    #     self._capturer.capture('B')
+    #     self._holder.move(Position.ABOVE, Orientation.UPWARDS_270) # paso intermedio
+    #     self._holder.move([Position.ABOVE[0], Position.ABOVE[1], Position.ABOVE[2] + 0.15], Orientation.UPWARDS_270) # paso intermedio
+    #     # self._holder.move((0.40, 0, 0.65), (math.pi, 3*math.pi/4, 0))
+    #     self._holder.move((0.40, 0, 0.70), (math.pi, 3*math.pi/4-0.25, 0))
+    #     self._capturer.capture('D')
+    #     self._holder.move(Position.ABOVE, Orientation.UPWARDS_0) # paso intermedio
+    #     self._holder.move([Position.X, Position.Y + 0.2, 0.3], Orientation.RIGHTWARDS_0) # TODO: hacer que funcione para el brazo derecho tambien
+    #     self.switch_l2r() # TODO: ver linea anterior
+    #     self._holder.move(Position.ABOVE, Orientation.UPWARDS_90, True) # paso intermedio
+    #     self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_90_2)
+    #     self._capturer.capture('R')
+    #     self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_270_2)
+    #     self._capturer.capture('L')
+    #     self._holder.move(Position.ABOVE, Orientation.UPWARDS_270) # paso intermedio
+    #     self._holder.move([Position.ABOVE[0], Position.ABOVE[1], Position.ABOVE[2] + 0.15], Orientation.UPWARDS_270) # paso intermedio
+    #     # self._holder.move((0.40, 0, 0.65), (0, -math.pi/4, -math.pi))
+    #     # self._holder.move((0.40, 0, 0.65), (math.pi, 3*math.pi/4, 0))
+    #     self._holder.move((0.40, 0, 0.70), (math.pi, 3*math.pi/4-0.25, 0))
+    #     self._capturer.capture('U')
+    #     self._holder.move(Position.ABOVE, Orientation.UPWARDS_0) # paso intermedio
+    #     self._holder.move([Position.X, Position.Y, 0.3], Orientation.LEFTWARDS_0) # TODO: hacer que funcione para el brazo derecho tambien
+    #
     def capture(self):
         self._holder.move(Position.ABOVE, Orientation.UPWARDS_90, True) # paso intermedio
-        self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_90_2)
+        self._holder._limb.move_to_joint_positions(Angle.F_CAM)
         self._capturer.capture('F')
-        self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_270_2)
+        self._holder._limb.move_to_joint_positions(Angle.B_CAM)
         self._capturer.capture('B')
-        self._holder.move(Position.ABOVE, Orientation.UPWARDS_270) # paso intermedio
-        self._holder.move([Position.ABOVE[0], Position.ABOVE[1], Position.ABOVE[2] + 0.15], Orientation.UPWARDS_270) # paso intermedio
-        # self._holder.move((0.40, 0, 0.65), (math.pi, 3*math.pi/4, 0))
-        self._holder.move((0.40, 0, 0.70), (math.pi, 3*math.pi/4-0.25, 0))
+        self._holder._limb.move_to_joint_positions(Angle.D_CAM)
         self._capturer.capture('D')
-        self._holder.move(Position.ABOVE, Orientation.UPWARDS_0) # paso intermedio
-        self._holder.move([Position.X, Position.Y + 0.2, 0.3], Orientation.RIGHTWARDS_0) # TODO: hacer que funcione para el brazo derecho tambien
+        self._holder._limb.move_to_joint_positions(Angle.LEFT_CLOSE)
         self.switch_l2r() # TODO: ver linea anterior
         self._holder.move(Position.ABOVE, Orientation.UPWARDS_90, True) # paso intermedio
-        self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_90_2)
+        self._holder._limb.move_to_joint_positions(Angle.R_CAM)
         self._capturer.capture('R')
-        self._holder.move(Position.HEAD_CAMERA, Orientation.UPWARDS_270_2)
+        self._holder._limb.move_to_joint_positions(Angle.L_CAM)
         self._capturer.capture('L')
-        self._holder.move(Position.ABOVE, Orientation.UPWARDS_270) # paso intermedio
-        self._holder.move([Position.ABOVE[0], Position.ABOVE[1], Position.ABOVE[2] + 0.15], Orientation.UPWARDS_270) # paso intermedio
-        # self._holder.move((0.40, 0, 0.65), (0, -math.pi/4, -math.pi))
-        # self._holder.move((0.40, 0, 0.65), (math.pi, 3*math.pi/4, 0))
-        self._holder.move((0.40, 0, 0.70), (math.pi, 3*math.pi/4-0.25, 0))
+        self._holder._limb.move_to_joint_positions(Angle.U_CAM)
         self._capturer.capture('U')
-        self._holder.move(Position.ABOVE, Orientation.UPWARDS_0) # paso intermedio
-        self._holder.move([Position.X, Position.Y, 0.3], Orientation.LEFTWARDS_0) # TODO: hacer que funcione para el brazo derecho tambien
+        self._holder._limb.move_to_joint_positions(Angle.RIGHT_FAR)
 
 
 
