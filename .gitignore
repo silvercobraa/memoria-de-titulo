@@ -1,3 +1,5 @@
 *.pyc
 __*
 *.npy
+solver/cache
+evidencia/*.mp4

@@ -70,7 +70,7 @@ for i in range(6):
     # mean = f.mean(axis=0)
     mean = feats[9*i + 4]
     # cov = np.cov(f, rowvar=False)
-    cov = np.array([[0.3*50, 0.0], [0.0, 5.0*50]])
+    cov = np.array([[0.3*30, 0.0], [0.0, 5.0*30]])
     # alphas[i] = float(len(f)) / len(feats)
     alphas[i] = 1 / 6.0
     means[i] = mean
@@ -119,7 +119,7 @@ ax = pl.subplot(111)
 
 for k in range(6):
     cov = gmm_sigma[k]
-    # cov = np.array([[0.3*50, 0.0], [0.0, 5.0*50]])
+    cov = covs[k]
     vals, vecs = eigsorted(cov)
     theta = np.degrees(np.arctan2(*vecs[:,0][::-1]))
     w, h = 2 * nstd * np.sqrt(vals)
