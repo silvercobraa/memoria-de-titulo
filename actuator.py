@@ -64,7 +64,7 @@ class Actuator():
     def D(self, degrees):
         """Rota la cara inferior del cubo en 'degrees' grados."""
         self._left._limb.move_to_joint_positions(Angle.D)
-        self._generic_move(degrees, self._left, Position.ABOVE, Orientation.RIGHTWARDS_0, -0.15, +0.0, -0.005, +0.0)
+        self._generic_move(degrees, self._left, Position.ABOVE, Orientation.RIGHTWARDS_0, -0.15, +0.005, -0.005, +0.0)
 
 
     def L(self, degrees):
