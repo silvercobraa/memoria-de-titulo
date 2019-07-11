@@ -83,7 +83,7 @@ class Classifier(object):
         covs = np.empty((6, feats.shape[1], feats.shape[1]))
         for i in range(6):
             mean = feats[9*i + 4]
-            cov = np.array([[0.3*50, 0.0], [0.0, 5.0*50]])
+            cov = np.array([[0.5*10, 0.0], [0.0, 2.5*10]])
             alphas[i] = 1 / 6.0
             means[i] = mean
             covs[i] = cov
@@ -110,7 +110,10 @@ class Classifier(object):
         nstd = 2
         ax = pl.subplot(111)
         for i, c in enumerate(self._ans):
-            pl.scatter(*feats[i], color=X[centroid_id[c]]/255.0, marker='o')
+            if i % 9 == 4:
+                pl.scatter(*feats[i], color=X[centroid_id[c]]/255.0, marker='x')
+            else:
+                pl.scatter(*feats[i], color=X[centroid_id[c]]/255.0, marker='o')
 
         for k in range(6):
             cov = self._gmm.sigma[k]
@@ -121,6 +124,16 @@ class Classifier(object):
                           width=w, height=h,
                           angle=theta, color=X[centroid_id[k]]/255.0, alpha=0.5)
             ell.set_facecolor(X[centroid_id[k]]/255.0)
+            ax.add_artist(ell)
+        for k in range(6):
+            cov = covs[k]
+            vals, vecs = eigsorted(cov)
+            theta = np.degrees(np.arctan2(*vecs[:,0][::-1]))
+            w, h = 2 * nstd * np.sqrt(vals)
+            ell = mpl.patches.Ellipse(xy=self._gmm.mu[k],
+                          width=w, height=h,
+                          angle=theta, color=X[centroid_id[k]]/255.0, alpha=0.5)
+            # ell.set_facecolor(X[centroid_id[k]]/255.0)
             ax.add_artist(ell)
         pl.show()
 
@@ -145,7 +158,7 @@ class Classifier(object):
 def main():
     reps = np.load('capturas/reps.npy')
     cls = Classifier()
-    # cls.fit(reps)
+    # cls.fit2(reps)
     cls.fit3(reps)
     state = cls.get_state()
     print(state)
