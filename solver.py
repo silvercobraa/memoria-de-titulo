@@ -1,7 +1,7 @@
 import solver.solver as Solver
 
 def main():
-    state = 'URDDULBBLUBBFRLFURLRFFFRFUDDLRFDRUDBLFDBLUFLLRDBDBUUBR'
+    state = 'BDDFUULUULLFFRRFRRDBBDFDDLDRDRBDBUUURLBRLBLLBLRUFBUFFF'
     face = 'URFDLB'
     print(state)
     for f in range(6):

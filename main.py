@@ -1,5 +1,6 @@
 import rospy
 import os
+import time
 from actuator import Limb, Actuator
 from geometry import Position, Orientation, Angle
 from color import ColorExtractor
@@ -17,12 +18,11 @@ def main():
     actuator.set_capturer(Capturer(DIR, 1))
     #
     actuator.calibrate()
-    # actuator._right._limb.move_to_joint_positions(Angle.RIGHT_FAR)
-    # actuator._left._limb.move_to_joint_positions(Angle.LEFT_FAR)
     actuator.pick_up('left')
     # actuator.switch_l2r()
     # actuator.switch_r2l()
-    # actuator.move('F3 R1 D2 L1 U1 D3 B2 R2 F2 U3 D1 R2')
+    # actuator.move('R2 L1 F1 U2 F2 R3 F3 B3 R3 L3 U3 D1')
+    # time.sleep(1)
     # return
     #
     actuator.capture()
@@ -32,9 +32,8 @@ def main():
     ext.show()
     ext.save('reps')
 
-
     cls = Classifier('URFDLB')
-    cls.fit(colors)
+    cls.fit3(colors)
     state = cls.get_state()
     print(state)
     moves = Solver.solve(state, 20, 2)
@@ -43,25 +42,7 @@ def main():
 
     actuator.move(moves)
     # LRULRLURL
-    # actuator._right._limb.move_to_joint_positions(Angle.L)
-    # actuator._right._limb.move_to_joint_positions(Angle.R)
-    # actuator._right._limb.move_to_joint_positions(Angle.U)
-    # actuator._right._limb.move_to_joint_positions(Angle.L)
-    # actuator._right._limb.move_to_joint_positions(Angle.R)
-    # actuator._right._limb.move_to_joint_positions(Angle.L)
-    # actuator._right._limb.move_to_joint_positions(Angle.U)
-    # actuator._right._limb.move_to_joint_positions(Angle.R)
-    # actuator._right._limb.move_to_joint_positions(Angle.L)
     # BDFBDBFDB
-    # actuator._left._limb.move_to_joint_positions(Angle.B)
-    # actuator._left._limb.move_to_joint_positions(Angle.D)
-    # actuator._left._limb.move_to_joint_positions(Angle.F)
-    # actuator._left._limb.move_to_joint_positions(Angle.B)
-    # actuator._left._limb.move_to_joint_positions(Angle.D)
-    # actuator._left._limb.move_to_joint_positions(Angle.B)
-    # actuator._left._limb.move_to_joint_positions(Angle.F)
-    # actuator._left._limb.move_to_joint_positions(Angle.D)
-    # actuator._left._limb.move_to_joint_positions(Angle.B)
 
     actuator.drop()
 

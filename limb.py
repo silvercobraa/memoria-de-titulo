@@ -137,8 +137,9 @@ def main():
     import rospy
     import time
     rospy.init_node('limb')
-    # limb = Limb('right', calibrate=True)
-    limb = Limb('left')
+    limb = Limb('right')
+    # limb = Limb('left')
+    print(limb._limb.joint_angles())
     # descomentar para testear funciones
     # limb.close()
     # limb.open()
@@ -149,8 +150,8 @@ def main():
     # limb.rotate('w0', 180)
     # limb.move(Position.ABOVE, Orientation.RIGHTWARDS_0)
     # limb.move(Position.ABOVE, Orientation.UPWARDS_90, True)
-    DELTA = -0.15
-    limb.move([Position.ABOVE[0], Position.ABOVE[1] + DELTA, Position.ABOVE[2]], Orientation.RIGHTWARDS_270)
+    # DELTA = -0.15
+    # limb.move([Position.ABOVE[0], Position.ABOVE[1] + DELTA, Position.ABOVE[2]], Orientation.RIGHTWARDS_270)
 
 
 if __name__ == '__main__':

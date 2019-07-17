@@ -206,12 +206,29 @@ class Angle:
     'right_e0': 1.95505851415996,
     'right_e1': 1.031985575049912}
 
+    THROW_1 = {'right_s0': 0.5288398766234964,
+    'right_s1': -0.018791264651596317,
+    'right_w0': 0.11504855909140603,
+    'right_w1': 2.0946507658575326,
+    'right_w2': -0.09740778003072377,
+    'right_e0': 3.0541557486798587,
+    'right_e1': 1.8791264651596318}
+
+    THROW_2 = {'right_s0': 0.565271920335775,
+    'right_s1': 0.05177185159113271,
+    'right_w0': 0.14611167004608566,
+    'right_w1': -0.15301458359157002,
+    'right_w2': -0.1004757416064946,
+    'right_e0': 2.9889615651947286,
+    'right_e1': 0.3006602344255411}
+
 
 
 
 
 class Orientation():
-    """Constantes para las orientaciones. Cada orientación es una tupla de 3 elementos, donde cada una corresponde a ángulos en radianes en los ejes (x, y, z) respectivamente. La orientación (0,0,0) corresponde a el gripper apuntando hacia arriba, en forma de 'U' visto desde el frente."""
+    """Constantes para las orientaciones. Cada orientación es una tupla de 3 elementos,
+    donde cada una corresponde a ángulos en radianes en los ejes (x, y, z) respectivamente. La orientación (0,0,0) corresponde a el gripper apuntando hacia arriba, en forma de 'U' visto desde el frente."""
 
     def __init__(self):
         raise Error('Clase no instanciable.')
