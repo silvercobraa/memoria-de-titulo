@@ -1,0 +1,429 @@
+\chapter{Sistema/Modelo/Método}
+
+\section{Modelo}
+El cubo de Rubik $3 \times 3 \times 3$ está compuesto de 3 tipos de piezas distintas:
+\begin{itemize}
+	\item \textbf{Centros}: piezas con un sólo color, que sólo rotan sobre su eje, 6 en total.
+	\item \textbf{Aristas}: piezas con 2 colores, 12 en total.
+	\item \textbf{Esquinas}: piezas con 3 colores, 8 en total.
+\end{itemize}
+La cantidad total de stickers (también llamados \textit{facelets}) es entonces $1\times 6 + 2\times 12 + 3\times 8 = 54$.
+\begin{figure}[h!]
+	\centering
+	\subcaptionbox{Centros}{%
+		\includegraphics[width=0.30\textwidth]{figures/centers}
+	}%
+	\hfill
+	\subcaptionbox{Aristas}{%
+		\includegraphics[width=0.30\textwidth]{figures/edges}
+	}%
+	\hfill
+	\subcaptionbox{Esquinas}{%
+		\includegraphics[width=0.30\textwidth]{figures/corners}
+	}%
+	\caption{Los 3 tipos de piezas del cubo de Rubik.}
+\end{figure}
+
+\subsection{Convenciones}
+Existe una notación estándar para describir los ejes, las caras y los facelets del cubo.
+Los 3 ejes de coordenadas del sistema de referencia utilizado se definen de la siguiente manera:
+\begin{itemize}
+	\item $x$: eje que atraviesa las caras derecha e izquierda del cubo, con respecto al observador.
+	\item $y$: eje que atraviesa las caras superior e inferior del cubo.
+	\item $z$: eje que atraviesa las caras frontal y trasera del cubo.
+\end{itemize}
+Así, cada una de las piezas esquina del cubo tiene 1 color por eje, mientras que las aristas tienen un color en sólo 2 ejes y los centros en solamente 1.
+
+Las caras del cubo se identifican mediante la letra inicial de la palabra en inglés que identifica su posición con respecto al observador.
+Éstas letras son \textit{U} (up), \textit{R} (right), \textit{F} (front), \textit{D} (down), \textit{L} (left) y \textit{B} (bottom).
+
+\begin{figure}[h!]
+	\centering
+	\subcaptionbox{Ejes}{%
+		\includegraphics[width=0.45\textwidth]{figures/axes}
+	}%
+	\hfill
+	\subcaptionbox{Caras}{%
+		\includegraphics[width=0.45\textwidth]{figures/faces}
+	}%
+	\caption{Notación de ejes y caras del cubo.}
+\end{figure}
+De manera similar, los movimientos posibles de cada cara del cubo también quedan descritos por la letra correspondiente de la cara rotada.
+En este punto, se decidió adoptar una notación ligeramente diferente de la estándar.
+\textit{XN} indica que la cara \textit{X} rota en $90 \times N$ grados, donde los grados se miden utilizando la regla de la mano derecha sobre un vector normal a la superficie de la cara a rotar.
+Entonces, por ejemplo \textit{R1} significa rotar la cara frontal en 90 (o -270) grados, \textit{R2} es rotar la cara frontal en 180 (o -180) grados y \textit{R3} rotar la cara frontal en 270 (o -90) grados.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.3]{figures/R1}
+	\caption{Flecha azul: movimiento \textit{R1} ($90$ grados sentido horario). Flecha amarilla: movimiento \textit{R3} (90 grados sentido antihorario).}
+	\label{moveR}
+\end{figure}
+
+Estos ángulos bastan para describir todos los movimientos posibles, ya que 360 equivale a una operación nula y cualquier otro ángulo dejaría el cubo en un estado inválido (bloqueando los movimientos de alguna de las demás caras).
+
+Las piezas se identifican con las letras de las caras a las que pertenecen. Por lo tanto los centros son \textit{U}, \textit{R}, \textit{F}, \textit{D}, \textit{L} y \textit{B}, las aristas son \textit{UF}, \textit{UR}, \textit{UL}, \textit{UB}, \textit{DF}, \textit{DR}, \textit{DL}, \textit{DB}, \textit{FR}, \textit{FL}, \textit{BR} y \textit{BL} y las esquinas son \textit{URF}, \textit{URB}, \textit{ULF}, \textit{ULB}, \textit{DRF}, \textit{DRB}, \textit{DLF}, y \textit{DLB}.
+
+El estado final del cubo se representó como un arreglo de 54 elementos, donde cada elemento representa un facelet. El orden de los facelets se muestra en la figura~\ref{faceletorder}.
+La asignación de colores a cada cara es totalmente arbitraria y no tiene importancia para el sistema desarrollado. Lo importante es que una vez se decida una asignación se mantenga hasta el final.
+
+\tikzset{boxu/.style={draw, minimum width=1cm, minimum height=1cm, fill=red, text=white}}
+\tikzset{boxr/.style={draw, minimum width=1cm, minimum height=1cm, fill=blue, text=white}}
+\tikzset{boxf/.style={draw, minimum width=1cm, minimum height=1cm, fill=yellow}}
+\tikzset{boxd/.style={draw, minimum width=1cm, minimum height=1cm, fill=orange, text=white}}
+\tikzset{boxl/.style={draw, minimum width=1cm, minimum height=1cm, fill=red, text=white}}
+\tikzset{boxl/.style={draw, minimum width=1cm, minimum height=1cm, fill=green}}
+\tikzset{boxb/.style={draw, minimum width=1cm, minimum height=1cm, fill=white}}
+\tikzset{boxx/.style={draw, minimum width=1cm, minimum height=1cm, fill=red, text=white}}
+\tikzset{boxy/.style={draw, minimum width=1cm, minimum height=1cm, fill=green}}
+\tikzset{boxz/.style={draw, minimum width=1cm, minimum height=1cm, fill=blue, text=white}}
+\tikzset{boxc/.style={draw, minimum width=1cm, minimum height=1cm}}
+
+\begin{figure}[h!]
+	\centering
+	\begin{tikzpicture}[scale=0.8,every node/.style={scale=0.8}]
+		\foreach \x in {0,...,2} {
+			\foreach \y in {0,...,2} {
+			 	\pgfmathsetmacro\result{int(3*\x+\y)}
+				\node[boxu] at (3+\y, 8-\x) {$\result_U$};
+			}
+		}
+		\foreach \x in {0,...,2} {
+			\foreach \y in {0,...,2} {
+				\pgfmathsetmacro\result{int(3*\x+\y + 36)}
+				\node[boxl] at (\y, 5-\x) {$\result_L$};
+			}
+		}
+		\foreach \x in {0,...,2} {
+			\foreach \y in {0,...,2} {
+				\pgfmathsetmacro\result{int(3*\x+\y + 18)}
+				\node[boxf] at (\y+3, 5-\x) {$\result_F$};
+			}
+		}
+		\foreach \x in {0,...,2} {
+			\foreach \y in {0,...,2} {
+				\pgfmathsetmacro\result{int(3*\x+\y + 9)}
+				\node[boxr] at (\y+6, 5-\x) {$\result_R$};
+			}
+		}
+		\foreach \x in {0,...,2} {
+			\foreach \y in {0,...,2} {
+				\pgfmathsetmacro\result{int(3*\x+\y + 45)}
+				\node[boxb] at (\y+9, 5-\x) {$\result_B$};
+			}
+		}
+		\foreach \x in {0,...,2} {
+			\foreach \y in {0,...,2} {
+				\pgfmathsetmacro\result{int(3*\x+\y + 27)}
+				\node[boxd] at (\y+3, 2-\x) {$\result_D$};
+			}
+		}
+	\end{tikzpicture}
+	\caption{Orden de los facelets. El valor representa su posición el arreglo y el subíndice la cara a la que pertenece.}
+	\label{faceletorder}
+\end{figure}
+
+\section{Sistema}
+El sistema desarrollado consiste de varios módulos que pueden agruparse según su función en las siguientes categorías:
+\begin{description}
+	\item[Manipulación:] Módulos que se encargan de mover las articulaciones y grippers del robot.
+	\item[Visión:] Módulos encargados de la detección del estado del cubo.
+	\item[Resolución:] Modulo encargado de buscar una secuencia de rotaciones de caras que lleven al cubo a su estado resuelto.
+\end{description}
+
+\subsection{Manipulación}
+Consiste de los módulos que se encargan de la parte hardware del sistema, es decir los movimientos de las articulaciones del robot y la apertura, cierre y calibración de los grippers. Para mover los brazos del robot se usa una combinación de cinemáticas inversas y manipulación directa de ángulos de sus articulaciones.
+
+Las tareas requeridas incluyen:
+\begin{enumerate}
+	\item Recoger el cubo.
+	\item Acercar el cubo a la cámara para detectar su estado.
+	\item Realizar rotaciones de las caras.
+	\item Mover el cubo de un brazo a otro cuando sea necesario.
+\end{enumerate}
+
+El robot Baxter posee varios tipos de grippers, mostrados en la figura~\ref{grippers}. Por el tamaño del cubo, se utilizó el gripper largo y angosto, para tener un agarre lo suficientemente profundo y apretado.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.25\textwidth]{figures/placeholder}
+	\caption{Grippers disponibles.}
+	\label{grippers}
+\end{figure}
+
+Los agarres son siempre de la forma como se muestra en la figura~\ref{agarres}. Esto impide la rotación de tres caras: las 2 que tocan los grippers y la cara que está más cercana al brazo del robot. La manera en que se realizan las rotaciones es que un brazo sostiene el cubo en una orientación cómoda para que el otro brazo se acerque y agarre una cara no bloqueada de manera perpendicular, y la gire en 90 180 o 270 grados según corresponda. Esto permite rotar libremente 3 caras. Para rotar las otras 3, se cambia el cubo al otro brazo, para que éste lo sostenga en una forma que libere las caras previamente bloqueadas.
+
+\begin{figure}[h!]
+	\centering
+	\subcaptionbox{Agarre poco profundo, inestable.}{%
+		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	}%
+	\hfill
+	\subcaptionbox{Agarre utilizado. 3 caras libres para rotar. Estable}{%
+		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	}%
+	\hfill
+	\subcaptionbox{Agarre profundo, cara lejana bloqueada.}{%
+		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	}%
+	\hfill
+	\subcaptionbox{Agarre impreciso, cara lateral bloqueada. Inestable.}{%
+		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	}%
+	\caption{Diferentes agarres.}
+	\label{agarre}
+\end{figure}
+
+\subsubsection{Recogida}
+La ejecución comienza con el cubo en la mesa, en una posición marcada cuyas coordenadas son conocidas. Los ejes se definieron con respecto al observador mirando de frente al robot, y no con respecto al punto de vista del robot. Utilizando el servicio de cinemáticas inversas de Baxter, se lleva el brazo izquierdo a una posición cercana al cubo, apuntando hacia abajo, para luego recogerlo, bloqueando las caras \textit{L}, \textit{R} y \textit{U}.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.1]{figures/pick}
+	\caption{Posición y orientación al recoger el cubo. Los grippers tocan las caras \textit{L} y \textit{R}.}
+	\label{pick}
+\end{figure}
+
+\subsubsection{Acercamiento a cámara}
+El servicio de cinemáticas inversas si bien garantiza la posición y orientación final solicitada para un gripper, no especifica nada sobre la trayectoria a realizar. Esto causa varios problemas, entre ellos los más graves son: la imposibilidad de llevar a cabo un movimiento debido a la complejidad de la trayectoria, a pesar de que sea una configuración válida; y la ejecución de ciertas trayectorias que causan que el robot se golpee a sí mismo. Debido a la naturaleza misma de IK, no es posible predecir cuándo suceden estos errores. Así que en este paso se mueve el brazo utilizando directamente los ángulos de cada una de sus articulaciones, para guiarlo a una configuración favorable, seguido inmediatamente por cinemáticas inversas para obtener la posición y orientación final deseada. Las 6 configuraciones necesarias para apuntar cada cara a la cámara se muestran en la figuras \ref{caml} y \ref{camr}.
+
+\begin{figure}[h!]
+	\centering
+	\subcaptionbox{Capturando la cara \textit{F}}{%
+		\includegraphics[width=0.30\textwidth]{figures/small_capture_F}
+	}%
+	\hfill
+	\subcaptionbox{Capturando la cara \textit{D}}{%
+		\includegraphics[width=0.30\textwidth]{figures/small_capture_D}
+	}%
+	\hfill
+	\subcaptionbox{Capturando la cara \textit{B}}{%
+		\includegraphics[width=0.30\textwidth]{figures/small_capture_B}
+	}%
+	\caption{Configuraciones del brazo izquierdo para acercamiento a la cámara.}
+	\label{caml}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\subcaptionbox{Capturando la cara \textit{L}}{%
+		\includegraphics[width=0.30\textwidth]{figures/small_capture_L}
+	}%
+	\hfill
+	\subcaptionbox{Capturando la cara \textit{U}}{%
+		\includegraphics[width=0.30\textwidth]{figures/small_capture_U}
+	}%
+	\hfill
+	\subcaptionbox{Capturando la cara \textit{R}}{%
+		\includegraphics[width=0.30\textwidth]{figures/small_capture_R}
+	}%
+	\caption{Configuraciones del brazo derecho para acercamiento a la cámara.}
+	\label{camr}
+\end{figure}
+
+\subsubsection{Rotaciones de caras}
+Esta parte es muy similar a la anterior, en el sentido de que usa la misma idea de ángulos directos seguido por IK. Una diferencia es en las coordenadas utilizadas, para lo cual se escogió una posición en la que el robot pudiese llegar en las 3 orientaciones de cada brazo. Estas configuraciones se muestran en las figuras \ref{movel} y \ref{mover}.
+
+\begin{figure}[h!]
+	\centering
+	\subcaptionbox{Rotación cara \textit{F}}{%
+		\includegraphics[width=0.30\textwidth]{figures/small_move_F}
+	}%
+	\hfill
+	\subcaptionbox{Rotación cara \textit{D}}{%
+		\includegraphics[width=0.30\textwidth]{figures/small_move_D}
+	}%
+	\hfill
+	\subcaptionbox{Rotación cara \textit{B}}{%
+		\includegraphics[width=0.30\textwidth]{figures/small_move_B}
+	}%
+	\caption{Configuraciones del brazo izquierdo para rotaciones.}
+	\label{movel}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\subcaptionbox{Rotación cara \textit{L}}{%
+		\includegraphics[width=0.30\textwidth]{figures/small_move_L}
+	}%
+	\hfill
+	\subcaptionbox{Rotación cara \textit{U}}{%
+		\includegraphics[width=0.30\textwidth]{figures/small_move_U}
+	}%
+	\hfill
+	\subcaptionbox{Rotación cara \textit{R}}{%
+		\includegraphics[width=0.30\textwidth]{figures/small_move_R}
+	}%
+	\caption{Configuraciones del brazo derecho para rotaciones.}
+	\label{mover}
+\end{figure}
+Otra diferencia es que en este paso se agregan posiciones intermedias al acercar el brazo libre a la posición del cubo, para que el servicio de cinemáticas inversas prefiera movimientos paralelos y no cause golpes no deseados. Ver figura ....
+
+Para efectuar una rotación de alguna cara, la secuencia de pasos es:
+\begin{enumerate}
+	\item Brazo que sostiene el cubo se mueve a una posición definida en función de la cara que será rotada (ángulos directos).
+	\item Brazo libre se mueve a una posición cercana a la cara a rotar del cubo, pero no lo suficiente para agarralo (IK).
+	\item Brazo libre se mueve a una posición aún mas cercana a la cara a rotar del cubo, lo suficiente para agarralo (IK, movimiento paralelo).
+	\item Gripper de brazo libre se cierra.
+	\item brazo libre rota articulación de su muñeca en el ángulo deseado (águlos directos).
+	\item Gripper de brazo libre se abre.
+	\item brazo libre se aleja del brazo que sostiene el cubo para permitir libertad en los movimientos siguientes (IK, seguido de angulos directos).
+\end{enumerate}
+
+\subsubsection{Cambio de mano}
+Este paso utiliza ángulos directos y cinemáticas inversas. Las posiciones para realizar este paso son las mismas de los brazos ocupados para los movimientos \textit{U} y \textit{R} respectivamente, con la diferencia de que el brazo izquierdo tiene un desplazamiento de 90 grados. Así, cuando se cambia el brazo de la mano izquierda a la derecha, se liberan las caras \textit{L}, \textit{R} y \textit{U}, pero se bloquean las caras \textit{F}, \textit{B} y \textit{L}, y viceversa.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.1]{figures/switch}
+	\caption{Cambio de mano}
+	\label{switch}
+\end{figure}
+
+Al tener 3 caras libres por brazo, puede que se necesiten pocos cambios de mano para realizar una secuencia de giros. Sin embargo, en el peor caso siempre se tendrá tantos cambios de mano como rotaciones se vaya a realizar.
+
+\subsection{Visión}
+Estos módulos se encargan de obtener el estado del cubo. Es la parte más compleja del sistema.
+\subsubsection{Preparaciones previas}
+\subsubsection{Robot}
+Si bien Baxter posee cámaras en sus 2 manos y en su cabeza, la calidad de la imagen que obtiene usándolas deja bastante que desear. Se decidió entonces utilizar una cámara externa, la cual se ubicó encima de la cámara de la cabeza del robot. Ésta fue conectada directamente a la máquina desde donde se ejecuta el programa principal, pues a pesar de que el robot tiene interfaces USB (que permite el uso de joysticks entre otras cosas) no se encontró documentación ni códigos de ejemplo respecto del uso de cámaras externas.
+\begin{figure}[h!]
+	\centering
+	\subcaptionbox{Cámara brazo izquierdo.}{%
+		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	}%
+	\hfill
+	\subcaptionbox{Cámara brazo derecho.}{%
+		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	}%
+	\hfill
+	\subcaptionbox{Cámara de la cabeza.}{%
+		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	}%
+	\hfill
+	\subcaptionbox{Cámara externa.}{%
+	\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	}%
+	\caption{Calidad de imagen de las distintas cámaras disponibles.}
+	\label{camaras}
+\end{figure}
+
+\subsubsection{Cubo}
+El cubo fue cubierto con goma eva. Esto cumple varios objetivos. En primer lugar, es un material que refleja la luz más difusamente que el plástico de los stickers del cubo, por lo que los colores capturados por la cámara tienden a ser más uniformes, como se aprecia en la figura~\ref{luz}.
+
+\begin{figure}[h!]
+	\centering
+	\subcaptionbox{Luz sobre el plástico. Algunos colores son erróneamente detectados como blanco.}{%
+	\includegraphics[width=0.40\textwidth]{figures/placeholder}
+	}%
+	\subcaptionbox{Luz sobre la goma eva. }{%
+	\includegraphics[width=0.40\textwidth]{figures/placeholder}
+	}%
+	\caption{Difusión de luz en ambos materiales.}
+	\label{luz}
+\end{figure}
+
+En segundo lugar, la goma eva aumenta el roce entre los grippers y el cubo, ya que el plástico original tendía a deslizarse con mayor facilidad. Por último pero no menos importante, provee algo de protección cuando el cubo cae al suelo, algo que sucedió no pocas veces.
+
+Sobre cada facelet del cubo de dibujó un círculo para marcar las regiones de interés. Esto ayuda mucho a la detección.
+
+Los colores de goma eva utilizados fueron rojo, azul, verde, amarillo, rosado y marrón, correspondientes a los mismo colores originales con excepción de los 2 últimos (naranja y blanco, originalmente).
+
+\begin{figure}[h!]
+	\centering
+	\subcaptionbox{Cubo original, caras \textit{U} \textit{R} y \textit{F}.}{%
+	\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	}%
+	\subcaptionbox{Cubo original, caras \textit{D} \textit{L} y \textit{B}.}{%
+	\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	}%
+	\subcaptionbox{Cubo cubierto, caras \textit{U} \textit{R} y \textit{F}.}{%
+	\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	}%
+	\subcaptionbox{Cubo cubierto, caras \textit{D} \textit{L} y \textit{B}.}{%
+	\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	}%
+	\caption{Colores.}
+	\label{colorescubo}
+\end{figure}
+
+\subsubsection{Círculos de Hough}
+Una vez que el manipulador acerca el cubo a la cámara, se capturan fotos de cada cara. Sobre cada una de estas 6 imágenes, se aplica el algoritmo de Hough para detección de círculos, provisto por la biblioteca de OpenCV. El algoritmo itera hasta que encuentra exactamente 9 círculos en cada imagen, entregando sus centros y radios respectivos.
+
+\begin{figure}[h!]
+	\centering
+	\subcaptionbox{Detección correcta.}{%
+		\includegraphics[width=0.30\textwidth]{figures/placeholder}
+	}%
+	\subcaptionbox{Detección incorrecta, faltan círculos.}{%
+		\includegraphics[width=0.30\textwidth]{figures/placeholder}
+	}%
+	\subcaptionbox{Detección incorrecta, sobran círculos.}{%
+		\includegraphics[width=0.30\textwidth]{figures/placeholder}
+	}%
+	\caption{Identificación de círculos.}
+	\label{circulos}
+\end{figure}
+Este algoritmo funciona asi... TODO
+Los parámetros usados se obtuvieron mediante ensayo y error, y corresponden a TODO.
+
+\subsubsection{Colores representantes}
+Una vez se tienen los 54 círculos, se procede a extraer un color representativo de la región encerrada por cada uno. Se decidió usar la mediana RGB, pues en el caso de una detección imperfecta de un círculo no se quiere que el borde del círculo afecte al color representante. Para mayor comodidad en la iteración, se utilizó como región un cuadrado inscrito en un círculo en lugar del círculo completo. Este paso tiene como resultado un vector 54 colores RGB.
+
+\subsubsection{Clasificación}
+Para identificar cuales facelets son del mismo color, independientemente de cual sea éste, se utilizó un modelo no supervisado para clasificarlos. El algoritmo utilizado fue el de mezcla de gaussianas (Gaussian Mixture Model, o \textit{GMM}), con 6 componentes. Las características usadas fueron las componentes matiz y saturación de la conversión a HSV de cada uno de los colores RGB representantes de cada facelet.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/rgb_3d}
+	\caption{Colores representantes en espacio RGB.}
+	\label{rgb3d}
+\end{figure}
+
+
+Empíricamente se observó que la distribución RGB de los colores son de la misma cara se alinean en rectas. Después de fracasar con varios modelos (KMeans, KMeans despúes de PCA, KMeans en HSV) se decidió optar por un modelo de mezcla de gaussianas en HSV, pues los colores, con excepción del marrón tienen componentes de matiz muy similares, variando principalmente en su saturación o brillo.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/rgb_pca}
+	\caption{Colores representantes, luego de aplicar PCA con 2 componentes. Clases no trivialmente separables.}
+	\label{rgb3d}
+\end{figure}
+
+Aprovechando el hecho de que las piezas centro del cubo no se mueven, se puede saber con certeza de que esos colores son todos distintos, no así las aristas y esquinas del cubo que pueden moverse libremente a cualquier otra ubicación. Los colores de los centros se utilizaron entonces como las medias iniciales de las gaussianas. Además, se asignaron las probabilidades a priori en 1/6 a cada gaussiana, pues todas las caras tienen la misma cantidad de facelets. Las covarianzas iniciales de cada gaussiana se tomaron con mayor varianza en el eje de saturación que en el de matiz. Esto es simplemente conocimiento previo de la distribución de los datos luego de un montón de intentos.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{figures/gmm}
+	\caption{Colores representantes, en HSV. Eje horizontal es matiz, eje vertical es saturación. Los puntos marcados con cruces indican los representantes de los centros, y por ende las medias iniciales de las gaussianas. Las elipses grandes son las covarianzas finales, a 2 desviaciones estándar las elipses pequeñnas son las covarianzas iniciales. Esta clasificación es correcta.}
+	\label{gmmgood}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{figures/gmm_bad}
+	\caption{El mismo caso de la figura~\ref{gmmgood}. Cuando las covarianzas crecen por igual en ambos ejes, ocurren más errores de clasificación, al igual que con KMeans. En particular, puntos rojos fueron incorrectamente clasificados como puntos rosados.}
+	\label{gmmbad}
+\end{figure}
+
+Cuando GMM era incializado con KMeans, como lo hace por ejemplo el modelo GMM de la biblioteca de Python scikit-learn, se tiende a confundir los colores rojo y rosado, ya que sus matices suelen están más cerca que la distancia en saturación más grande entre 2 rojos o 2 rosados.
+
+Al finalizar este paso, si es que no hubo algún error de clasificación, se tiene un vector de 54 caracteres en el orden dado por la figura\ref{faceletorder}. Así, el caracter \textit{X} en la posición $i$ indica que el facelet $i$ es del mismo color que el centro de la cara \textit{X}. Por ejemplo, para los representantes de las figuras ..., el estado resultante es el string \textit{LLLFUBRUBRRFRRUDBBFFUDFUDRRLFFBDDBRRBLUDLFDLFUUUBBLDDL}.
+
+
+\subsection{Resolución}
+Para la fase de resolución se utilizó el algoritmo de 2 fases de Kociemba. Se adaptó la implementación de [referencia] a las necesidades del sistema desarrollado, además de portarlo al lenguaje Python 2 para integrarlo facilmente a los demás módulos.
+
+Este módulo recibe un string con el estado o permutación del cubo y entrega una secuencia de giros en el formato descrito en la sección [referencia]. Por ejemplo, para el mismo string mostrado en la sección anterior (\textit{LLLFUBRUBRRFRRUDBBFFUDFUDRRLFFBDDBRRBLUDLFDLFUUUBBLDDL}), la secuencia de giros que lleva al cubo a su estado resuelto es \textit{B1 L1 D1 R1}. Obsérvese que para que el robot realice dicha secuencia de acciones, si comienza con el cubo en su brazo izquierdo podrá realizar la rotación \textit{B1} inmediatamente. Sin embargo, como el gripper izquierdo bloquea las caras \textit{L} y \textit{R} y \textit{U}, se deberá realizar un cambio de mano antes de realizar el giro \textit{L1}. Lo mismo sucederá cuando posteriormente se quiera efectuar \textit{D1} con el cubo en el brazo derecho y \textit{R1} con el cubo en el brazo izquierdo.
+
+
+\subsection{Orden de ejecución final}
+El orden de ejecución final es el siguiente:
+\begin{enumerate}
+	\item Robot recoge el cubo de Rubik con su brazo izquierdo. La posición donde queden ubicados los grippers corresponderán a las caras \textit{R} y \textit{L}.
+	\item Robot mueve brazo izquierdo de manera de apuntar las caras \textit{F}, \textit{B} y \textit{D} (en ese orden) directamente hacia la cámara ubicada en su cabeza. Cada cara es fotografiada una vez y se guarda la matriz correspondiente a la imagen RGB y los 9 círculos detectados en cada cara.
+	\item Robot entrega el cubo de su mano izquierda a su mano derecha.
+	\item Robot mueve brazo derecho de manera de apuntar las caras \textit{R}, \textit{L} y \textit{U} (en ese orden) directamente hacia la cámara ubicada en su cabeza. Cada cara es fotografiada una vez y se guarda la matriz correspondiente a la imagen RGB y los 9 círculos detectados en cada cara.
+	\item Se extrae el color representativo de cada uno de los 54 círculos, dando a lugar a un arreglo de 54 colores RGB.
+	\item Se agrupan los colores del paso anterior para obtener el estado del cubo, como una permutación.
+	\item Se toma la permutación obtenida y se obtiene una secuencia de rotaciones para resolver el cubo.
+	\item Se realizan las rotaciones moviendo los brazos del robot, cambiando de mano cuando sea necesario.
+\end{enumerate}

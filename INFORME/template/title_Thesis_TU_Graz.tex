@@ -1,0 +1,70 @@
+\begin{titlepage}
+
+{\sffamily
+
+\begin{center}
+
+\includegraphics[width=30mm]{figures/escudo.png}
+
+\vfill\vfill\vfill
+\vfill\vfill\vfill
+
+{\LARGE\bfseries\mytitle}
+
+\vfill\vfill\vfill
+
+{\bfseries\myauthor} \\
+\myinstitute \\
+\myuniversity
+\vfill\vfill\vfill
+\vfill\vfill\vfill
+
+{\bfseries Profesor Guía: \mysupervisor} \\
+{\bfseries Comisión: \myevaluator}
+
+\today
+
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+
+\end{center}
+}%% end sffamily
+\end{titlepage}
+
+%% if myaddcolophon is set to "true", colophon is added:
+\ifthenelse{\boolean{myaddcolophon}}{
+  % \newpage
+  % \thispagestyle{empty}  %% no page header or footer
+
+  ~
+  \vfill
+  \mycolophon
+}{}
+% \newpage
+
+%% end of title page
+%%% Local Variables:
+%%% mode: latex
+%%% mode: auto-fill
+%%% mode: flyspell
+%%% eval: (ispell-change-dictionary "en_US")
+%%% TeX-master: "../main"
+%%% End:
