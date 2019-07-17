@@ -37,11 +37,11 @@ Una parte importante de los errores se dieron entre las caras U y D, que en las 
 \section{Manipulación}
 Para esta clase de pruebas se utilizaron los mismos desarmes que en las pruebas de visión, pero con el desarme $i$ truncado a $i$ rotaciones. De esta manera, se probó una secuencia por cada uno de los largos de secuencias posibles, desde el mínimo (1) hasta el máximo (20). Se midió en cuál giro el robot es incapaz de proseguir. Los resultados se ven en la tabla \ref{resultadogiros}.
 
-\begin{table}
+\begin{table}[h!]
 	\centering
 	\begin{tabular}{|r|r|l|}
 		\hline
-		Largo secuencia & Cambios de mano requeridos & resultado \\ \hline \hline
+		Largo & Cambios & Resultado \\ \hline \hline
 		 1 & 1 & Ejecución completada exitosamente \\ \hline
 		 2 & 0 & Ejecución completada exitosamente \\ \hline
 		 3 & 1 & Ejecución falla en giro 3 \\ \hline
@@ -63,7 +63,7 @@ Para esta clase de pruebas se utilizaron los mismos desarmes que en las pruebas 
 		19 & 0 &  \\ \hline
 		20 & 0 &  \\ \hline
 	\end{tabular}
-	\caption{Resultados experimentos de manipulación.}
+	\caption{Resultados experimentos de manipulación. La columna ``largo'' es el largo de la secuencia y la columna ``cambios'' es la cantidad de cambios de mano que debe realizar el robot para ejecutarla.}
 	\label{resultadogiros}
 \end{table}
 

@@ -97,6 +97,7 @@
 \input{template/preamble}%% DO NOT REMOVE THIS LINE!
 \usepackage{subcaption}
 \usepackage{amsmath}
+\usepackage{lipsum}
 \setboolean{myaddcolophon}{false}  %% "true" or "false"
 %% If set to "true": a colophon (with notes about this document
 %% template, LaTeX, ...) is added after the title page.
@@ -225,29 +226,16 @@
 \input{chapters/methods}
 \input{chapters/experiments}
 \input{chapters/conclusions}
+\input{references}
 % \input{example-short-chapter}   %% remove this line to get rid of the example chapter
 % \input{example-style-chapter}   %% remove this line to get rid of the style chapter
 
-\appendix                       %% closes main document, appendix follows until end; only available in book-classes
-\addpart*{Apéndice}             %% adding Appendix to tableofcontents
+% \appendix                       %% closes main document, appendix follows until end; only available in book-classes
+% \addpart*{Apéndice}             %% adding Appendix to tableofcontents
 \input{chapters/appendix}
 
 \printbibliography              %% remove, if using BibTeX instead of biblatex
 % \include{further_ressources}  %% this is a suggestion: you have to create this file on demand
 
 
-
-
-
-
-%%%% end{document}
 \end{document}
-%% vim:foldmethod=expr
-%% vim:fde=getline(v\:lnum)=~'^%%%%\ .\\+'?'>1'\:'='
-%%% Local Variables:
-%%% mode: latex
-%%% mode: auto-fill
-%%% mode: flyspell
-%%% eval: (ispell-change-dictionary "en_US")
-%%% TeX-master: "main"
-%%% End:
