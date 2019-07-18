@@ -1,13 +1,26 @@
 \chapter{Discusión Bibliográfica}
 
-Citas y más citas...
+\section*{Rubik}
+Un cubo de Rubik válidamente permutado tiene una solución dada por una secuencia de rotaciones de caras, que al aplicarlas en orden al cubo lo llevan a su estado resuelto. Usualmente, se utilizan 2 métricas para contar la cantidad de rotaciones: quarter-turn metric (``QTM'') y half-turn (``HTM'') metric [CITA]. La primera, considera solamente rotaciones de 90 grados, ya sea en sentido horario o antihorario como 1 acción, mientras que la segunda métrica considera giros de 180 grados como 1 acción en lugar de 2.
 
-\lipsum[1]
+A lo largo de los años, se ha ido reduciendo la cota superior del largo máximo de una solución para cualquier configuración del cubo A este valor se le conoce el número de Dios, en alusión a el algoritmo de Dios, un algoritmo hipotético capaz de resolver cualquier cubo de Rubik en la menor cantidad de movimientos.
 
-\lipsum[2]
+En 1981, Thistlethwaite[CITA] demuestra que 52 movimientos bastan para resolver cualquier cubo. Posteriormente, Kloosterman[CITA] reduce esta cota a 42 en 1990. En 1991, Reid y Winter disminuyen este valor a 39 y 37 movimientos, transcurriendo sólamente 1 día entre estos 2 eventos[CITA Y CITA]. En 1995 Reid baja aún mas la cota a 29 giros[CITA].
 
-\lipsum[3]
+En 1995, Reid demuestra que la posición ``superflip'', una configuración en la que el cubo está resuelto, con la excepción de que todas las aristas están volteadas en su lugar, requiere de 20 rotaciones[CITA] en HTM, dando una cota inferior para el largo de una solución en el peor caso.
 
-\lipsum[4]
+La cota superior sigue descendiendo, demostrándose de 28 en y 27 por Radu[CITA] en 2005 y 2006 respectivamente, 25 por Kunkle[CITA] en 2007 y 25, 23 y luego 22 por Rokicki[CITA CITA CITA] et al en 2008.
 
-\lipsum[5]
+Finalmente, en Julio de 2010 Rokicki, Kociemba, Davidson y Dethridge demuestran que el número de Dios es 20 [CITA].
+
+En cuanto a métodos concretos para resolver el cubo, varias alternativas existen actualmente. El método del principiante es el que suele ser utilizado por ..., [CITA]. Consiste en armar el cubo por niveles: primero la capa inferior, luego la media y finalmente la superior, utilizando secuencias de giros que preserven lo que ya ha sido armado en los pasos anteriores. Es un método amigable para humanos, ya que requiere memorizar pocas secuencias para ubicar correctamente todas las piezas del cubo.
+
+En competencias de speedcubing, torneos donde gente intenta armar cubos de Rubik lo más rápido posible, otros métodos suelen utilizados, que favorecen el tiempo de resolución y el el largo de las soluciones, pero que requieren memorizar más secuencias de rotaciones. El método CFOP (abreviación inglesa de ``Cross, First 2 layers, Orientation last layer, Permutation last layer''), inventado por Jessica Fridrich[CITA] y en menor medida el método Petrus, inventado por Lars Petrus[CITA].
+
+Otros métodos más amigables para computadores que para seres humanos se basan en búsqueda[CITA AIMA]. Algunos funcionan descomponiendo el cubo de Rubik usando teoría de grupos en varios subgrupos para reducir el espacio de búsqueda, como es el caso del algoritmo de Thistlethwaite[CITA] (5 subgrupos) y su versión mejorada, el algoritmo de Kociemba [CITA] (3 subgrupos). Otro enfoque es el algoritmo de Korf[CITA], que se basa en una búsqueda informada con profundidad iterativa (IDA*)[CITA] y bases de datos de patrones[CITA]. Este último es una instancia del algoritmo de Dios, ya que entrega siempre la solución óptima, a cambio de un costo computacional tremendo.
+
+[ROBOTICA, IK]
+
+[VISION, CANNY, HOUGH, ML]
+
+[BAXTER CON RUBIK]

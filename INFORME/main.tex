@@ -41,7 +41,10 @@
 %% See babel documentation for further details.
 
 %% BibLaTeX-settings: (see biblatex reference for further description)
-\newcommand{\mybiblatexstyle}{authoryear}
+% \newcommand{\mybiblatexstyle}{authoryear}
+% \newcommand{\mybiblatexstyle}{numeric-comp}
+\newcommand{\mybiblatexstyle}{numeric}
+% \bibliographystyle{acm}
 %% e.g., "alphabetic", "authoryear", ...
 %% The biblatex style which is being used for referencing. See
 %% biblatex documentation for further details and more values.
@@ -52,7 +55,7 @@
 %%          not have an option "dashed=..." and causes an error if it
 %%          does not get removed from the list of options.
 
-\newcommand{\mybiblatexdashed}{false}  %% "true" or "false"
+% \newcommand{\mybiblatexdashed}{false}  %% "true" or "false"
 %% If true: replace recurring reference authors with a dash.
 
 \newcommand{\mybiblatexbackref}{true}  %% "true" or "false"
@@ -205,7 +208,7 @@
 %% include the abstract without chapter number but include it on table of contents:
 % \cleardoublepage
 \phantomsection
-\addcontentsline{toc}{chapter}{Abstract}
+\addcontentsline{toc}{chapter}{Resumen}
 \include{abstract}              %% Abstract
 
 
@@ -234,7 +237,7 @@
 % \addpart*{Apéndice}             %% adding Appendix to tableofcontents
 \input{chapters/appendix}
 
-\printbibliography              %% remove, if using BibTeX instead of biblatex
+% \printbibliography              %% remove, if using BibTeX instead of biblatex
 % \include{further_ressources}  %% this is a suggestion: you have to create this file on demand
 
 

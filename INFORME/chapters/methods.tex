@@ -25,7 +25,7 @@ La cantidad total de stickers (también llamados \textit{facelets}) es entonces 
 \end{figure}
 
 \subsection{Convenciones}
-Existe una notación estándar para describir los ejes, las caras y los facelets del cubo.
+Existe una notación estándar para describir los ejes, las caras y los facelets del cubo~\cite{notationsingmaster}.
 Los 3 ejes de coordenadas del sistema de referencia utilizado se definen de la siguiente manera:
 \begin{itemize}
 	\item $x$: eje que atraviesa las caras derecha e izquierda del cubo, con respecto al observador.
@@ -146,8 +146,8 @@ El robot Baxter posee varios tipos de grippers, mostrados en la figura~\ref{grip
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.25\textwidth]{figures/placeholder}
-	\caption{Grippers disponibles.}
+	\includegraphics[width=0.50\textwidth]{figures/gripper}
+	\caption{Grippers disponibles. Los de la esquina superior izquierda sólo permiten rotar una cara sin cambiar de mano el cubo. Los de la esquina inferior izquierda son más anchos que el tamaño del cubo. Los de la esquina inferior derecha son muy cortos para tener un agarre estable. Los de la esquina superior derecha fueron los gripper utilizados.}
 	\label{grippers}
 \end{figure}
 
@@ -156,19 +156,19 @@ Los agarres son siempre de la forma como se muestra en la figura~\ref{agarres}. 
 \begin{figure}[h!]
 	\centering
 	\subcaptionbox{Agarre poco profundo, inestable.}{%
-		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+		\includegraphics[width=0.24\textwidth]{figures/small_agarre_corto}
 	}%
 	\hfill
 	\subcaptionbox{Agarre utilizado. 3 caras libres para rotar. Estable}{%
-		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+		\includegraphics[width=0.24\textwidth]{figures/small_agarre_adecuado}
 	}%
 	\hfill
-	\subcaptionbox{Agarre profundo, cara lejana bloqueada.}{%
-		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	\subcaptionbox{Agarre profundo, cara lejana (roja) bloqueada.}{%
+		\includegraphics[width=0.24\textwidth]{figures/small_agarre_profundo}
 	}%
 	\hfill
-	\subcaptionbox{Agarre impreciso, cara lateral bloqueada. Inestable.}{%
-		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	\subcaptionbox{Agarre impreciso, cara lateral (marrón) bloqueada. Inestable.}{%
+		\includegraphics[width=0.24\textwidth]{figures/small_agarre_desplazado}
 	}%
 	\caption{Diferentes agarres.}
 	\label{agarre}
@@ -288,21 +288,21 @@ Si bien Baxter posee cámaras en sus 2 manos y en su cabeza, la calidad de la im
 \begin{figure}[h!]
 	\centering
 	\subcaptionbox{Cámara brazo izquierdo.}{%
-		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+		\includegraphics[width=0.24\textwidth]{figures/camara_izq}
 	}%
 	\hfill
 	\subcaptionbox{Cámara brazo derecho.}{%
-		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+		\includegraphics[width=0.24\textwidth]{figures/camara_der}
 	}%
 	\hfill
 	\subcaptionbox{Cámara de la cabeza.}{%
-		\includegraphics[width=0.20\textwidth]{figures/placeholder}
+		\includegraphics[width=0.24\textwidth]{figures/camara_cabeza}
 	}%
 	\hfill
 	\subcaptionbox{Cámara externa.}{%
-	\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	\includegraphics[width=0.24\textwidth]{figures/camara_externa}
 	}%
-	\caption{Calidad de imagen de las distintas cámaras disponibles.}
+	\caption{Calidad de imagen de las distintas cámaras disponibles. Las imágenes tomadas por las cámaras del robot presentan ruido en forma de un patrón mallado, mientras que la externa no tiene este problema.}
 	\label{camaras}
 \end{figure}
 
@@ -312,10 +312,10 @@ El cubo fue cubierto con goma eva. Esto cumple varios objetivos. En primer lugar
 \begin{figure}[h!]
 	\centering
 	\subcaptionbox{Luz sobre el plástico. Algunos colores son erróneamente detectados como blanco.}{%
-	\includegraphics[width=0.40\textwidth]{figures/placeholder}
+	\includegraphics[width=0.48\textwidth]{figures/luz_plastico}
 	}%
 	\subcaptionbox{Luz sobre la goma eva. }{%
-	\includegraphics[width=0.40\textwidth]{figures/placeholder}
+	\includegraphics[width=0.48\textwidth]{figures/luz_goma_eva}
 	}%
 	\caption{Difusión de luz en ambos materiales.}
 	\label{luz}
@@ -330,16 +330,16 @@ Los colores de goma eva utilizados fueron rojo, azul, verde, amarillo, rosado y 
 \begin{figure}[h!]
 	\centering
 	\subcaptionbox{Cubo original, caras \textit{U} \textit{R} y \textit{F}.}{%
-	\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	\includegraphics[width=0.24\textwidth]{figures/plastico_urf}
 	}%
 	\subcaptionbox{Cubo original, caras \textit{D} \textit{L} y \textit{B}.}{%
-	\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	\includegraphics[width=0.24\textwidth]{figures/plastico_dlb}
 	}%
 	\subcaptionbox{Cubo cubierto, caras \textit{U} \textit{R} y \textit{F}.}{%
-	\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	\includegraphics[width=0.24\textwidth]{figures/goma_eva_urf}
 	}%
 	\subcaptionbox{Cubo cubierto, caras \textit{D} \textit{L} y \textit{B}.}{%
-	\includegraphics[width=0.20\textwidth]{figures/placeholder}
+	\includegraphics[width=0.24\textwidth]{figures/goma_eva_dlb}
 	}%
 	\caption{Colores.}
 	\label{colorescubo}
@@ -351,13 +351,13 @@ Una vez que el manipulador acerca el cubo a la cámara, se capturan fotos de cad
 \begin{figure}[h!]
 	\centering
 	\subcaptionbox{Detección correcta.}{%
-		\includegraphics[width=0.30\textwidth]{figures/placeholder}
+		\includegraphics[width=0.30\textwidth]{figures/small_circulos}
 	}%
 	\subcaptionbox{Detección incorrecta, faltan círculos.}{%
-		\includegraphics[width=0.30\textwidth]{figures/placeholder}
+		\includegraphics[width=0.30\textwidth]{figures/small_circulos_pocos}
 	}%
 	\subcaptionbox{Detección incorrecta, sobran círculos.}{%
-		\includegraphics[width=0.30\textwidth]{figures/placeholder}
+		\includegraphics[width=0.30\textwidth]{figures/small_circulos_muchos}
 	}%
 	\caption{Identificación de círculos.}
 	\label{circulos}

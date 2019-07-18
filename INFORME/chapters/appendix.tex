@@ -1,6 +1,5 @@
-\chapter*{Apéndice} {
-\section*{Experimentos}
-\subsection*{Secuencias de desarme utilizadas}
+\chapter*{Anexos} {
+\section*{Secuencias de desarme utilizadas}
 
 \begin{table}[h!]
 	\centering
@@ -34,9 +33,10 @@
 	\label{vision}
 \end{table}
 
+\section*{Desarmes truncados}
 \begin{table}[h!]
 	\centering
-	\resizebox{\textwidth}{!}{%
+	\resizebox{0.9\textwidth}{!}{%
 	\begin{tabular}{|r|c|}
 		\hline
 		ID & Desarme \\ \hline \hline
@@ -66,9 +66,8 @@
 	\label{manipulation}
 \end{table}
 
-\subsection*{Detalle experimentos visión}
-La tabla\ref{visionerrors} indica los facelet específicos donde el algoritmo de visión desarrollado se equivocó.
-Un subíndice, cuando existe, indica el valor correcto, cuando no quiere decir que el facelet fue correctamente identificado.
+\section*{Detalle experimentos visión}
+La tabla\ref{visionerrors} indica los facelet específicos donde el algoritmo de visión desarrollado se equivocó. En cada fila de dicha tabla, el string superior es el resultado obtenido y el inferior el esperado. Las diferencias se muestran subrayadas.
 \begin{table}[h!]
 	\centering
 	\resizebox{\textwidth}{!}{%
@@ -140,3 +139,12 @@ Un subíndice, cuando existe, indica el valor correcto, cuando no quiere decir q
 \end{figure}
 
 }
+
+\section*{Recursos adicionales}
+
+\begin{itemize}
+	\item Vídeo de ejemplo de Robot Baxter resolviendo el cubo. Este corresponde a la secuencia de largo 8 en los experimentos de manipulación.
+	\url{https://www.youtube.com/watch?v=AlMi1rzPEQs}
+	\item Repositorio de código del sistema desarrollado: \url{https://github.com/silvercobraa/memoria-de-titulo}
+	\item WCA Legacy Scrambler: \url{https://www.worldcubeassociation.org/regulations/history/files/scrambles/scramble_cube.htm}
+\end{itemize}
