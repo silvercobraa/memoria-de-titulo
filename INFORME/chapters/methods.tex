@@ -52,7 +52,7 @@ De manera similar, los movimientos posibles de cada cara del cubo también queda
 En este punto, se decidió adoptar una notación ligeramente diferente de la estándar.
 En la notación propuesta, \textit{XN} indica que la cara \textit{X} rota en $90 \times N$ grados, donde los grados se miden en sentido horario con respecto a un vector normal a la superficie de la cara a rotar.
 Entonces, por ejemplo ``R$1$'' significa rotar la cara derecha en $90$ (o equivalentemente, $-270$) grados, ``R$2$'' es rotar la cara derecha en $180$ (o $-180$) grados y ``R$3$'' rotar la cara derecha en $270$ (o $-90$) grados.
-La razón de el porque usar esta notación no más que un detalle de implementación, pues de esta manera el string que representa cada rotación tiene un largo fijo.
+La razón del por qué usar esta notación es tan sólo un detalle de implementación, pues de esta manera el string que representa cada rotación tiene un largo fijo.
 
 \begin{figure}[h!]
 	\centering
@@ -236,7 +236,7 @@ El servicio de cinemáticas inversas, si bien garantiza la posición y orientaci
 \end{figure}
 
 \subsubsection{Rotaciones de caras}
-Esta tarea se resuleve de una manera muy similar a la anterior, en el sentido de que usa la misma idea de ángulos directos seguido por IK. Una diferencia es con respecto a las coordenadas utilizadas, para lo cual se escogió una posición en la que el robot pudiese llegar en 3 orientaciones distintas con cada brazo. Estas configuraciones se muestran en las figuras \ref{movel} y \ref{mover}.
+Esta tarea se resuleve de una manera muy similar a la anterior, en el sentido de que usa la misma idea de ángulos directos seguido por IK. Existe una diferencia con respecto a las coordenadas utilizadas: acá se escogió una posición en la que los grippers del robot pudiesen llegar en 3 orientaciones distintas por cada brazo. Estas configuraciones se muestran en las figuras \ref{movel} y \ref{mover}.
 
 \begin{figure}[h!]
 	\centering
@@ -339,7 +339,7 @@ En segundo lugar, la goma EVA aumenta el roce entre los grippers y el cubo, ya q
 
 Los colores de goma EVA utilizados fueron rojo, azul, verde, amarillo, rosado y marrón, correspondientes a los mismo colores originales con excepción de los $2$ últimos (naranja y blanco, originalmente), pues no se disponía de naranja y  el blanco se ensucia bastante luego de muchas manipulaciones.
 
-Sobre cada facelet del cubo de dibujó un círculo con un marcador permanente, negro, para denotar el borde de las regiones de interés (los facelets) con un color que contrastase los colores claros de la goma EVA, con excepción del marrón, cuyos círculos fueron dibujados con color blanco para mayor contraste.
+Sobre cada facelet del cubo se dibujó un círculo con un marcador permanente, negro, para denotar el borde de las regiones de interés (los facelets) con un color que contrastase los colores claros de la goma EVA, con excepción del marrón, cuyos círculos fueron dibujados con color blanco para mayor contraste.
 
 \begin{figure}[h!]
 	\centering
@@ -421,7 +421,7 @@ Luego de realizar muchos experimentos se observó que la distribución RGB de lo
 	\label{rgb3d}
 \end{figure}
 
-Aprovechando el hecho de que las piezas centro del cubo no se mueven, se puede saber con certeza de que sus facelets son todos de colores distintos, no así las aristas y esquinas del cubo que pueden moverse libremente a cualquier otra ubicación. Los colores de los centros se utilizaron entonces como las medias iniciales de las gaussianas. Además, se asignaron las probabilidades a priori en 1/6 a cada gaussiana, pues todas las caras tienen la misma cantidad de facelets. Las covarianzas iniciales de cada gaussiana se tomaron con mayor varianza en el eje de saturación que en el de matiz. Esto es simplemente conocimiento previo de la distribución de los datos luego de un muchos experimentos. El efecto de elegir las covarianzas de esta forma se muestra en las figuras \ref{gmmgood} y \ref{gmmbad}.
+Aprovechando el hecho de que las piezas centro del cubo no se mueven, se puede saber con certeza de que sus facelets son todos de colores distintos, no así las aristas y esquinas del cubo que pueden moverse libremente a cualquier otra ubicación. Los colores de los centros se utilizaron entonces como las medias iniciales de las gaussianas. Además, se asignaron las probabilidades a priori en 1/6 a cada gaussiana, pues todas las caras tienen la misma cantidad de facelets. Las covarianzas iniciales de cada gaussiana se tomaron con mayor varianza en el eje de saturación que en el de matiz. Esto es simplemente conocimiento previo de la distribución de los datos luego de muchos experimentos. El efecto de elegir las covarianzas de esta forma se muestra en las figuras \ref{gmmgood} y \ref{gmmbad}.
 
 \begin{figure}[h!]
 	\centering
@@ -462,7 +462,7 @@ Así, el algoritmo de $2$ fases de Kociemba siempre encuentra una solución de l
 
 Se adaptó la implementación de \cite{cubeexplorer} a las necesidades del sistema desarrollado, además de portarlo al lenguaje Python 2 para integrarlo facilmente a los demás módulos.
 
-Este módulo recibe un string con el estado o permutación del cubo y entrega una secuencia de giros en el formato descrito en la sección \ref{convenciones}. Por ejemplo, para el mismo string mostrado en la sección anterior (\textit{LLLFUBRUBRRFRRUDBBFFUDFUDRRLFFBDDBRRBLUDLFDLFUUUBBLDDL}), la secuencia de giros que lleva al cubo a su estado resuelto es \textit{B1 L1 D1 R1}. Obsérvese que para que el robot realice dicha secuencia de acciones, si comienza con el cubo en su brazo izquierdo podrá realizar la rotación \textit{B1} inmediatamente. Sin embargo, como el gripper izquierdo bloquea las caras \textit{L} y \textit{R} y \textit{U}, se deberá realizar un cambio de mano antes de realizar el giro \textit{L1}. Lo mismo sucederá cuando posteriormente se quiera efectuar \textit{D1} con el cubo en el brazo derecho y \textit{R1} con el cubo en el brazo izquierdo.
+Este módulo recibe un string con el estado o permutación del cubo y entrega una secuencia de giros en el formato descrito en la sección \ref{convenciones}. Por ejemplo, para el mismo string mostrado en la sección anterior (\textit{LLLFUBRUBRRFRRUDBBFFUDFUDRRLFFBDDBRRBLUDLFDLFUUUBBLDDL}), la secuencia de giros que lleva al cubo a su estado resuelto es \textit{B1 L1 D1 R1}. Obsérvese que para que el robot realice dicha secuencia de acciones, si comienza con el cubo en su brazo izquierdo podrá realizar la rotación \textit{B1} inmediatamente. Sin embargo, como el gripper izquierdo bloquea las caras \textit{L}, \textit{R} y \textit{U}, se deberá realizar un cambio de mano antes de realizar el giro \textit{L1}. Lo mismo sucederá cuando posteriormente se quiera efectuar \textit{D1} con el cubo en el brazo derecho y \textit{R1} con el cubo en el brazo izquierdo.
 
 
 \subsection{Orden de ejecución final}
