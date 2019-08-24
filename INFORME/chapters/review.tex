@@ -1,15 +1,15 @@
 \chapter{Discusión Bibliográfica}
 
 \section*{Rubik}
-Un cubo de Rubik válidamente permutado tiene una solución dada por una secuencia de rotaciones de caras, que al aplicarlas en orden al cubo lo llevan a su estado resuelto. Usualmente, se utilizan 2 métricas para contar la cantidad de rotaciones: \emph{quarter-turn metric} o ``QTM''\cite{qtm} y \emph{half-turn metric} o ``HTM''\cite{htm}. La primera considera cada rotación de $90$ grados (ya sea en sentido horario o antihorario) como una acción por sí misma. La segunda es similar, salvo que además considera los giros de $180$ grados como $1$ acción en lugar de $2$.
+Un cubo de Rubik válidamente permutado tiene una solución dada por una secuencia de rotaciones de caras que, al aplicarlas en orden, llevan el cubo a su estado resuelto. Usualmente, se utilizan 2 métricas para contar la cantidad de rotaciones: \emph{quarter-turn metric} o ``QTM'' y \emph{half-turn metric} o ``HTM''\cite{qtmhtm}. La primera considera cada rotación de $90$ grados (ya sea en sentido horario o antihorario) como una acción por sí misma. La segunda es similar, salvo que además considera los giros de $180$ grados como $1$ acción en lugar de $2$.
 
-A lo largo de los años, se ha ido reduciendo la cota superior del largo máximo de una solución para cualquier configuración del cubo. A este valor se le conoce como el ``número de Dios'', en alusión a el ``algoritmo de Dios'', un algoritmo que sería capaz de resolver cualquier cubo de Rubik en la menor cantidad de movimientos\cite{godalgorithm}.
+A lo largo de los años, se ha ido reduciendo la cota superior del largo máximo de una solución para cualquier configuración del cubo. A este valor se le conoce como el ``número de Dios'', en alusión a el ``algoritmo de Dios'', un algoritmo que sería capaz de resolver cualquier cubo de Rubik en la menor cantidad de movimientos.
 
-En $1981$, Thistlethwaite\cite{thistlethwaite} demuestra que $52$ movimientos bastan para resolver cualquier cubo. Posteriormente, Kloosterman\cite{kloosterman} reduce esta cota a $42$ en $1990$. En $1991$, Reid y Winter disminuyen este valor a $39$ y $37$ movimientos, transcurriendo sólamente $1$ día entre estos dos eventos\cite{reid39}\cite{winter}. En $1995$, Reid baja aún mas la cota a $29$ giros \cite{reid29}.
+En $1981$, Thistlethwaite\cite{thistlethwaite} demuestra que $52$ movimientos bastan para resolver cualquier cubo. Posteriormente, Kloosterman\cite{kloosterman} reduce esta cota a $42$ en $1990$. En $1992$, Reid y Winter disminuyen este valor a $39$ y $37$ movimientos, transcurriendo sólamente $1$ día entre estos dos eventos\cite{reid39}\cite{winter}. En $1995$, Reid baja aún mas la cota a $29$ giros \cite{reid29}.
 
 En $1995$, Reid demuestra que la posición ``superflip'', una configuración en la que el cubo está resuelto, con la excepción de que todas las aristas están volteadas en su lugar, requiere de 20 rotaciones\cite{superflip} en HTM, dando una cota inferior para el largo de una solución en el peor caso.
 
-La cota superior continuó descendiendo, demostrándose de $28$ en y $27$ por Radu\cite{radu28}\cite{radu27} en $2005$ y $2006$ respectivamente, $25$ por Kunkle\cite{kunkle} en $2007$ y $25$, $23$ y luego $22$ por Rokicki\cite{rokicki25}\cite{rokicki23}\cite{rokicki22} et al en $2008$.
+La cota superior continuó descendiendo, demostrándose de $28$ en y $27$ por Radu\cite{radu28} en $2005$ y $2006$ respectivamente, $25$ por Kunkle\cite{kunkle} en $2007$ y $25$, $23$ y luego $22$ por Rokicki\cite{rokicki25}\cite{rokicki23}\cite{rokicki22} et al en $2008$.
 
 Finalmente, en julio de $2010$ Rokicki, Kociemba, Davidson y Dethridge demuestran que el número de Dios es $20$\cite{godnumber20}.
 
@@ -21,16 +21,16 @@ Otros métodos menos amigables para seres humanos se basan en búsqueda. Algunos
 
 
 \section*{Visión Computacional}
-Si bien encontrar una solución para un cubo de Rubik se puede considerar un problema resuelto, hay muchos pasos previos que se deben realizar antes de llegar a una representación del estado apta para su resolución. Para obtener el estado del cubo, bien se puede ingresar manualmente o se puede detectar automáticamente. Si se desea esto último, como es el caso de este proyecto, se deben aplicar técnicas de visión computacional.
+Si bien encontrar una solución para un cubo de Rubik se puede considerar un problema resuelto, hay muchos pasos previos que se deben realizar antes de llegar a una representación del estado apta para su resolución. Para obtener el estado del cubo, bien se puede ingresar manualmente (por ejemplo, mediante teclado) o se puede detectar automáticamente. Si se desea esto último, como es el caso de este proyecto, se deben aplicar técnicas de visión computacional.
 
 La visión computacional es el área de la inteligencia artificial que estudia cómo automatizar las tareas realizadas por el sistema visual humano. En este campo se desarrollan métodos para que computadores puedan percibir, analizar, procesar e interpretar imágenes del mundo real\cite{vision}.
 
-Algunos de los problemas que vuelven a la visión computacional una tarea muy compleja son la perspectiva, la orientación, las oclusiones y la deformación, pues pueden causar formas totalmente distintas para el mismo objeto\cite{aima}. Otros aspectos dificultan la percepción de color, como las sombras, la reflexión especular y las interreflexiones\cite{aima}.
+Algunos de los problemas que vuelven a la visión computacional una tarea muy compleja son la perspectiva, la orientación, las oclusiones y la deformación, pues pueden causar formas totalmente distintas para el mismo objeto. Otros aspectos dificultan la percepción de color, como las sombras, la reflexión especular y las interreflexiones\cite{aima}.
 
 El problema de detectar los colores del cubo de Rubik puede atacarse con modelos de aprendizaje supervisado, pero aún con numerosos ejemplos es difícil generalizar a diferentes entornos, cambios en iluminación o desgaste del material \cite{rubikcolors}.
 
 \section*{Robótica}
-Un robot es un agente que realiza tareas en el mundo físico por medio de sus efectores\cite{robotics}. La robótica es el estudio y diseño de estos agentes. La mayoría de los robots puede clasificarse como robot manipulador o robot móvil. Baxter es un robot del tipo manipulador, pues sus únicos efectores son sus brazos y su cabeza, siendo incapaz de desplazarse.
+Un robot es un agente que realiza tareas en el mundo físico por medio de sus efectores\cite{aima}. La robótica es el estudio y diseño de estos agentes. La mayoría de los robots puede clasificarse como robot manipulador o robot móvil. Baxter es un robot del tipo manipulador, pues sus únicos efectores son sus brazos y su cabeza, siendo incapaz de desplazarse.
 
 Un problema de importancia en robótica es el de las cinemáticas inversas\cite{ik} (o ``IK'', del inglés ``Inverse Kinematics''), que consiste en obtener coordenadas en el espacio de configuración propio del robot -que en el caso de Baxter, corresponde a encontrar los ángulos de cada articulación de un brazo- a partir de coordenadas cartesianas del espacio tridimensional. Esto no siempre es posible, ya que el mismo brazo del robot restringe las posiciones válidas. Por ejemplo, no es posible alcanzar puntos más allá del largo del brazo de Baxter, ni curvar los brazos más allá de los ángulos límite de las articulaciones, ni llegar a puntos que causen colisiones con sigo mismo. Algunas posiciones son alcanzables pero sólo en una determinada orientación, por ejemplo, un punto ubicado muy a la derecha del robot puede alcanzarse con el brazo izquierdo sólo orientado hacia la derecha. Estas restricciones juegan un papel importante al decidir las posturas que se le den al robot para manipular el cubo.
 

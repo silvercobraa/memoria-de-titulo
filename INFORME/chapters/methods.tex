@@ -24,7 +24,7 @@ La cantidad total de facelets es entonces $1\times 6 + 2\times 12 + 3\times 8 = 
 	\caption{Los $3$ tipos de piezas del cubo de Rubik.}
 \end{figure}
 
-\subsection{Convenciones}
+\subsection{Convenciones}\label{convenciones}
 Existe una notación estándar para describir los ejes, las caras y los facelets del cubo~\cite{notationsingmaster}.
 Los $3$ ejes de coordenadas del sistema de referencia utilizado se definen de la siguiente manera:
 \begin{itemize}
@@ -35,7 +35,7 @@ Los $3$ ejes de coordenadas del sistema de referencia utilizado se definen de la
 Así, cada una de las piezas esquina del cubo tiene $1$ color por eje, mientras que las aristas tienen un color en sólo $2$ de los $3$ ejes y los centros en solamente $1$.
 
 Las caras del cubo se identifican mediante la letra inicial de la palabra en inglés que identifica su posición con respecto al observador.
-Éstas letras son \textbf{U} (up), \textbf{R} (right), \textbf{F} (front), \textbf{D} (down), \textbf{L} (left) y \textbf{B} (bottom).
+Estas letras son \textbf{U} (up), \textbf{R} (right), \textbf{F} (front), \textbf{D} (down), \textbf{L} (left) y \textbf{B} (bottom).
 
 \begin{figure}[h!]
 	\centering
@@ -129,7 +129,7 @@ El sistema desarrollado consiste de varios módulos que pueden agruparse según 
 \begin{description}
 	\item[Manipulación:] Módulos que se encargan de mover las articulaciones y controlar las pinzas del robot.
 	\item[Visión:] Módulos encargados de la detección del estado del cubo.
-	\item[Resolución:] Modulo encargado de buscar una secuencia de rotaciones de caras que lleven al cubo a su estado resuelto.
+	\item[Resolución:] Módulo encargado de buscar una secuencia de rotaciones de caras que lleven al cubo a su estado resuelto.
 \end{description}
 
 \subsection{Manipulación}
@@ -171,19 +171,19 @@ Los agarres son siempre de la forma como se muestra en la figura~\ref{agarreadec
 \begin{figure}[h!]
 	\centering
 	\subcaptionbox{Agarre poco profundo, inestable.}{%
-		\includegraphics[width=0.24\textwidth]{figures/small_agarre_corto}
+		\includegraphics[width=0.35\textwidth]{figures/small_agarre_corto}
 	}%
 	\hfill
-	\subcaptionbox{Agarre utilizado. $3$ caras libres para rotar. Estable\label{agarreadecuado}}{%
-		\includegraphics[width=0.24\textwidth]{figures/small_agarre_adecuado}
+	\subcaptionbox{Agarre utilizado. $3$ caras libres para rotar. Estable.\label{agarreadecuado}}{%
+		\includegraphics[width=0.35\textwidth]{figures/small_agarre_adecuado}
 	}%
 	\hfill
 	\subcaptionbox{Agarre profundo, cara lejana (roja) bloqueada.}{%
-		\includegraphics[width=0.24\textwidth]{figures/small_agarre_profundo}
+		\includegraphics[width=0.35\textwidth]{figures/small_agarre_profundo}
 	}%
 	\hfill
 	\subcaptionbox{Agarre impreciso, cara lateral (marrón) bloqueada. Inestable.}{%
-		\includegraphics[width=0.24\textwidth]{figures/small_agarre_desplazado}
+		\includegraphics[width=0.35\textwidth]{figures/small_agarre_desplazado}
 	}%
 	\caption{Diferentes agarres.}
 	\label{agarre}
@@ -200,7 +200,7 @@ La ejecución comienza con el cubo en la mesa, en una posición marcada cuyas co
 \end{figure}
 
 \subsubsection{Acercamiento a cámara}
-El servicio de cinemáticas inversas si bien garantiza la posición y orientación final solicitada para un gripper, no especifica nada sobre la trayectoria a realizar. Esto causa varios problemas, entre ellos los más graves son: la imposibilidad de llevar a cabo un movimiento debido a la complejidad de la trayectoria, a pesar de que sea una configuración válida; y la ejecución de ciertas trayectorias que causan que el robot se golpee a sí mismo. Debido a la naturaleza misma de IK, no es posible predecir cuándo suceden estos errores. Así que en este paso se mueve el brazo utilizando directamente los ángulos de cada una de sus articulaciones, para guiarlo a una configuración favorable, seguido inmediatamente por cinemáticas inversas para obtener la posición y orientación final deseada. Las $6$ configuraciones necesarias para apuntar cada cara a la cámara se muestran en la figuras \ref{caml} y \ref{camr}.
+El servicio de cinemáticas inversas, si bien garantiza la posición y orientación final solicitada para un gripper, no especifica nada sobre la trayectoria a realizar. Esto puede causar varios problemas, entre ellos los más graves son: la imposibilidad de llevar a cabo un movimiento debido a la complejidad de la trayectoria, a pesar de que sea una configuración válida; y la ejecución de ciertas trayectorias que causan que el robot se golpee a sí mismo. Debido a la naturaleza misma de IK, no es posible predecir cuándo suceden estos errores. Así que en este paso se mueve el brazo utilizando directamente los ángulos de cada una de sus articulaciones, para guiarlo a una configuración favorable, seguido inmediatamente por cinemáticas inversas para obtener la posición y orientación final deseada. Las $6$ configuraciones necesarias para apuntar cada cara a la cámara se muestran en la figuras \ref{caml} y \ref{camr}.
 
 \begin{figure}[h!]
 	\centering
@@ -236,7 +236,7 @@ El servicio de cinemáticas inversas si bien garantiza la posición y orientaci�
 \end{figure}
 
 \subsubsection{Rotaciones de caras}
-Esta tarea se resuleve de una manera muy similar a la anterior, en el sentido de que usa la misma idea de ángulos directos seguido por IK. Una diferencia es en las coordenadas utilizadas, para lo cual se escogió una posición en la que el robot pudiese llegar en 3 orientaciones distintas con cada brazo. Estas configuraciones se muestran en las figuras \ref{movel} y \ref{mover}.
+Esta tarea se resuleve de una manera muy similar a la anterior, en el sentido de que usa la misma idea de ángulos directos seguido por IK. Una diferencia es con respecto a las coordenadas utilizadas, para lo cual se escogió una posición en la que el robot pudiese llegar en 3 orientaciones distintas con cada brazo. Estas configuraciones se muestran en las figuras \ref{movel} y \ref{mover}.
 
 \begin{figure}[h!]
 	\centering
@@ -293,12 +293,12 @@ Este paso utiliza ángulos directos y cinemáticas inversas. Las posiciones para
 	\label{switch}
 \end{figure}
 
-Al tener 3 caras libres por brazo, puede que se necesiten pocos cambios de mano para realizar una secuencia de giros. Sin embargo, en el peor caso siempre se tendrá tantos cambios de mano como rotaciones se vaya a realizar.
+Al tener 3 caras libres por brazo, no suele ser necesario realizar muchos cambios de mano para llevar a cabo una secuencia de giros. Sin embargo, en el peor caso siempre se tendrá tantos cambios de mano como rotaciones se vaya a realizar.
 
 \subsection{Visión}
-Estos módulos se encargan de obtener el estado del cubo. Es la parte más compleja del sistema.
+Estos módulos se encargan de obtener el estado del cubo. Es la parte más compleja del sistema, en términos de la cantidad de submódulos involucrados.
 \subsubsection{Preparaciones previas en el robot}
-Si bien Baxter posee cámaras en sus $2$ manos y en su cabeza, la calidad de la imagen que se obtiene usándolas es insatisfactoria. Se decidió entonces utilizar una cámara externa, en concreto, una Logitech C920\cite{logitech}, la cual se ubicó encima de la cámara de la cabeza del robot. Ésta fue conectada directamente al computador desde donde se ejecuta el programa principal, pues a pesar de que el robot tiene interfaces USB (que permite el uso de joysticks entre otras cosas) no se encontró documentación ni códigos de ejemplo respecto del uso de cámaras externas.
+Si bien Baxter posee cámaras en sus $2$ manos y en su cabeza, la calidad de la imagen que se obtiene usándolas es insatisfactoria. Se decidió entonces utilizar una cámara externa, en concreto, una Logitech C920\cite{logitech}, la cual se ubicó encima de la cámara de la cabeza del robot. Ésta fue conectada directamente al computador desde donde se ejecuta el programa principal, pues a pesar de que el robot tiene interfaces USB (que permite el uso de joysticks entre otros dispositivos) no se encontró documentación ni códigos de ejemplo respecto del uso de cámaras externas.
 \begin{figure}[h!]
 	\centering
 	\subcaptionbox{Cámara brazo izquierdo.}{%
@@ -339,21 +339,24 @@ En segundo lugar, la goma EVA aumenta el roce entre los grippers y el cubo, ya q
 
 Los colores de goma EVA utilizados fueron rojo, azul, verde, amarillo, rosado y marrón, correspondientes a los mismo colores originales con excepción de los $2$ últimos (naranja y blanco, originalmente), pues no se disponía de naranja y  el blanco se ensucia bastante luego de muchas manipulaciones.
 
-Sobre cada facelet del cubo de dibujó un círculo con un marcador permanente, negro, para denotar el borde de las regiones de interés (los facelets) con un color que contrastase los colores claros de la goma EVA, con excepción del marrón, cuyos círculos fueron dibujados con corrector líquido blanco.
+Sobre cada facelet del cubo de dibujó un círculo con un marcador permanente, negro, para denotar el borde de las regiones de interés (los facelets) con un color que contrastase los colores claros de la goma EVA, con excepción del marrón, cuyos círculos fueron dibujados con color blanco para mayor contraste.
 
 \begin{figure}[h!]
 	\centering
 	\subcaptionbox{Cubo original, caras \textit{U} \textit{R} y \textit{F}.}{%
-	\includegraphics[width=0.24\textwidth]{figures/plastico_urf}
+	\includegraphics[width=0.35\textwidth]{figures/plastico_urf}
 	}%
+	\hfill
 	\subcaptionbox{Cubo original, caras \textit{D} \textit{L} y \textit{B}.}{%
-	\includegraphics[width=0.24\textwidth]{figures/plastico_dlb}
+	\includegraphics[width=0.35\textwidth]{figures/plastico_dlb}
 	}%
+	\hfill
 	\subcaptionbox{Cubo cubierto, caras \textit{U} \textit{R} y \textit{F}.}{%
-	\includegraphics[width=0.24\textwidth]{figures/goma_eva_urf}
+	\includegraphics[width=0.35\textwidth]{figures/goma_eva_urf}
 	}%
+	\hfill
 	\subcaptionbox{Cubo cubierto, caras \textit{D} \textit{L} y \textit{B}.}{%
-	\includegraphics[width=0.24\textwidth]{figures/goma_eva_dlb}
+	\includegraphics[width=0.35\textwidth]{figures/goma_eva_dlb}
 	}%
 	\caption{Colores del cubo de Rubik usado.}
 	\label{colorescubo}
@@ -364,20 +367,22 @@ Una vez que el manipulador acerca el cubo a la cámara, se capturan fotos de cad
 
 \begin{figure}[h!]
 	\centering
-	\subcaptionbox{Detección correcta.\label{deteccioncorrecta}}{%
-		\includegraphics[width=0.30\textwidth]{figures/small_circulos}
-	}%
 	\subcaptionbox{Detección incorrecta, faltan círculos.}{%
-		\includegraphics[width=0.30\textwidth]{figures/small_circulos_pocos}
+		\includegraphics[width=0.35\textwidth]{figures/small_circulos_pocos}
 	}%
+	\hfill
 	\subcaptionbox{Detección incorrecta, sobran círculos.}{%
-		\includegraphics[width=0.30\textwidth]{figures/small_circulos_muchos}
+		\includegraphics[width=0.35\textwidth]{figures/small_circulos_muchos}
+	}%
+	\hfill
+	\subcaptionbox{Detección correcta.\label{deteccioncorrecta}}{%
+	\includegraphics[width=0.35\textwidth]{figures/small_circulos}
 	}%
 	\caption{Identificación de círculos.}
 	\label{circulos}
 \end{figure}
 
-La transformada de Hough\cite{hough} es una técnica para extracción de características en imágenes, inicialmente concebida para detectar líneas, pero posteriormente se generalizó para detectar círculos o elipses. La ventaja de utilizar esta transformación es que es muy robusta, pudiendo detectar círculos imperfectos, incluso cuando están parcialmente ocultos por un objeto entre la cámara y el círculo. Su cómputo y en particular su implementación en OpenCV es bastante rápida, sin embargo no es perfecta. Dependiendo del ambiente de la imagen y los parámetros utilizados se pueden obtener falsos positivos, o falsos negativos, como se ve en la figura \ref{circulos}.
+La transformada de Hough\cite{hough} es una técnica para extracción de características en imágenes, inicialmente concebida para detectar líneas, pero posteriormente se generalizó para detectar círculos o elipses. Una ventaja de utilizar esta transformación es que es muy robusta, pudiendo detectar círculos imperfectos, incluso cuando están parcialmente ocultos por un objeto entre la cámara y el círculo. Su cómputo y en particular su implementación en OpenCV es bastante rápida, sin embargo no es perfecta. Dependiendo del ambiente de la imagen y los parámetros utilizados se pueden obtener falsos positivos, o falsos negativos, como se ve en la figura \ref{circulos}.
 
 Mediante ensayo y error se obtubieron parámetros lo suficientemente buenos para la transformada de Hough. Estos fueron radio mínimo y máximo de $10$ y $35$ píxeles para los círculos, con una distancia mínima entre ellos de $30$ píxeles. Otros dos parámetros correspondientes a umbrales que controlan la cantidad potencial de círculos (\texttt{param1} y \texttt{param2}) se dejaron en $80$ y $30$ respectivamente.
 
@@ -394,7 +399,7 @@ Una vez se tienen los $54$ círculos, se procede a extraer un color representati
 	\subcaptionbox{Espacio de colores HSV.}{%
 		\includegraphics[width=0.4\textwidth]{figures/HSV}
 	}%
-	\caption[Espacios de colores.]{En RGB, los colores rojo, verde y azul corresponden a 3 ejes cartesianos. En HSV, el espacio tiene coordenadas cilíndricas. Los colores ``rojos'' tienen radios similares entre sí, al igual que los ``verdes'', ``azules'' y demás colores.}
+	\caption[Espacios de colores.]{En RGB, los colores rojo, verde y azul corresponden a 3 ejes cartesianos. En HSV, el espacio tiene coordenadas cilíndricas, donde los colores ``rojos'' tienen radios similares entre sí, al igual que los ``verdes'', ``azules'' y demás colores.}
 	\label{colorspace}
 \end{figure}
 Para identificar cuales facelets son del mismo color, independientemente de cual sea éste, se utilizó un modelo no supervisado para clasificarlos. El algoritmo utilizado fue el de mezcla de gaussianas (Gaussian Mixture Model, o \textit{GMM})\cite{gmm}, con 6 componentes. Las características usadas fueron las componentes matiz y saturación de la conversión de espacio RGB (Red, Green, Blue)\cite{rgb} al espacio HSV (Hue, Saturation, Value)\cite{hsv} de cada uno de los colores representantes de cada facelet.
@@ -434,14 +439,14 @@ Aprovechando el hecho de que las piezas centro del cubo no se mueven, se puede s
 
 El algoritmo de agrupamiento de un modelo de mezcla de gaussianas suele calcularse de manera iterativa a partir de una solución inicial, siguiendo el proceso de Expectation-Maximization. Cuando el algoritmo GMM era incializado con el resultado de procesar los puntos con K-Means (como lo hace, por ejemplo el modelo GMM de la biblioteca de Python scikit-learn), se tiende a confundir los colores rojo y rosado, ya que sus matices suelen están más cerca que la distancia en saturación más grande entre 2 rojos o 2 rosados.
 
-Al finalizar este paso, si es que no hubo algún error de clasificación, se tiene un vector de 54 caracteres en el orden dado por la figura\ref{faceletorder}. Así, el caracter \textit{X} en la posición $i$ indica que el facelet $i$ es del mismo color que el centro de la cara \textit{X}. Por ejemplo, para los representantes de las figuras \ref{gmmgood}, el estado resultante es el string \textit{LLLFUBRUBRRFRRUDBBFFUDFUDRRLFFBDDBRRBLUDLFDLFUUUBBLDDL}.
+Al finalizar este paso, si es que no hubo algún error de clasificación, se tiene un vector de 54 caracteres en el orden dado por la figura \ref{faceletorder}. Así, el caracter \textit{X} en la posición $i$ indica que el facelet $i$ es del mismo color que el centro de la cara \textit{X}. Por ejemplo, para los representantes de las figuras \ref{gmmgood}, el estado resultante es el string \textit{LLLFUBRUBRRFRRUDBBFFUDFUDRRLFFBDDBRRBLUDLFDLFUUUBBLDDL}.
 
 
 \subsection{Resolución}
 Para la fase de resolución se utilizó el algoritmo de $2$ fases de Kociemba.
 Este algoritmo encuentra soluciones a cualquier configuración del cubo mediante una búsqueda exhaustiva, realizada en dos pasos.
 
-En la primera fase, se lleva la permutación actual a algún estado en la que todas las piezas arista y esquina tengan orientación igual a cero (ver figura \ref{orientation}). La segunda fase, lleva dicha configuración -sin orientaciones- al estado resuelto.
+En la primera fase, se lleva la permutación actual a algún estado en la que todas las piezas arista y esquina tengan orientación igual a cero (ver figura \ref{orientation}). La segunda fase lleva dicha configuración -sin orientaciones- al estado resuelto.
 
 \begin{figure}[h!]
 	\centering
@@ -457,7 +462,7 @@ Así, el algoritmo de $2$ fases de Kociemba siempre encuentra una solución de l
 
 Se adaptó la implementación de \cite{cubeexplorer} a las necesidades del sistema desarrollado, además de portarlo al lenguaje Python 2 para integrarlo facilmente a los demás módulos.
 
-Este módulo recibe un string con el estado o permutación del cubo y entrega una secuencia de giros en el formato descrito en la sección [referencia]. Por ejemplo, para el mismo string mostrado en la sección anterior (\textit{LLLFUBRUBRRFRRUDBBFFUDFUDRRLFFBDDBRRBLUDLFDLFUUUBBLDDL}), la secuencia de giros que lleva al cubo a su estado resuelto es \textit{B1 L1 D1 R1}. Obsérvese que para que el robot realice dicha secuencia de acciones, si comienza con el cubo en su brazo izquierdo podrá realizar la rotación \textit{B1} inmediatamente. Sin embargo, como el gripper izquierdo bloquea las caras \textit{L} y \textit{R} y \textit{U}, se deberá realizar un cambio de mano antes de realizar el giro \textit{L1}. Lo mismo sucederá cuando posteriormente se quiera efectuar \textit{D1} con el cubo en el brazo derecho y \textit{R1} con el cubo en el brazo izquierdo.
+Este módulo recibe un string con el estado o permutación del cubo y entrega una secuencia de giros en el formato descrito en la sección \ref{convenciones}. Por ejemplo, para el mismo string mostrado en la sección anterior (\textit{LLLFUBRUBRRFRRUDBBFFUDFUDRRLFFBDDBRRBLUDLFDLFUUUBBLDDL}), la secuencia de giros que lleva al cubo a su estado resuelto es \textit{B1 L1 D1 R1}. Obsérvese que para que el robot realice dicha secuencia de acciones, si comienza con el cubo en su brazo izquierdo podrá realizar la rotación \textit{B1} inmediatamente. Sin embargo, como el gripper izquierdo bloquea las caras \textit{L} y \textit{R} y \textit{U}, se deberá realizar un cambio de mano antes de realizar el giro \textit{L1}. Lo mismo sucederá cuando posteriormente se quiera efectuar \textit{D1} con el cubo en el brazo derecho y \textit{R1} con el cubo en el brazo izquierdo.
 
 
 \subsection{Orden de ejecución final}
