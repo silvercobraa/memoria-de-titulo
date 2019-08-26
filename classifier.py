@@ -78,6 +78,16 @@ class Classifier(object):
         hsv = cv2.cvtColor(X_hsv, cv2.COLOR_RGB2HSV)[0]
         centroid_id = list(range(4, 54, 9))
         feats = hsv[:,::2]
+
+        ax = pl.subplot(111)
+        for i, c in enumerate(feats):
+            if i % 9 == 4:
+                # print(type(raw_colors[i]))
+                pl.scatter(*feats[i], color=X[i]/255.0, marker='x')
+            else:
+                pl.scatter(*feats[i], color=X[i]/255.0, marker='o')
+        pl.show()
+
         alphas = np.empty((6, 1))
         means = np.empty((6, feats.shape[1]))
         covs = np.empty((6, feats.shape[1], feats.shape[1]))

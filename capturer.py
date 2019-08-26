@@ -19,8 +19,8 @@ from hough import hough
 class Capturer(object):
     # BRIGHTNESS = 0.1
     # BRIGHTNESS = 0.2
-    # BRIGHTNESS = 0.3
-    BRIGHTNESS = 0.5
+    BRIGHTNESS = 0.3
+    # BRIGHTNESS = 0.5
     """docstring for Capturer."""
 
     def __init__(self, dir, camera_id):

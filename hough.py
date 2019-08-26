@@ -18,6 +18,7 @@ def hough(img):
     # circles = cv2.HoughCircles(gray_img, method=cv.CV_HOUGH_GRADIENT, dp=1, minDist=30, param1=80, param2=30, minRadius=10, maxRadius=30)
     circles = cv2.HoughCircles(gray_img, method=cv.CV_HOUGH_GRADIENT, dp=1, minDist=30,
         param1=80, param2=30, minRadius=10, maxRadius=35)
+        # param1=80, param2=30, minRadius=5, maxRadius=40)
     # circles = cv2.HoughCircles(gray_img, method=cv.CV_HOUGH_GRADIENT, dp=1, minDist=20,
     #     param1=80, param2=30, minRadius=10, maxRadius=40)
     # radios para la cabeza
@@ -38,9 +39,9 @@ def hough(img):
         cv2.circle(img, (i[0],i[1]), 2, (0,0,255), 3)
 
     cv2.imshow('detected circles', img)
+    cv2.imwrite('many_circles.png', img)
     if cv2.waitKey(100) >= 0:
         pass
-    # cv2.imshow('canny', canny)
     return circles
 
 
@@ -74,25 +75,11 @@ def rectangles(img):
 
 
 def main():
-    cap = cv2.VideoCapture(1)
-    face = 'D'
-    while True:
-        ret, bgr_frame = cap.read()
-        gray_frame = cv2.cvtColor(bgr_frame, cv2.COLOR_BGR2GRAY)
-        # circles = hough(gray_frame)
-        circles = hough(bgr_frame)
-        if circles is not None and 9 <= circles.shape[1] <= 9:
-            np.save('capturas/' + face, bgr_frame)
-            np.save('capturas/' + face + '_circles', circles)
-            print(bgr_frame)
-            print(circles.shape)
-            # cv2.destroyAllWindows()
-            # break
-        # rectangles(bgr_frame)
-
-        key = cv2.waitKey(1) & 0xFF
-        if key == ord('q'):
-            break
+    img = np.load('capturas/' + 'F.npy')
+    # cv2.imwrite('camara_externa.png', img)
+    gray_frame = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    cv2.imshow('asdasd', gray_frame)
+    circles = hough(img)
 
 
 if __name__ == '__main__':
