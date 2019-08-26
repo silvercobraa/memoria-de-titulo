@@ -7,7 +7,7 @@ PROJECTNAME = "Projectname"
 
 ## Makefile von Karl Voit (Karl@Voit.net)
 
-## some Makefile-hints taken from: 
+## some Makefile-hints taken from:
 ## http://www.ctan.org/tex-archive/help/uk-tex-faq/Makefile
 
 
@@ -43,7 +43,7 @@ pdf:
 	-${BIBTEX_CMD} ${MAINDOCUMENTBASENAME}
 	${PDFLATEX_CMD} ${MAINDOCUMENTFILENAME}
 	${PDFLATEX_CMD} ${MAINDOCUMENTFILENAME}
-	-mv ${MAINDOCUMENTBASENAME}.pdf ${DATESTAMP_AND_PROJECT}.pdf
+	# -mv ${MAINDOCUMENTBASENAME}.pdf ${DATESTAMP_AND_PROJECT}.pdf
 
 #help	wc	counts the words from the PDF generated
 wc:	pdf
@@ -64,7 +64,7 @@ view: pdf
 
 #help	clean	clean up temporary files
 .PHONY: clean
-clean: 
+clean:
 	-rm -r *.bcf *.run.xml _*_.* *~ *.aux *-blx.bib *.bbl ${MAINDOCUMENTBASENAME}.dvi *.ps *.blg *.idx *.ilg *.ind *.toc *.log *.log *.brf *.out *.lof *.lot *.gxg *.glx *.gxs *.glo *.gls *.tdo -f
 
 #help	purge	cleaner than clean ;-)
@@ -106,4 +106,3 @@ templatedocu:
 
 
 #end
-

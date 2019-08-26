@@ -4,7 +4,7 @@
 \chapter*{Resumen}
 \label{cha:abstract}
 
-\lipsum[1]
+Este documento describe un proyecto de Memoria de Título de Ingeniería Civil Informática, el cual consistió en lograr que Baxter, un robot manipulador industrial humanoide, resuelva el cubo de Rubik, un puzzle mecánico tridimensional. Se describe la implementación de un sistema que realiza esta tarea, desde el recoger el cubo de una mesa, pasando por la detección del estado del cubo, la búsqueda de una solución para el mismo, hasta la manipulación y ejecución de dicha solución. Se propone un esquema de 6 posturas de los brazos del robot para la captura del estado del cubo mediante una cámara externa, y otro también de 6 posturas para la ejecución de rotaciones de caras del cubo. Para la visión, se propone utilizar la transformada de Hough y un modelo de mezcla de gaussianas, para detectar regiones de interés, extracción de colores representantes de dicha región y agrupamiento de los mismos. Para la resolución, se utiliza el algoritmo de $2$ fases de Kociemba. El sistema implementado es capaz de detectar el estado de un cubo de Rubik con una exactitud de sobre el $90$\% del estado total, y es capaz de ejecutar correctamente secuencias no muy largas de movimientos de caras del cubo. Se describen situaciones problemáticas que se presentan al intentar completar el objetivo, y sus posibles causas.
 
 %\glsresetall %% all glossary entries should be used in long form (again)
 %% vim:foldmethod=expr

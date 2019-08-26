@@ -31,7 +31,7 @@ Scramble #2: D1 F2 D3 B2 L1 B2 F2 D3 B2 L3 F2 U1 R2 B2 U3 B3 D1 R2 F3 D3 L2 R2 F
   [1 0 4]]
 
  [[2 0(3) 0]
-  [1 1 0]
+  [1 1 0(3)]
   [2 0(3) 0]]
 
  [[5 2 0(3)]
@@ -49,7 +49,7 @@ Scramble #2: D1 F2 D3 B2 L1 B2 F2 D3 B2 L3 F2 U1 R2 B2 U3 B3 D1 R2 F3 D3 L2 R2 F
  [[4 4 0]
   [5 5 4]
   [4 2(0) 2]]]
-Errores: 7
+Errores: 8
 Scramble #3: L2 U2 F1 R2 F3 R2 F3 L1 B2 R2 B1 F2 D2 U2 L2 R2 D2 B2 U3 F1 U3 L3 R2 D1 U1 B1 F3 L2 R3 F2
 [[[2 3 5]
   [4 0 5]
